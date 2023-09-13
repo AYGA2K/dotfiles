@@ -1,0 +1,17 @@
+#!/bin/bash
+
+processes_cmd=("com.rtosta.zapzap" "xbanish" "greenclip daemon")
+process_names=("zapzap" "xbanish" "greenclip")
+
+# Check if each process is running, and if not, start it using the corresponding name
+for i in "${!processes_cmd[@]}"; do
+	process="${processes_cmd[i]}"
+	process_name="${process_names[i]}"
+
+	if ! pgrep -f "$process_name" >/dev/null; then
+		echo "Starting $process_name... $process"
+		$process >/dev/null &
+	else
+		echo "$process_name is already running."
+	fi
+done

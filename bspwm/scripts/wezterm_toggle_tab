@@ -1,0 +1,18 @@
+#!/bin/bash
+
+config_path="/home/$USER/.wezterm.lua"
+# Check if the configuration file exists
+if [ -f "$config_path" ]; then
+	# Toggle the hide_tab_bar_if_only_one_tab setting
+	if grep -q "config.enable_tab_bar = true" "$config_path"; then
+		sed -i 's/config.enable_tab_bar = true/config.enable_tab_bar = false/g' "$config_path"
+	elif grep -q "config.enable_tab_bar = false" "$config_path"; then
+		sed -i 's/config.enable_tab_bar = false/config.enable_tab_bar = true/g' "$config_path"
+	else
+		echo "Configuration value not found."
+		exit 1
+	fi
+	echo "Setting toggled successfully."
+else
+	echo "Configuration file not found."
+fi
