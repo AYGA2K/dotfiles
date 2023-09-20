@@ -185,6 +185,7 @@ backupdotfiles() {
 
     # Copy .zshrc 
    cp ~/.zshrc $DIR
+   cp -r ~/.oh-my-zsh $DIR
 
     # installed packages
    yay -Qqe  > $DIR/packages.txt

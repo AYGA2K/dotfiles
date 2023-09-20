@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+update_count="$(yay -Qu | wc -l)"
+update_count_aur="$(yay -Qua | wc -l)"
+total_updates=$((update_count + update_count_aur))
+if [ "$total_updates" -gt 0 ]; then
+	wezterm -e yay
+	notify-send "System up to date"
+else
+	notify-send "No updates available"
+fi
