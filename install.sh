@@ -10,6 +10,7 @@ install_packages() {
 copy_zshrc() {
 	echo "Copying .zshrc to home directory..."
 	cp .zshrc ~/
+	cp .oh-my-zsh ~/
 }
 
 copy_wezterm() {
