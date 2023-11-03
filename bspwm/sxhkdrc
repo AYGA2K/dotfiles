@@ -24,8 +24,8 @@ super + Return
 alt + F1
 	rofi_launcher
 
-alt + h
-  ~/.config/bspwm/scripts/wezterm_toggle_tab
+# alt + h
+#   ~/.config/bspwm/scripts/wezterm_toggle_tab
 # Rofi Run
 alt + F2
 	rofi_runner

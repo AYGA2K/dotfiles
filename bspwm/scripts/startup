@@ -1,5 +1,5 @@
 #!/bin/bash
-
+setxkbmap -option ctrl:nocaps
 processes_cmd=("com.rtosta.zapzap" "xbanish" "greenclip daemon")
 process_names=("zapzap" "xbanish" "greenclip")
 

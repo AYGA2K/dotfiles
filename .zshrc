@@ -7,7 +7,7 @@ export ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="random"
 
 zstyle ':omz:update' mode disabled  # disable automatic updates
-plugins=(git cp thefuck)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -68,9 +68,8 @@ alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
 #other
-alias hx=helix
 alias vim=nvim
-alias pnpm=npm
+alias mvnrun="mvn spring-boot:run"
 
 # functions 
 
@@ -132,13 +131,10 @@ function fix_noto_arabic_fonts() {
 EOF
 )
 
-    # The custom message
     local custom_message="Arabic legibility fixed "
 
-    # The target file to add the content
     local target_file="/etc/fonts/conf.d/66-noto-reject-nastaliq.conf"
 
-    # Use sudo with echo and process substitution to append to the file
     sudo echo '$content' > '$target_file'
 
     echo "$custom_message"
@@ -185,7 +181,6 @@ backupdotfiles() {
 
     # Copy .zshrc 
    cp ~/.zshrc $DIR
-   cp -r ~/.oh-my-zsh $DIR
 
     # installed packages
    yay -Qqe  > $DIR/packages.txt
@@ -197,3 +192,4 @@ backupdotfiles() {
  fi
 }
 
+export PATH="$HOME/go/bin:$PATH"

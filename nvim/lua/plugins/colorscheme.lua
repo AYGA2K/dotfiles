@@ -4,9 +4,11 @@ return {
     opts = {
       transparent = true,
     },
+    lazy = true,
   },
   {
     "Shatur/neovim-ayu",
+    lazy = true,
   },
   {
     colorscheme = "tokyonight-night",
@@ -15,6 +17,7 @@ return {
       -- custom options here
       transparent_background = true,
     },
+    lazy = true,
   },
   {
     "LazyVim/LazyVim",
