@@ -15,10 +15,10 @@ local function map(mode, lhs, rhs, opts)
 end
 
 -- Move to window using the <ctrl> hjkl keys
-map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
-map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
-map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
-map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
+-- map("n", "<C-h>", "<C-w>h", { desc = "Go to left window", remap = true })
+-- map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
+-- map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
+-- map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase window height" })
 map("n", "<C-Down>", "<cmd>resize -2<cr>", { desc = "Decrease window height" })
@@ -36,6 +36,10 @@ map("n", "<leader>e", "<cmd> Yazi <cr>", { desc = "Yazi" })
 -- buffers
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
+-- vim.keymao.del("n", "<C-h>")
+-- vim.keymap.del("n", "<C-l>")
+-- vim.keymap.del("n", "<C-k>")
+-- vim.keymap.del("n", "<C-j>")
 
 -- if Util.has("bufferline.nvim") then
 --   map("n", "<C-S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })

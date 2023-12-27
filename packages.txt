@@ -95,7 +95,6 @@ gksu
 glow
 gnu-netcat
 go
-google-chrome
 gpart
 gparted
 gpick
@@ -113,6 +112,7 @@ hdparm
 hw-probe
 hwinfo
 hyperv
+hypnotix-wayland
 hypridle
 hyprland
 hyprlock
@@ -123,7 +123,6 @@ irssi
 jfsutils
 jq
 kitty
-lapce
 laptop-detect
 lazydocker-bin
 lazygit
@@ -290,6 +289,7 @@ usb_modeswitch
 usbmuxd
 usbutils
 v4l2loopback-dkms
+vhs
 vim
 volumeicon
 vpnc

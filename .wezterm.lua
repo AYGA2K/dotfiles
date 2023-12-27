@@ -21,8 +21,8 @@ config.colors = {
 -- config.scrollback_lines = 3000
 
 config.window_padding = {
-	left = 100,
-	right = 100,
+	left = 400,
+	right = 400,
 	top = 0,
 	bottom = 0,
 }
@@ -43,7 +43,6 @@ config.mouse_bindings = {
 local act = wezterm.action
 
 config.keys = {
-	-- Switch tabs using Alt + 1, 2, 3, ...
 	{ key = "1", mods = "ALT", action = wezterm.action({ ActivateTab = 0 }) },
 	{ key = "2", mods = "ALT", action = wezterm.action({ ActivateTab = 1 }) },
 	{ key = "3", mods = "ALT", action = wezterm.action({ ActivateTab = 2 }) },
@@ -56,33 +55,22 @@ config.keys = {
 
 	{ key = "h", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
 	{ key = "l", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+
 	{ key = "V", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
 	{ key = "C", mods = "CTRL", action = wezterm.action.CopyTo("ClipboardAndPrimarySelection") },
-	{ key = "U", mods = "CTRL", action = act.ScrollByPage(-0.5) },
-	{ key = "D", mods = "CTRL", action = act.ScrollByPage(0.5) },
-}
 
-wezterm.on("user-var-changed", function(window, pane, name, value)
-	local overrides = window:get_config_overrides() or {}
-	if name == "ZEN_MODE" then
-		local incremental = value:find("+")
-		local number_value = tonumber(value)
-		if incremental ~= nil then
-			while number_value > 0 do
-				window:perform_action(wezterm.action.IncreaseFontSize, pane)
-				number_value = number_value - 1
-			end
-			overrides.enable_tab_bar = false
-		elseif number_value < 0 then
-			window:perform_action(wezterm.action.ResetFontSize, pane)
-			overrides.font_size = nil
-			overrides.enable_tab_bar = true
-		else
-			overrides.font_size = number_value
-			overrides.enable_tab_bar = false
-		end
-	end
-	window:set_config_overrides(overrides)
-end)
+	{ key = "U", mods = "ALT|SHIFT", action = act.ScrollByPage(-0.5) },
+	{ key = "D", mods = "ALT|SHIFT", action = act.ScrollByPage(0.5) },
+
+	{ key = "V", mods = "ALT|SHIFT", action = act.SplitVertical({ domain = "CurrentPaneDomain" }) },
+	{ key = "Z", mods = "ALT|SHIFT", action = act.SplitHorizontal({ domain = "CurrentPaneDomain" }) },
+	-- navigate between splits
+	{ key = "H", mods = "ALT|SHIFT", action = act.ActivatePaneDirection("Left") },
+	{ key = "L", mods = "ALT|SHIFT", action = act.ActivatePaneDirection("Right") },
+	{ key = "K", mods = "ALT|SHIFT", action = act.ActivatePaneDirection("Up") },
+	{ key = "J", mods = "ALT|SHIFT", action = act.ActivatePaneDirection("Down") },
+	-- close current split
+	{ key = "Q", mods = "ALT|SHIFT", action = act.CloseCurrentPane({ confirm = true }) },
+}
 
 return config
