@@ -102,6 +102,7 @@ jfsutils
 jq
 kitty
 laptop-detect
+lazygit
 less
 libadwaita-without-adwaita-git
 libfido2

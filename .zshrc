@@ -4,17 +4,16 @@ export ZSH=$HOME/.ohmyzsh
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="gozilla"
-
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-plugins=(git zsh-vi-mode  zsh-autosuggestions zsh-syntax-highlighting fast-syntax-highlighting)
+#
+CUSTOM_SCRIPTS_FOLDER=$HOME/.zsh
+for file in $CUSTOM_SCRIPTS_FOLDER/*.zsh; do
+    if [ -f "$file" ]; then
+        source "$file"
+    fi
+done
 
 source $ZSH/oh-my-zsh.sh
-source $HOME/.zsh/alias.zsh
-source $HOME/.zsh/functions.zsh
 
 
-export PATH="$HOME/go/bin:$PATH"
-export _JAVA_AWT_WM_NONREPARENTING=1
 #  Load Angular CLI autocompletion.
 # source <(ng completion script)

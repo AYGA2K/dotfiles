@@ -5,10 +5,6 @@ config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 17
 config.line_height = 1
-config.colors = {
-	background = "#11121D",
-	foreground = "#FDFDFD",
-}
 
 config.scrollback_lines = 3000
 
