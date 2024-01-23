@@ -21,9 +21,6 @@ sourcezsh(){
 
 
 backupdotfiles() {
-  if [ -z "$1" ]; then
-    echo "Usage: backup_dotfiles <commit_message>"
-  else
    CURR_DIR=$(pwd)
    DIR=~/hyprland_dotfiles
    # Create the directory if it doesn't exist
@@ -41,10 +38,4 @@ backupdotfiles() {
 
     # installed packages
    yay -Qqe  > $DIR/packages.txt
-
-    # git
-   cd $DIR
-   git add . && git commit -m "$1" && git push origin main
-   cd $CURR_DIR
- fi
 }

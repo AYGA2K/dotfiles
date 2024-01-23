@@ -17,3 +17,5 @@ source $ZSH/oh-my-zsh.sh
 
 #  Load Angular CLI autocompletion.
 # source <(ng completion script)
+
+export PATH=$PATH:/home/ayga/.spicetify

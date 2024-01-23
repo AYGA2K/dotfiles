@@ -33,7 +33,7 @@ config.mouse_bindings = {
 	-- Ctrl-click will open the link under the mouse cursor
 	{ event = { Up = { streak = 1, button = "Left" } }, mods = "CTRL", action = wezterm.action.OpenLinkAtMouseCursor },
 }
-config.enable_wayland = false
+config.enable_wayland = true
 config.keys = {
 	-- Switch tabs using Alt + 1, 2, 3, ...
 	{ key = "1", mods = "ALT", action = wezterm.action({ ActivateTab = 0 }) },
