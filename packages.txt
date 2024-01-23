@@ -39,6 +39,7 @@ base
 base-devel
 bash-completion
 bat
+betterdiscord-installer-bin
 bibata-cursor-theme-bin
 bind
 blueman
@@ -60,6 +61,7 @@ dex
 dhclient
 dialog
 diffutils
+discord
 dmidecode
 dmraid
 dnsmasq
@@ -76,6 +78,7 @@ f2fs-tools
 fatresize
 file-roller
 firefox
+flatpak
 fsarchiver
 git
 gksu
@@ -161,6 +164,7 @@ nvidia-dkms
 nvidia-settings
 nvme-cli
 nwg-look-bin
+obs-studio
 open-iscsi
 openconnect
 openresolv
@@ -176,17 +180,17 @@ partimage
 paru-bin
 pavucontrol
 pcsclite
+pipewire-pulse
 playerctl
 polkit
 polkit-gnome
 powertop
 ppp
 pptpclient
-pulseaudio
 pulseaudio-alsa
-pulseaudio-bluetooth
 pv
 python-requests
+qbittorrent
 qt5-wayland
 qt5ct
 qt6-wayland
@@ -210,6 +214,7 @@ sg3_utils
 slurp
 smartmontools
 sof-firmware
+spotify
 squashfs-tools
 starship
 sudo
@@ -232,6 +237,7 @@ timeshift
 tmux
 tpm2-tss
 ttf-dejavu
+ttf-font-awesome
 ttf-hack
 ttf-jetbrains-mono-nerd
 udftools
@@ -243,6 +249,7 @@ urxvt-resize-font-git
 usb_modeswitch
 usbmuxd
 usbutils
+v4l2loopback-dkms
 vim
 volumeicon
 vpnc
@@ -254,6 +261,7 @@ wireless-regdb
 wireless_tools
 wl-clipboard
 wlogout
+wlrobs-hg
 wofi
 wpa_supplicant
 wvdial
@@ -304,6 +312,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xwaylandvideobridge
 yay
 zsh
 zsh-autosuggestions
