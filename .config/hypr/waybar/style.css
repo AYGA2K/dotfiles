@@ -67,7 +67,7 @@ tooltip label {
 #workspaces button {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  background-color: @surface0; /* Surface0 from the palette */
+  background-color: transparent; /* Surface0 from the palette */
   color: @subtext1; /* fgcolor */
   /*min-width: 36px;*/
   /* Use box-shadow instead of border so the text isn't offset */
@@ -78,7 +78,7 @@ tooltip label {
 #workspaces button.active {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  background-color: transparent;
+  background-color: @surface1;
   color: @blue;
   /* min-width: 25px; */
   /* Use box-shadow instead of border so the text isn't offset */
