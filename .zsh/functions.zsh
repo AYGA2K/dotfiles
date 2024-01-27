@@ -50,7 +50,7 @@ backupdotfiles() {
     echo "Usage: backup_dotfiles <commit_message>"
   else
    CURR_DIR=$(pwd)
-   DIR=~/hyprland_dotfiles
+   DIR=~/hyprland-awesome_dotfiles
    # Create the directory if it doesn't exist
    mkdir -p $DIR
 

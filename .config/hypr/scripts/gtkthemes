@@ -5,7 +5,7 @@
 THEME='Catppuccin-Mocha-Standard-Blue-Dark'
 ICONS='Papirus-Dark'
 FONT='Noto Sans 11'
-CURSOR='Catppuccin-Mocha-Light-Cursors'
+CURSOR='Bibata-Modern-Ice'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
