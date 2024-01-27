@@ -64,7 +64,7 @@ backupdotfiles() {
 
 	 mkdir -p $DIR/.local
 
-	 cp -r ~/.local/share/fonts $DIR/.local/share
+	 cp -r ~/.local/share/fonts $DIR/.local/share/
 
     # Copy .zshrc
    cp ~/.zshrc $DIR
