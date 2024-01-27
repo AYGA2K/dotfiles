@@ -38,7 +38,6 @@ arcolinux-wallpapers-git
 arcolinuxd-system-config-git
 arcolinuxd-welcome-app-git
 asusctl
-awesome-git
 base
 base-devel
 bash-completion
@@ -130,7 +129,6 @@ lsb-release
 lsd
 lsscsi
 lvm2
-lxappearance-gtk3
 maim
 mako
 man-db
@@ -193,7 +191,6 @@ partimage
 paru-bin
 pavucontrol
 pcsclite
-picom-git
 pipewire-alsa
 pipewire-pulse
 playerctl
@@ -216,7 +213,6 @@ refind
 reflector
 reiserfsprogs
 ripgrep
-rofi
 rog-control-center
 rp-pppoe
 rsync
@@ -285,11 +281,9 @@ wofi
 wpa_supplicant
 wvdial
 xclip
-xcolor
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdman-beta-bin
-xdotool
 xf86-input-elographics
 xf86-input-libinput
 xf86-video-nouveau
