@@ -1,32 +1,28 @@
 {
   "include": "~/.config/hypr/waybar/modules.jsonc",
   "layer": "top",
+  "output": ["HDMI-A-1", "eDP-1"],
+  // "output-all": true,
   //"mode": "dock",
   "exclusive": true,
   "passthrough": false,
   "hover": false,
   "position": "top",
-  "spacing": 3,
+  "spacing": 0,
   "fixed-center": true,
   "ipc": true,
   "margin-left": 0,
   "margin-right": 0,
-  "modules-left": [
-    "hyprland/workspaces",
-    "cpu",
-    "memory",
-    "disk",
-    "temperature"
-  ],
-  "modules-center": ["custom/weather", "clock#3"],
+  "modules-left": ["cpu", "memory", "disk", "temperature", "custom/media"],
+  "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "custom/spotify",
     "tray",
-    // "custom/updater",
     "network",
+    "clock#3",
     "battery",
-    // "custom/profile",
     "backlight",
     "pulseaudio",
-    "pulseaudio#microphone"
-  ]
+    "pulseaudio#microphone",
+  ],
 }

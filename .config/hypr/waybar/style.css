@@ -34,7 +34,7 @@
   /* Recommended font sizes: 720p: ~14px, 1080p: ~18px */
   font-weight: bold;
   font-size: 12px;
-  min-height: 0;
+  min-height: 20px;
 }
 
 /* icons start at U+E900 in Jetbrains mono in gucharmap */
@@ -69,7 +69,7 @@ tooltip label {
   margin: 0 0 0 0;
   background-color: transparent; /* Surface0 from the palette */
   color: @subtext1; /* fgcolor */
-  /*min-width: 36px;*/
+  min-width: 30px;
   /* Use box-shadow instead of border so the text isn't offset */
   /*    box-shadow: inset 0 -3px transparent;*/
   /* border-radius: 0px; */
@@ -78,15 +78,10 @@ tooltip label {
 #workspaces button.active {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  background-color: @surface1;
-  color: @blue;
-  /* min-width: 25px; */
-  /* Use box-shadow instead of border so the text isn't offset */
-  /* box-shadow: inset 0 -3px transparent; */
-  /* border-radius: 0px; */
+  background-color: @surface0;
+  color: @green;
 }
 
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 #workspaces button:hover {
   background: transparent;
 }
@@ -116,29 +111,44 @@ tooltip label {
 #network,
 #pulseaudio,
 #wireplumber,
-#custom-media,
 #tray,
 #cava,
 #mode,
 #idle_inhibitor,
-#custom-power,
-#custom-menu,
-#custom-screen_locker,
-#custom-updater,
+/* #custom-power, */
+/* #custom-menu, */
+/* #custom-screen_locker, */
+/* #custom-updater, */
 #workspaces,
-#custom-clipboard,
-#custom-profile,
+#custom-media,
+/* #custom-clipboard, */
+/* #custom-profile, */
 #custom-weather {
-  padding: 2px 6px 2px 6px;
-  margin: 4px 3px 4px 3px;
-  color: @sky;
+  padding: 2px;
+  margin: 3px 6px 3px 6px;
+  color: @text;
   /* background-color: rgba(10, 10, 10, 0.3); */
   background-color: transparent;
 }
 
-#window,
-#workspaces {
+/* @keyframes move { */
+/*   from { */
+/*     color: @rosewater; */
+/*   } */
+/**/
+/*   to { */
+/*     color: @text; */
+/*   } */
+/* } */
+
+#custom-media {
+  color: @rosewater;
+  /* animation-name: move; */
+  /* animation-duration: 5s; */
+  /* animation-timing-function: linear; */
+  /* animation-iteration-count: infinite; */
 }
+
 #custom-clipboard {
   color: @teal;
 }
@@ -168,10 +178,6 @@ tooltip label {
 } */
 
 @keyframes blink {
-  to {
-    background-color: @surface2;
-    color: @rosewater;
-  }
 }
 
 #battery.critical:not(.charging) {
@@ -241,22 +247,8 @@ label:focus {
 #custom-power_profile {
   color: @green;
 }
-#custom-media {
-  background-color: @sapphire; /* Sapphire from the palette */
-  color: @surface1; /* Adjust the color as needed */
-  min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-  background-color: @sapphire;
-}
-
-#custom-media.custom-vlc {
-  background-color: @peach;
-}
-
 #temperature {
-  color: @maroon;
+  color: @red;
   /* background-color: #f0932b; */
 }
 

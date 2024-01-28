@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 local config = {}
 config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrainsMono Nerd Font")
-config.font_size = 17
+config.font_size = 16
 config.line_height = 1
 
 config.scrollback_lines = 3000
@@ -33,7 +33,9 @@ config.mouse_bindings = {
 	-- Ctrl-click will open the link under the mouse cursor
 	{ event = { Up = { streak = 1, button = "Left" } }, mods = "CTRL", action = wezterm.action.OpenLinkAtMouseCursor },
 }
-config.enable_wayland = true
+-- config.enable_wayland = false
+local act = wezterm.action
+
 config.keys = {
 	-- Switch tabs using Alt + 1, 2, 3, ...
 	{ key = "1", mods = "ALT", action = wezterm.action({ ActivateTab = 0 }) },
@@ -46,10 +48,12 @@ config.keys = {
 	{ key = "q", mods = "ALT", action = wezterm.action({ CloseCurrentTab = { confirm = true } }) },
 	{ key = "v", mods = "ALT", action = wezterm.action.ActivateCopyMode },
 
-	{ key = "LeftArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
-	{ key = "RightArrow", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
+	{ key = "h", mods = "ALT", action = wezterm.action.ActivateTabRelative(-1) },
+	{ key = "l", mods = "ALT", action = wezterm.action.ActivateTabRelative(1) },
 	{ key = "V", mods = "CTRL", action = wezterm.action.PasteFrom("Clipboard") },
 	{ key = "C", mods = "CTRL", action = wezterm.action.CopyTo("ClipboardAndPrimarySelection") },
+	{ key = "U", mods = "CTRL", action = act.ScrollByPage(-0.5) },
+	{ key = "D", mods = "CTRL", action = act.ScrollByPage(0.5) },
 }
 wezterm.on("user-var-changed", function(window, pane, name, value)
 	local overrides = window:get_config_overrides() or {}

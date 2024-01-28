@@ -19,7 +19,7 @@ image_size=24
 exec_search=false
 hide_search=true
 parse_search=true
-insensitive=false
+insensitive=true
 
 ## Other
 hide_scroll=true
