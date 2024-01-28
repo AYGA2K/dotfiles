@@ -21,9 +21,7 @@ arcolinux-grub-theme-vimix-git
 arcolinux-keyring
 arcolinux-mirrorlist-git
 arcolinux-neofetch-git
-arcolinux-paru-git
 arcolinux-systemd-services-git
-arcolinux-wallpapers-git
 arcolinuxd-system-config-git
 arcolinuxd-welcome-app-git
 asusctl
