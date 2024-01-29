@@ -35,6 +35,7 @@ bind
 blueman
 bluez
 bluez-utils
+breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
 btop
@@ -55,6 +56,8 @@ discord
 dmidecode
 dmraid
 dnsmasq
+docker
+docker-compose
 dosfstools
 duf
 e2fsprogs
@@ -69,6 +72,7 @@ fatresize
 file-roller
 firefox
 flatpak
+flatpak-kcm
 fortune-mod
 fsarchiver
 git
@@ -97,7 +101,15 @@ insomnia-bin
 irssi
 jfsutils
 jq
+kde-gtk-config
+kdeplasma-addons
+kgamma
+khotkeys
 kitty
+kscreen
+kwallet-pam
+kwayland-integration
+kwrited
 laptop-detect
 lazydocker-bin
 lazygit
@@ -166,6 +178,7 @@ openresolv
 openssh
 openvpn
 os-prober
+oxygen
 pacman-contrib
 pamixer
 papirus-icon-theme
@@ -177,7 +190,20 @@ pavucontrol
 pcsclite
 pipewire-alsa
 pipewire-pulse
+plasma-browser-integration
+plasma-desktop
+plasma-disks
+plasma-firewall
+plasma-nm
+plasma-pa
+plasma-sdk
+plasma-systemmonitor
+plasma-thunderbolt
+plasma-vault
+plasma-wayland-session
+plasma-welcome
 playerctl
+plymouth-kcm
 polkit
 polkit-gnome
 powertop
@@ -207,6 +233,7 @@ rxvt-unicode-terminfo
 sardi-icons
 screen
 sddm
+sddm-kcm
 sdparm
 sg3_utils
 slurp
@@ -230,7 +257,6 @@ thunar
 thunar-archive-plugin
 thunar-shares-plugin
 thunar-volman
-thunderbird
 timeshift
 tmux
 tpm2-tss
@@ -317,5 +343,7 @@ xorg-xwud
 xplr
 xwaylandvideobridge
 yay
+zathura
+zathura-pdf-mupdf
 zsh
 zsh-autosuggestions
