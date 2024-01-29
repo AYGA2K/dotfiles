@@ -34,7 +34,7 @@ backupdotfiles() {
      # Copy .config
 		rm -rf $DIR/.config
 		mkdir -p $DIR/.config
-   cp -r ~/.config/hypr ~/.config/qt6ct ~/.config/qt5ct ~/.config/tmux ~/.config/swaylock ~/.config/wofi ~/.config/wlogout ~/.config/alacritty ~/.config/nvim ~/.config/mpv ~/.config/zathura $DIR/.config/
+   cp -r ~/.config/hypr ~/.config/qt6ct ~/.config/qt5ct ~/.config/tmux ~/.config/swaylock ~/.config/wofi ~/.config/wlogout ~/.config/alacritty ~/.config/nvim ~/.config/mpv ~/.config/zathura ~/.config/swayimg $DIR/.config/
 
     # Copy .zshrc
    cp ~/.zshrc $DIR
