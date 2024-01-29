@@ -6,7 +6,6 @@ THEME='Catppuccin-Mocha-Standard-Blue-Dark'
 ICONS='Papirus-Dark'
 FONT='Roboto 11'
 CURSOR='Bibata-Modern-Ice'
-
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
 apply_themes() {

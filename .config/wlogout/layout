@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock --clock --indicator --effect-blur 7x5  -i $HOME/.config/hypr/bg/wallhaven-j37md5.jpg",
+    "action" : "swaylock --clock --indicator --effect-blur 7x5 ",
     "text" : "Lock",
     "keybind" : "l"
 }

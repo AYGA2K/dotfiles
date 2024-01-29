@@ -66,7 +66,6 @@ exfatprogs
 expac
 f2fs-tools
 fatresize
-feh
 file-roller
 firefox
 flatpak
@@ -220,6 +219,7 @@ surfn-icons-git
 swappy
 swaybg
 swayidle
+swayimg
 swaylock-effects
 swww
 syslinux
@@ -240,6 +240,7 @@ ttf-hack
 ttf-iosevka
 ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
+tumbler
 udftools
 upd72020x-fw
 upower
