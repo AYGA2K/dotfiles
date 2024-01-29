@@ -6,7 +6,7 @@
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "systemctl suspend-then-hibernate && swaylock --clock --indicator --effect-blur 7x5 ",
     "text" : "Hibernate",
     "keybind" : "h"
 }
@@ -24,7 +24,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "systemctl suspend &&  swaylock --clock --indicator --effect-blur 7x5 ",
     "text" : "Suspend",
     "keybind" : "u"
 }
