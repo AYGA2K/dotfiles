@@ -5,7 +5,7 @@
   // "output-all": true,
   //"mode": "dock",
   "exclusive": true,
-  "passthrough": false,
+  "passthrough": true,
   "hover": false,
   "position": "top",
   "spacing": 0,
