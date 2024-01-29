@@ -1,9 +1,9 @@
 {
   "custom/media": {
-    "format": "<span color='#b4befe' size='small'>󰝚  </span>{}<span color='#b4befe' size='small' > 󰝚</span>",
+    "format": "<span color='#b4befe' rise='3000'  size='small'>󰝚  </span>{}<span color='#b4befe' size='small' rise='3000'  > 󰝚</span>",
     "escape": true,
     "return-type": "json",
-    "max-length": 40,
+    "max-length": 50,
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl stop",
     "smooth-scrolling-threshold": 5, // This value was tested using a trackpad, it should be lowered if using a mouse.

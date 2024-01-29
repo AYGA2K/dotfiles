@@ -115,11 +115,10 @@ class PlayerManager:
     def on_metadata_changed(self, player, metadata, _=None):
         logger.debug(f"Metadata changed for player {player.props.player_name}")
         player_name = player.props.player_name
+        print(player_name)
         artist = player.get_artist()
         title = player.get_title()
 
-        if len(title) > 20:
-            title = title[:17] + "..."
         print(title)
         print(len(title))
 
@@ -140,6 +139,9 @@ class PlayerManager:
                 track_info = "  " + track_info
             else:
                 track_info = "  " + track_info
+        if len(track_info) >= 50:
+            track_info = track_info[:47] + "..."
+
         print(track_info)
         # only print output if no other player is playing
         current_playing = self.get_first_playing_player()

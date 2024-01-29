@@ -125,7 +125,7 @@ tooltip label {
 /* #custom-profile, */
 #custom-weather {
   padding: 2px;
-  margin: 3px 6px 3px 6px;
+  margin: 1px 4px 1px 4px;
   color: @text;
   /* background-color: rgba(10, 10, 10, 0.3); */
   background-color: transparent;
@@ -143,6 +143,7 @@ tooltip label {
 
 #custom-media {
   color: @rosewater;
+  font-size: 12px;
   /* animation-name: move; */
   /* animation-duration: 5s; */
   /* animation-timing-function: linear; */
