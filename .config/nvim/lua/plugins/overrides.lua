@@ -25,7 +25,7 @@ return {
   { "nvim-lualine/lualine.nvim", enabled = false },
   { "stevearc/dressing.nvim", enabled = false },
   { "goolord/alpha-nvim", enabled = false },
-  { "nvimdev/dashboard-nvim", enabled = false },
+  -- { "nvimdev/dashboard-nvim", enabled = false },
   { "dstein64/vim-startuptime", enabled = false },
   { "folke/flash.nvim", enabled = false },
   { "folke/trouble.nvim", enabled = false },

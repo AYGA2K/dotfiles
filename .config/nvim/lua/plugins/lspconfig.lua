@@ -10,9 +10,6 @@ return {
         html = {
           filetypes_include = { "templ" },
         },
-        javascript = {
-          filetypes_include = { "templ" },
-        },
         cssls = {
           filetypes_include = { "templ" },
         },
@@ -41,7 +38,7 @@ return {
       },
       setup = {
         eslint = function()
-          require("lazyvim.util").on_attach(function(client)
+          require("lazyvim.util").lsp.on_attach(function(client)
             if client.name == "eslint" then
               client.server_capabilities.documentFormattingProvider = true
             elseif client.name == "tsserver" then
