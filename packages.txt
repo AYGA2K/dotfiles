@@ -282,7 +282,7 @@ volumeicon
 vpnc
 waybar
 wd719x-firmware
-wezterm-git
+wezterm
 wget
 wireless-regdb
 wireless_tools
