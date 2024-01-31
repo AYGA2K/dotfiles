@@ -32,9 +32,11 @@ bat
 betterdiscord-installer-bin
 bibata-cursor-theme-bin
 bind
+binder_linux-dkms
 blueman
 bluez
 bluez-utils
+brave-bin
 breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
@@ -45,6 +47,7 @@ catppuccin-gtk-theme-mocha
 catppuccin-mocha-grub-theme-git
 chaotic-keyring
 cliphist
+composer
 cryptsetup
 dbgate-bin
 ddrescue
@@ -70,7 +73,6 @@ expac
 f2fs-tools
 fatresize
 file-roller
-firefox
 flatpak
 flatpak-kcm
 fortune-mod
@@ -105,7 +107,6 @@ kde-gtk-config
 kdeplasma-addons
 kgamma
 khotkeys
-kitty
 kscreen
 kwallet-pam
 kwayland-integration
@@ -268,6 +269,7 @@ ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 tumbler
 udftools
+ufw
 upd72020x-fw
 upower
 urxvt-fullscreen
@@ -281,6 +283,7 @@ vim
 volumeicon
 vpnc
 waybar
+waydroid
 wd719x-firmware
 wezterm
 wget
