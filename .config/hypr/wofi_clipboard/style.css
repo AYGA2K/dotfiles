@@ -5,7 +5,7 @@
 
 * {
   font-family: "JetBrains Mono Nerd Font", monospace;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
 }
 
@@ -35,14 +35,14 @@ window {
 /* Scroll */
 #scroll {
   margin: 0px;
-  padding: 0px;
+  padding: 10px;
   border: none;
 }
 
 /* Input */
 #input {
-  margin: 2px;
-  padding: 2px;
+  margin: 5px;
+  padding: 5px;
   border: none;
   color: @accent;
   background-color: @bg2;

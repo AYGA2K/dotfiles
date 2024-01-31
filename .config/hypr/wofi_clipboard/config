@@ -2,14 +2,14 @@
 
 ## General
 show=drun
-prompt=Apps
+prompt=Clipboard
 normal_window=true
 layer=overlay
 term=wezterm
 columns=1
 
 ## Geometry
-width=25%
+width=65%
 height=40%
 location=0
 orientation=vertical

@@ -1,7 +1,7 @@
 #!/bin/bash
-CONFIG="$HOME/.config/hypr/wofi/config"
-STYLE="$HOME/.config/hypr/wofi/style.css"
-COLORS="$HOME/.config/hypr/wofi/colors"
+CONFIG="$HOME/.config/hypr/wofi_clipboard/config"
+STYLE="$HOME/.config/hypr/wofi_clipboard/style.css"
+COLORS="$HOME/.config/hypr/wofi_clipboard/colors"
 
 if [[ ! $(pidof wofi) ]]; then
 	cliphist list | wofi -dmenu --prompt 'Search...' --conf ${CONFIG} --style ${STYLE} --color ${COLORS} | cliphist decode | wl-copy
