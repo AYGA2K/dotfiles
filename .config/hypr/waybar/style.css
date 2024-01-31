@@ -29,8 +29,7 @@
   border: none;
   border-radius: 6px;
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: "Fantasque Sans Mono Bold", "JetBrainsMono Nerd Font Bold",
-    "fontawesome", "Font Awesome 5 Free";
+  font-family: "Roboto";
   /* Recommended font sizes: 720p: ~14px, 1080p: ~18px */
   font-weight: bold;
   font-size: 12px;

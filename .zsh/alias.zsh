@@ -27,3 +27,4 @@ alias gp='git push origin master'
 #other
 alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
+alias sail="./vendor/bin/sail"
