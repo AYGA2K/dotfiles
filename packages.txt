@@ -238,8 +238,6 @@ spotify
 squashfs-tools
 stremio-beta
 sudo
-surfn-icons-git
-surfn-plasma-dark-icons-git
 swappy
 swaybg
 swayidle
