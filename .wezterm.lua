@@ -5,14 +5,20 @@ config.color_scheme = "Catppuccin Mocha"
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 16
 config.line_height = 1
-
-config.scrollback_lines = 3000
-
--- Dim inactive panes
-config.inactive_pane_hsb = {
-	saturation = 0.24,
-	brightness = 0.5,
+config.colors = {
+	tab_bar = {
+		background = "#1e1e2e",
+		inactive_tab = {
+			bg_color = "#1e1e2e",
+			fg_color = "#bac2de",
+		},
+		active_tab = {
+			bg_color = "#313244",
+			fg_color = "#89dceb",
+		},
+	},
 }
+-- config.scrollback_lines = 3000
 
 config.window_padding = {
 	left = 10,
@@ -22,12 +28,12 @@ config.window_padding = {
 }
 -- Tab bar
 config.use_fancy_tab_bar = false
-config.status_update_interval = 1000
+-- config.status_update_interval = 1000
 config.tab_bar_at_bottom = true
 config.hide_tab_bar_if_only_one_tab = true
 config.enable_tab_bar = true
 config.disable_default_key_bindings = true
-config.cursor_blink_rate = 80
+-- config.cursor_blink_rate = 80
 
 config.mouse_bindings = {
 	-- Ctrl-click will open the link under the mouse cursor
@@ -55,27 +61,5 @@ config.keys = {
 	{ key = "U", mods = "CTRL", action = act.ScrollByPage(-0.5) },
 	{ key = "D", mods = "CTRL", action = act.ScrollByPage(0.5) },
 }
-wezterm.on("user-var-changed", function(window, pane, name, value)
-	local overrides = window:get_config_overrides() or {}
-	if name == "ZEN_MODE" then
-		local incremental = value:find("+")
-		local number_value = tonumber(value)
-		if incremental ~= nil then
-			while number_value > 0 do
-				window:perform_action(wezterm.action.IncreaseFontSize, pane)
-				number_value = number_value - 1
-			end
-			overrides.enable_tab_bar = false
-		elseif number_value < 0 then
-			window:perform_action(wezterm.action.ResetFontSize, pane)
-			overrides.font_size = nil
-			overrides.enable_tab_bar = true
-		else
-			overrides.font_size = number_value
-			overrides.enable_tab_bar = false
-		end
-	end
-	window:set_config_overrides(overrides)
-end)
 
 return config
