@@ -41,7 +41,7 @@ backupdotfiles() {
    cp -r ~/.zsh  $DIR
 
     # installed packages
-   # yay -Qqe  > $DIR/packages.txt
+   yay -Qqe  > $DIR/packages.txt
 
     # git
    cd $DIR
