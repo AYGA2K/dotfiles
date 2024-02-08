@@ -21,10 +21,6 @@ copy_config_files() {
 	cp ./.config ~/
 	cd ..
 }
-copy_starship() {
-	echo "Copying starship.toml..."
-	cp starship.toml ~/.config/
-}
 fish_default_shell() {
 	echo "installing oh my fish"
 	curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
