@@ -11,12 +11,6 @@ install_packages() {
 	done <packages.txt
 }
 
-copy_zshrc() {
-	echo "Copying .zshrc to home directory..."
-	cp .zshrc ~/
-	cp .zsh ~/
-}
-
 copy_wezterm() {
 	echo "Copying .wezterm.lua to home directory..."
 	cp .wezterm.lua ~/
@@ -27,17 +21,27 @@ copy_config_files() {
 	cp ./.config ~/
 	cd ..
 }
+copy_starship() {
+	echo "Copying starship.toml..."
+	cp starship.toml ~/.config/
+}
+fish_default_shell() {
+	echo "installing oh my fish"
+	curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
+	echo "Setting fish as default shell..."
+	sudo chsh -s /bin/fish
+}
 
 # Main script
 main() {
 
 	install_packages
 
-	copy_zshrc
-
 	copy_config_files
 
 	copy_wezterm
+
+	fish_default_shell
 
 	echo "Installation completed!"
 }

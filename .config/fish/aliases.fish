@@ -1,6 +1,5 @@
 # config
-alias zshconfig="nvim ~/.zsh"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias fishconfig="nvim ~/.config/fish/"
 alias config="nvim ~/.config/"
 alias nvimconfig="nvim ~/.config/nvim/"
 alias weztermconfig="nvim ~/.wezterm.lua"
@@ -16,7 +15,7 @@ alias cdconfig='cd ~/.config/'
 alias cdisk='cd /run/media/ayga/Disk/'
 
 # mount
-alias mountdisk='sudo mkdir -p /run/media/ayga/Disk/ && sudo mount /dev/sda1 /run/media/ayga/Disk/ -t ntfs'
+alias mountdisk='sudo mkdir -p /run/media/ayga/Disk/; sudo mount /dev/sda1 /run/media/ayga/Disk/ -t ntfs'
 
 # git
 alias gcl='git clone --depth 1'
@@ -24,7 +23,8 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
-#other
+
+# other
 alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
 alias sail="./vendor/bin/sail"
