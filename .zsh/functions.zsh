@@ -41,11 +41,61 @@ backupdotfiles() {
    cp -r ~/.zsh  $DIR
 
     # installed packages
-   yay -Qqe  > $DIR/packages.txt
+   # yay -Qqe  > $DIR/packages.txt
 
     # git
    cd $DIR
    git add . && git commit -m "$1" && git push origin main
    cd $CURR_DIR
  fi
+}
+run_mongodb() {
+    local username=$1
+    local password=$2
+
+    if [ -z "$username" ] || [ -z "$password" ]; then
+        echo "Usage: run_mongodb <username> <password>"
+        return 1
+    fi
+
+    docker run -d -p 27017:27017 \
+        --name mongodb \
+        -e MONGO_INITDB_ROOT_USERNAME="$username" \
+        -e MONGO_INITDB_ROOT_PASSWORD="$password" \
+        mongo
+
+    echo "MongoDB container started. Root username: $username, password: $password"
+}
+
+run_mysql() {
+    local password=$1
+
+    if [ -z "$password" ]; then
+        echo "Usage: run_mysql <password>"
+        return 1
+    fi
+
+    docker run -d -p 3306:3306 \
+        --name mysql \
+        -e MYSQL_ROOT_PASSWORD="$password" \
+         mysql
+
+    echo "MySQL container started. Username: root, Password: $password"
+	}
+
+
+run_postgres() {
+    local password=$1
+
+    if [ -z "$password" ]; then
+        echo "Usage: run_postgres <password>"
+        return 1
+    fi
+
+    docker run -d -p 5432:5432 \
+        --name postgres \
+        -e POSTGRES_PASSWORD="$password" \
+        postgres
+
+    echo "PostgreSQL container started. Username: postgres, Password: $password"
 }

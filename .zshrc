@@ -19,3 +19,5 @@ source $ZSH/oh-my-zsh.sh
 # source <(ng completion script)
 
 export PATH=$PATH:/home/ayga/.spicetify
+eval "$(starship init zsh)"
+

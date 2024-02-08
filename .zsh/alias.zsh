@@ -28,3 +28,4 @@ alias gp='git push origin master'
 alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
 alias sail="./vendor/bin/sail"
+alias lzd='lazydocker'

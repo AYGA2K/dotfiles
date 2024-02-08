@@ -10,6 +10,9 @@ return {
         html = {
           filetypes_include = { "templ" },
         },
+        -- javascript = {
+        --   filetypes_include = { "templ" },
+        -- },
         cssls = {
           filetypes_include = { "templ" },
         },
@@ -25,7 +28,7 @@ return {
           -- exclude a filetype from the default_config
           filetypes_exclude = { "markdown" },
           -- add additional filetypes to the default_config
-          filetypes_include = { "templ", "php" },
+          filetypes_include = { "templ", "php", "vue" },
           -- to fully override the default_config, change the below
           -- filetypes = {}
           init_options = {
@@ -38,7 +41,7 @@ return {
       },
       setup = {
         eslint = function()
-          require("lazyvim.util").lsp.on_attach(function(client)
+          require("lazyvim.util").on_attach(function(client)
             if client.name == "eslint" then
               client.server_capabilities.documentFormattingProvider = true
             elseif client.name == "tsserver" then

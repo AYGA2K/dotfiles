@@ -1,5 +1,12 @@
 # Swayimg configuration file.
 
+# This file contains the default configuration.
+# The viewer searches for the config file in the following locations:
+# 1. $XDG_CONFIG_HOME/swayimg/config
+# 2. $HOME/.config/swayimg/config
+# 3. $XDG_CONFIG_DIRS/swayimg/config
+# 4. /etc/xdg/swayimg/config
+
 # Any of these options can be overridden using the --config argument
 # on the command line, for instance:
 # $ swayimg --config="general.scale=real"
@@ -51,9 +58,9 @@ all = yes
 ################################################################################
 [font]
 # Font name
-name = Roboto
+name = monospace
 # Font size (in pt)
-size = 12
+size = 14
 # Font color
 color = #cccccc
 # Drop shadow (none/RGB, e.g. #112233)
