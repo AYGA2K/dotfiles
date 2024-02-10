@@ -239,7 +239,6 @@ spotify
 squashfs-tools
 starship
 stremio-beta
-sublime-text-4
 sudo
 swappy
 swaybg
