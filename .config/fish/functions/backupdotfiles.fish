@@ -10,9 +10,11 @@ function backupdotfiles
 
         rm -rf $DIR/.config
         mkdir -p $DIR/.config
-        cp -r ~/.config/hypr ~/.config/qt6ct ~/.config/qt5ct ~/.config/tmux ~/.config/swaylock ~/.config/wofi ~/.config/wlogout ~/.config/alacritty ~/.config/nvim ~/.config/mpv ~/.config/zathura ~/.config/swayimg ~/.config/fish $DIR/.config/
+        cp -r ~/.config/hypr ~/.config/qt6ct ~/.config/qt5ct ~/.config/tmux ~/.config/swaylock ~/.config/wofi ~/.config/wlogout ~/.config/alacritty ~/.config/nvim ~/.config/mpv ~/.config/zathura ~/.config/swayimg ~/.config/swaync ~/.config/fish $DIR/.config/
 
         cp ~/.config/starship.toml $DIR/.config/starship.toml
+
+        yay -Qqe >$DIR/packages.txt
 
         cd $DIR
         git add . && git commit -m "$argv[1]" && git push origin main

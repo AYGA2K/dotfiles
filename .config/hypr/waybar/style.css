@@ -45,6 +45,8 @@ window#waybar {
   transition-duration: 0.5s;
   border-radius: 5;
 }
+#custom-notification {
+}
 
 window#waybar.hidden {
   opacity: 0.1;

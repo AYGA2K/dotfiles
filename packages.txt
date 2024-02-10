@@ -11,8 +11,6 @@ alsa-firmware
 alsa-plugins
 alsa-tools
 alsa-utils
-android-studio
-appflowy-bin
 appstream
 appstream-qt5
 arandr
@@ -34,7 +32,6 @@ arcolinuxd-welcome-app-git
 asusctl
 base
 base-devel
-bash-completion
 bat
 betterdiscord-installer-bin
 bibata-cursor-theme-bin
@@ -43,7 +40,6 @@ binder_linux-dkms
 blueman
 bluez
 bluez-utils
-brave-bin
 breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
@@ -58,6 +54,7 @@ composer
 cryptsetup
 dbgate-bin
 ddrescue
+debtap
 dex
 dhclient
 dialog
@@ -79,9 +76,12 @@ exfatprogs
 expac
 f2fs-tools
 fatresize
+fd
 file-roller
+fish
 flatpak
 floorp-bin
+font-manager
 fortune-mod
 fsarchiver
 git
@@ -90,6 +90,7 @@ gksu
 glow
 gnu-netcat
 go
+google-chrome
 gpart
 gparted
 gpick
@@ -108,12 +109,12 @@ hw-probe
 hwinfo
 hyperv
 hyprland-git
+imv
 inotify-tools
 insomnia-bin
 irssi
 jfsutils
 jq
-kwayland-integration
 laptop-detect
 lazydocker-bin
 lazygit
@@ -135,7 +136,6 @@ lsd
 lsscsi
 lvm2
 maim
-mako
 man-db
 man-pages
 mc
@@ -196,6 +196,7 @@ pavucontrol
 pcsclite
 pipewire
 playerctl
+pnpm
 polkit
 polkit-gnome
 powertop
@@ -236,13 +237,15 @@ smartmontools
 sof-firmware
 spotify
 squashfs-tools
+starship
 stremio-beta
+sublime-text-4
 sudo
 swappy
 swaybg
 swayidle
-swayimg
 swaylock-effects
+swaync
 swww
 syslinux
 tcpdump
@@ -277,7 +280,6 @@ vim
 volumeicon
 vpnc
 waybar
-waydroid
 wd719x-firmware
 wezterm
 wget
@@ -339,9 +341,6 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xplr
-xwaylandvideobridge
 yay
 zathura
 zathura-pdf-mupdf
-zsh
-zsh-autosuggestions

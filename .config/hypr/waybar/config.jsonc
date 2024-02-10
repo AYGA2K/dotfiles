@@ -18,6 +18,7 @@
   "modules-left": ["cpu", "memory", "disk", "temperature", "custom/media"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
+    "custom/notification",
     "custom/spotify",
     "tray",
     "network",

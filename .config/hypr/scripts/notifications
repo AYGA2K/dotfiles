@@ -2,7 +2,5 @@
 
 CONFIG="$HOME/.config/hypr/mako/config"
 
-if [[ ! $(pidof mako) ]]; then
-	killall mako
-	mako --config ${CONFIG}
-fi
+killall -9 swaync
+swaync
