@@ -43,7 +43,6 @@ bluez-utils
 breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
-btop
 btrfs-progs
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
