@@ -32,11 +32,11 @@ map("n", "<C-d>", "<C-d>zz", { desc = "Scroll down" })
 map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
 
 -- buffers
-if Util.has("bufferline.nvim") then
-  map("n", "<C-S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
-  map("n", "<C-S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
-  -- else
-  --   map("n", "<C-S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
-  --   map("n", "<C-S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
-end
-map("n", "<A-z>", "<cmd> ZenMode <cr>", { desc = "Toggle Zen Mode" })
+-- if Util.has("bufferline.nvim") then
+--   map("n", "<C-S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })
+--   map("n", "<C-S-l>", "<cmd>BufferLineCycleNext<cr>", { desc = "Next buffer" })
+-- else
+--   map("n", "<C-S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+--   map("n", "<C-S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+-- end
+-- map("n", "<A-z>", "<cmd> ZenMode <cr>", { desc = "Toggle Zen Mode" })
