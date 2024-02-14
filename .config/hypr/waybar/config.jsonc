@@ -18,8 +18,7 @@
   "modules-left": ["cpu", "memory", "disk", "temperature", "custom/media"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
-    "custom/notification",
-    "custom/spotify",
+    // "custom/spotify",
     "tray",
     "network",
     "clock#3",
@@ -27,5 +26,6 @@
     "backlight",
     "pulseaudio",
     "pulseaudio#microphone",
+    "custom/notification",
   ],
 }

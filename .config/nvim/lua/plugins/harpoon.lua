@@ -1,45 +1,76 @@
-local plugin = "harpoon"
-
 return {
-  -- {{{ Define the Harpoon lazy.vim specificaiton.
-
-  "ThePrimeagen/harpoon",
+  "theprimeagen/harpoon",
+  branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim" },
-
-  -- ----------------------------------------------------------------------- }}}
-  -- {{{ Use Harpoon defaults or my customizations.
-
-  opts = function(_, opts)
-    opts.global_settings = {
-      save_on_toggle = true,
-      save_on_change = true,
-      enter_on_sendcmd = false,
-      tmux_autoclose_windows = false,
-      excluded_filetypes = { plugin, "alpha", "dashboard", "gitcommit" },
-      mark_branch = true,
-      tabline = false,
-      tabline_prefix = "   ",
-      tabline_suffix = "   ",
-    }
+  config = function()
+    require("harpoon"):setup()
   end,
-
-  -- ----------------------------------------------------------------------- }}}
-  -- {{{ Configure harpoon.
-
-  config = function(_, opts)
-    require(plugin).setup(opts)
-    local mark = require(plugin .. ".mark")
-    local ui = require(plugin .. ".ui")
-    -- Harpoon next and previous.
-    vim.keymap.set("n", "<C-S-h>", function()
-      ui.nav_prev()
-    end)
-    vim.keymap.set("n", "<C-S-l>", function()
-      ui.nav_next()
-    end)
-
-    -- Harpoon user interface.
-    vim.keymap.set("n", "<C-S-k>", ui.toggle_quick_menu)
-    vim.keymap.set("n", "<C-S-j>", mark.add_file)
-  end,
+  keys = {
+    {
+      "<C-S-j>",
+      function()
+        require("harpoon"):list():append()
+      end,
+      desc = "harpoon file",
+    },
+    {
+      "<C-S-k>",
+      function()
+        local harpoon = require("harpoon")
+        harpoon.ui:toggle_quick_menu(harpoon:list())
+      end,
+      desc = "harpoon quick menu",
+    },
+    {
+      "<C-S-h>",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():prev()
+      end,
+      desc = "harpoon prev",
+    },
+    {
+      "<C-S-l>",
+      function()
+        local harpoon = require("harpoon")
+        harpoon:list():next()
+      end,
+      desc = "harpoon next",
+    },
+    -- {
+    --   "<leader>1",
+    --   function()
+    --     require("harpoon"):list():select(1)
+    --   end,
+    --   desc = "harpoon to file 1",
+    -- },
+    -- {
+    --   "<leader>2",
+    --   function()
+    --     require("harpoon"):list():select(2)
+    --   end,
+    --   desc = "harpoon to file 2",
+    -- },
+    -- {
+    --   "<leader>3",
+    --   function()
+    --     require("harpoon"):list():select(3)
+    --   end,
+    --   desc = "harpoon to file 3",
+    -- },
+    -- {
+    --   "<leader>4",
+    --   function()
+    --     require("harpoon"):list():select(4)
+    --   end,
+    --   desc = "harpoon to file 4",
+    -- },
+    -- {
+    --   "<leader>5",
+    --   function()
+    --     require("harpoon"):list():select(5)
+    --   end,
+    --   desc = "harpoon to file 5",
+    -- },
+  },
 }

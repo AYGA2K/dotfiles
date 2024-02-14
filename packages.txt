@@ -76,6 +76,7 @@ expac
 f2fs-tools
 fatresize
 fd
+ffmpegthumbnailer
 file-roller
 fish
 flatpak
@@ -83,6 +84,7 @@ floorp-bin
 font-manager
 fortune-mod
 fsarchiver
+fzf
 git
 github-cli
 gksu
@@ -117,6 +119,7 @@ jq
 laptop-detect
 lazydocker-bin
 lazygit
+lazysql
 less
 libadwaita-without-adwaita-git
 libfido2
@@ -151,9 +154,9 @@ mobile-broadband-provider-info
 modemmanager
 mpv
 mtools
-nano
 nbd
 ndisc6
+nemo
 neofetch
 neovim
 network-manager-applet
@@ -198,6 +201,7 @@ playerctl
 pnpm
 polkit
 polkit-gnome
+poppler
 powertop
 ppp
 pptpclient
@@ -249,10 +253,6 @@ syslinux
 tcpdump
 terminus-font
 the_silver_searcher
-thunar
-thunar-archive-plugin
-thunar-shares-plugin
-thunar-volman
 timeshift
 tmux
 tpm2-tss
@@ -265,6 +265,7 @@ ttf-jetbrains-mono-nerd
 tumbler
 udftools
 ufw
+unarchiver
 upd72020x-fw
 upower
 urxvt-fullscreen
@@ -339,6 +340,8 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xplr
+yarn
 yay
 zathura
 zathura-pdf-mupdf
+zoxide

@@ -1,7 +1,7 @@
 {
   "custom/notification": {
     "tooltip": false,
-    "format": " {icon} ",
+    "format": "{icon} ",
     "format-icons": {
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
@@ -113,8 +113,8 @@
       "1": " ",
       "2": "<span size='large'>󰖟 </span>",
       "3": " ",
-      "4": " ",
-      "5": " ",
+      "4": " ",
+      "5": " ",
       "6": " ",
       "7": " ",
       "8": " ",
