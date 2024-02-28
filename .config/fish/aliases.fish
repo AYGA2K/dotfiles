@@ -27,5 +27,5 @@ alias gp='git push origin master'
 # other
 alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
-alias sail="./vendor/bin/sail"
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 alias lzd='lazydocker'

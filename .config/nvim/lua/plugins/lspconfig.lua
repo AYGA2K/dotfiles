@@ -39,17 +39,7 @@ return {
         },
         templ = {},
       },
-      setup = {
-        eslint = function()
-          require("lazyvim.util").on_attach(function(client)
-            if client.name == "eslint" then
-              client.server_capabilities.documentFormattingProvider = true
-            elseif client.name == "tsserver" then
-              client.server_capabilities.documentFormattingProvider = false
-            end
-          end)
-        end,
-      },
+      setup = {},
       init_options = {
         --- @type table<string, any> https://docs.emmet.io/customization/preferences/
         preferences = {},

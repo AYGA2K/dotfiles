@@ -29,6 +29,7 @@ arcolinux-systemd-services-git
 arcolinux-wallpapers-git
 arcolinuxd-system-config-git
 arcolinuxd-welcome-app-git
+asdf-vm
 asusctl
 base
 base-devel
@@ -40,6 +41,7 @@ binder_linux-dkms
 blueman
 bluez
 bluez-utils
+brave-bin
 breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
@@ -49,6 +51,7 @@ catppuccin-gtk-theme-mocha
 catppuccin-mocha-grub-theme-git
 chaotic-keyring
 cliphist
+code
 composer
 cryptsetup
 dbgate-bin
@@ -58,6 +61,7 @@ dex
 dhclient
 dialog
 diffutils
+direnv
 discord
 dmidecode
 dmraid
@@ -71,6 +75,7 @@ edid-decode-git
 edk2-shell
 efibootmgr
 ethtool
+eww-wayland
 exfatprogs
 expac
 f2fs-tools
@@ -81,11 +86,11 @@ file-roller
 fish
 flatpak
 floorp-bin
-font-manager
 fortune-mod
 fsarchiver
 fzf
 git
+gitflow-avh
 github-cli
 gksu
 glow
@@ -140,6 +145,7 @@ lvm2
 maim
 man-db
 man-pages
+mariadb
 mc
 mdadm
 memtest86+
@@ -154,6 +160,7 @@ mobile-broadband-provider-info
 modemmanager
 mpv
 mtools
+nano
 nbd
 ndisc6
 nemo
@@ -167,6 +174,7 @@ networkmanager-pptp
 networkmanager-vpnc
 nfs-utils
 nilfs-utils
+nix
 noto-fonts
 noto-fonts-emoji
 npm
@@ -177,6 +185,7 @@ numlockx
 nvidia-dkms
 nvidia-settings
 nvme-cli
+nwg-displays
 nwg-look-bin
 obs-studio
 onlyoffice-bin
@@ -196,6 +205,7 @@ partimage
 paru-bin
 pavucontrol
 pcsclite
+phpactor
 pipewire
 playerctl
 pnpm
@@ -259,6 +269,7 @@ tpm2-tss
 ttf-dejavu
 ttf-font-awesome
 ttf-hack
+ttf-hack-nerd
 ttf-iosevka
 ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
@@ -278,6 +289,7 @@ v4l2loopback-dkms
 vim
 volumeicon
 vpnc
+warp-terminal
 waybar
 wd719x-firmware
 wezterm
@@ -287,6 +299,7 @@ wireless_tools
 wireplumber
 wl-clipboard
 wlogout
+wlr-randr
 wlrobs-hg
 wofi
 wpa_supplicant
@@ -340,6 +353,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xplr
+yadm
 yarn
 yay
 zathura

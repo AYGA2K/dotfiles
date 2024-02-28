@@ -14,3 +14,13 @@ set fish_cursor_default block blink
 set fish_cursor_insert line blink
 set fish_cursor_replace_one underscore blink
 set fish_cursor_visual block
+
+set fish_greeting
+
+# ssh agent
+# set SSH_AUTH_SOCK /tmp/ssh-XXXXXXITgPcd/agent.10961
+eval (ssh-agent -c) >/dev/null 2>&1
+ssh-add ~/.ssh/gitlab_ed25519 >/dev/null 2>&1
+ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
+
+fish_add_path /home/ayga/.spicetify

@@ -1,8 +1,8 @@
 {
   "include": "~/.config/hypr/waybar/modules.jsonc",
   "layer": "top",
-  "output": ["HDMI-A-1", "eDP-1"],
-  // "output-all": true,
+  // "output": ["HDMI-A-1", "eDP-1"],
+  "output-all": true,
   //"mode": "dock",
   "exclusive": true,
   "passthrough": false,

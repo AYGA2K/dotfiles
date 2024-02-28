@@ -113,8 +113,8 @@
       "1": " ",
       "2": "<span size='large'>󰖟 </span>",
       "3": " ",
-      "4": " ",
-      "5": " ",
+      "4": " ",
+      "5": " ",
       "6": " ",
       "7": " ",
       "8": " ",
@@ -124,19 +124,19 @@
       //"default": " "
       // "default": " ",
     },
-    // "all-outputs": true,
+    "all-outputs": false,
     "active-only": false,
     "show-special": false,
     "sort-by-number": true,
     // single monitor
-    "persistent_workspaces": {
-      "*": 10,
-    },
+    // "persistent_workspaces": {
+    //  "*": 10,
+    //},
 
     // dual monitors each 5 workspaces
-    // "persistent_workspaces": {
-    //   "*": 5,
-    // },
+    "persistent_workspaces": {
+      "*": 0,
+    },
 
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",

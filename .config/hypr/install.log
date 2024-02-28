@@ -1,0 +1,8 @@
+[10:59:28 2024-02-22] FETCHING Version 2.32.1
+[10:59:28 2024-02-22] DOWNLOADING https://github.com/spicetify/spicetify-cli/releases/download/v2.32.1/spicetify-2.32.1-linux-amd64.tar.gz
+[10:59:30 2024-02-22] EXTRACTING /home/ayga/.spicetify/spicetify.tar.gz
+[10:59:30 2024-02-22] SETTING EXECUTABLE PERMISSIONS TO /home/ayga/.spicetify/spicetify
+[10:59:30 2024-02-22] REMOVING /home/ayga/.spicetify/spicetify.tar.gz
+[10:59:30 2024-02-22] APPENDING /home/ayga/.spicetify to PATH in /home/ayga/.config/fish/config.fish
+[10:59:30 2024-02-22] spicetify v2.32.1 was installed successfully to /home/ayga/.spicetify
+[10:59:30 2024-02-22] Run 'spicetify --help' to get started
