@@ -2,14 +2,16 @@
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
 
--- Change to the directory provided as an argument when launching NeoVim without any files
-if #vim.fn.argv() == 0 and not vim.fn.isdirectory(vim.fn.expand("%:p")) then
-  vim.cmd('autocmd VimEnter * execute "cd " .. fnameescape(vim.fn.argv()[1])')
-end
-
 local function augroup(name)
   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
 end
+
+vim.api.nvim_create_autocmd("VimEnter", {
+  command = "ZenMode",
+})
+vim.api.nvim_create_autocmd("VimEnter", {
+  command = "Yazi",
+})
 
 vim.api.nvim_create_autocmd("FileType", {
   group = augroup("filetype"),

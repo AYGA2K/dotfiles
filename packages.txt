@@ -11,6 +11,7 @@ alsa-firmware
 alsa-plugins
 alsa-tools
 alsa-utils
+appflowy-bin
 appstream
 appstream-qt5
 arandr
@@ -51,7 +52,6 @@ catppuccin-gtk-theme-mocha
 catppuccin-mocha-grub-theme-git
 chaotic-keyring
 cliphist
-code
 composer
 cryptsetup
 dbgate-bin
@@ -232,6 +232,9 @@ refind
 reflector
 reiserfsprogs
 ripgrep
+rofi-bluetooth-git
+rofi-lbonn-wayland-git
+rofi-wifi-menu-git
 rog-control-center
 rp-pppoe
 rsync

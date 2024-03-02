@@ -31,6 +31,10 @@ map("n", "DD", '"_dd', { desc = "Delete line" })
 map("n", "<C-d>", "<C-d>zz", { desc = "Scroll down" })
 map("n", "<C-u>", "<C-u>zz", { desc = "Scroll up" })
 
+map("n", "<A-z>", "<cmd> ZenMode <cr>", { desc = "Toggle Zen Mode" })
+
+map("n", "<leader>e", "<cmd> Yazi <cr>", { desc = "Yazi" })
+
 -- buffers
 -- if Util.has("bufferline.nvim") then
 --   map("n", "<C-S-h>", "<cmd>BufferLineCyclePrev<cr>", { desc = "Prev buffer" })

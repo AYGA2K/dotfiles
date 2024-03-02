@@ -4,13 +4,14 @@ iDIR="$HOME/.config/hypr/mako/icons"
 
 # Get brightness
 get_backlight() {
-	BRIGHTNESS=$(brightnessctl --device=intel_backlight --get)
+	BRIGHTNESS=$(brightnessctl --device=intel_backlight info | awk 'NR==2 {print $4}' | tr -d '()')
+	echo "${BRIGHTNESS}"
 }
 
 # Get icons
 get_icon() {
-	backlight="$(get_backlight)"
-	current="${backlight%%%}"
+	backlight="$(get_backlight | tr -d '%')"
+	current="${backlight}"
 	if [[ ("$current" -ge "0") && ("$current" -le "20") ]]; then
 		icon="$iDIR/brightness-20.png"
 	elif [[ ("$current" -ge "20") && ("$current" -le "40") ]]; then

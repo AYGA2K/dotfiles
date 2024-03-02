@@ -1,4 +1,14 @@
 {
+  "bluetooth": {
+    "format": "<span font='9' color='white'>\udb80\udcaf</span> &#160;{status}",
+    "format-disabled": "",
+    "format-connected": " {device_alias}",
+    "format-connected-battery": " {device_alias} {device_battery_percentage}%",
+    "tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+    "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+    "tooltip-format-enumerate-connected-battery": "{device_alias}\t{device_address}\t{device_battery_percentage}%",
+  },
   "custom/notification": {
     "tooltip": false,
     "format": "{icon} ",
@@ -88,7 +98,7 @@
     "on-click-right": "~/.config/hypr/scripts/waybar-style-change",
   },
   "custom/profile": {
-    "format": "󰈐 {}",
+    "format": "󰈐  {}",
     "interval": 1,
     "exec": "asusctl profile -p | awk '{print $NF}'",
     "on-click": "asusctl profile -n",
@@ -107,7 +117,8 @@
     "exec-if": "ping wttr.in -c1",
   },
   "hyprland/workspaces": {
-    "format": "{icon}",
+    // "format": "{icon}",
+    "format": "{name}",
     "on-click": "activate",
     "format-icons": {
       "1": " ",
@@ -128,39 +139,14 @@
     "active-only": false,
     "show-special": false,
     "sort-by-number": true,
-    // single monitor
     // "persistent_workspaces": {
     //  "*": 10,
     //},
 
-    // dual monitors each 5 workspaces
     "persistent_workspaces": {
       "*": 0,
     },
 
-    "on-scroll-up": "hyprctl dispatch workspace e+1",
-    "on-scroll-down": "hyprctl dispatch workspace e-1",
-  },
-  "wlr/workspaces": {
-    // "format": "{name}",
-    "format": "{icon}",
-    "on-click": "activate",
-    "all-outputs": true,
-    "sort-by-number": true,
-    "disable-scroll": true,
-    "format-icons": {
-      "1": " ",
-      "2": " ",
-      "3": " ",
-      "4": "",
-      "5": "",
-      "6": " ",
-      "7": "",
-      "8": "",
-      "9": "  ",
-      "default": "",
-      // "default": "",
-    },
     "on-scroll-up": "hyprctl dispatch workspace e+1",
     "on-scroll-down": "hyprctl dispatch workspace e-1",
   },

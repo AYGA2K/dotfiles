@@ -4,7 +4,8 @@
 -- This file is automatically loaded by plugins.core
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
-
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 local opt = vim.opt
 
 opt.autowrite = false -- Enable auto write

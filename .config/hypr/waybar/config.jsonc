@@ -20,8 +20,10 @@
   "modules-right": [
     // "custom/spotify",
     "tray",
+    "bluetooth",
     "network",
     "clock#3",
+    "custom/profile",
     "battery",
     "backlight",
     "pulseaudio",
