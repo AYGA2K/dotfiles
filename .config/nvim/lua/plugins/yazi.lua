@@ -1,25 +1,10 @@
 return {
-  "SR-Mystar/yazi.nvim",
-  lazy = true,
-  cmd = "Yazi",
-
-  opts = {
-    window = {
-      size = {
-        width = 0.9,
-        height = 0.8,
-      },
-      command_args = {
-        open_dir = vim.cmd.edit,
-        open_file = vim.cmd.edit,
-        cwd = nil,
-        on_open = nil,
-      },
-      pos = "cc", -- see `:h yazi-win-position`
-      style = "minimal", -- "" | "minimal"
-      border = "single", -- "none" | "single" | "double" | "rounded" | "solid" | "shadow"
-      title = " Yazi ",
-      title_pos = "center", -- "center" | "left" | "right"
-    },
+  "DreamMaoMao/yazi.nvim",
+  dependencies = {
+    "nvim-telescope/telescope.nvim",
+    "nvim-lua/plenary.nvim",
+  },
+  keys = {
+    { "<leader>e", "<cmd>Yazi<CR>", desc = "Toggle Yazi" },
   },
 }

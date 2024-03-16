@@ -7,10 +7,7 @@ local function augroup(name)
 end
 
 vim.api.nvim_create_autocmd("VimEnter", {
-  command = "ZenMode",
-})
-vim.api.nvim_create_autocmd("VimEnter", {
-  command = "Yazi",
+  command = "lua if vim.fn.argc(-1) == 1 then local stat = vim.loop.fs_stat(vim.fn.argv(0)) if stat and stat.type == 'directory' then vim.cmd('Telescope find_files cwd=' .. vim.fn.argv(0)) end end",
 })
 
 vim.api.nvim_create_autocmd("FileType", {

@@ -21,8 +21,8 @@ config.colors = {
 -- config.scrollback_lines = 3000
 
 config.window_padding = {
-	left = 10,
-	right = 10,
+	left = 100,
+	right = 100,
 	top = 0,
 	bottom = 0,
 }

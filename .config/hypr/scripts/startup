@@ -13,9 +13,14 @@ ${SCRIPTSDIR}/statusbar &
 
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
+
 # Swayidle
-swayidle -w \
-	timeout 300 'hyprctl dispatch dpms off' \
-	resume 'hyprctl dispatch dpms on' \
-	timeout 460 "swaylock --clock -f --indicator --effect-blur 7x5 " \
-	before-sleep "systemctl suspend" &
+# swayidle -w \
+# 	timeout 300 'hyprctl dispatch dpms off' \
+# 	resume 'hyprctl dispatch dpms on' \
+# 	timeout 460 "swaylock --clock -f --indicator --effect-blur 7x5 " \
+# 	before-sleep "systemctl suspend" &
+#
+
+# Hypridle
+hypridle &
