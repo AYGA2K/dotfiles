@@ -86,6 +86,7 @@ fish
 flatpak
 floorp-bin
 fortune-mod
+freeze-bin
 fsarchiver
 fzf
 git
@@ -120,6 +121,7 @@ imv
 inotify-tools
 insomnia-bin
 irssi
+isoimagewriter
 jfsutils
 jq
 kitty
@@ -181,6 +183,7 @@ noto-fonts-emoji
 npm
 nss-mdns
 ntfs-3g
+ntfs-automount
 ntp
 numlockx
 nvidia-dkms
