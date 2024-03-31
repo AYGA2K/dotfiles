@@ -92,6 +92,7 @@ fzf
 git
 gitflow-avh
 github-cli
+github-desktop-bin
 gksu
 glow
 gnu-netcat
@@ -110,6 +111,7 @@ gst-plugins-ugly
 gvfs-mtp
 gvfs-smb
 hdparm
+hoppscotch-app-bin
 hw-probe
 hwinfo
 hyperv
@@ -192,7 +194,6 @@ nvme-cli
 nwg-displays
 nwg-look-bin
 obs-studio
-onlyoffice-bin
 open-iscsi
 openconnect
 openresolv
@@ -202,7 +203,6 @@ os-prober
 pacman-contrib
 pamixer
 papirus-icon-theme
-paprefs
 partclone
 parted
 partimage
@@ -211,6 +211,9 @@ pavucontrol
 pcsclite
 phpactor
 pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
 playerctl
 pnpm
 polkit
@@ -219,10 +222,6 @@ poppler
 powertop
 ppp
 pptpclient
-pulseaudio
-pulseaudio-alsa
-pulseaudio-bluetooth
-pulseaudio-jack
 pv
 python-mutagen
 python-requests
