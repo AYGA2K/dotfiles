@@ -1,10 +1,10 @@
 local wezterm = require("wezterm")
 
 local config = {}
-config.color_scheme = "Catppuccin Mocha"
+config.color_scheme = "catppuccin-mocha"
 config.font = wezterm.font("Iosevka Nerd Font")
-config.font_size = 15
-config.line_height = 1
+config.font_size = 22
+config.line_height = 0.9
 config.colors = {
 	tab_bar = {
 		background = "#1e1e2e",
@@ -21,8 +21,8 @@ config.colors = {
 -- config.scrollback_lines = 3000
 
 config.window_padding = {
-	left = 400,
-	right = 400,
+	left = 200,
+	right = 200,
 	top = 0,
 	bottom = 0,
 }
@@ -39,7 +39,7 @@ config.mouse_bindings = {
 	-- Ctrl-click will open the link under the mouse cursor
 	{ event = { Up = { streak = 1, button = "Left" } }, mods = "CTRL", action = wezterm.action.OpenLinkAtMouseCursor },
 }
--- config.enable_wayland = false
+config.enable_wayland = false
 local act = wezterm.action
 
 config.keys = {

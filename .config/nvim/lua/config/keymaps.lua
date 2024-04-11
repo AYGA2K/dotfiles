@@ -36,6 +36,13 @@ map("n", "<leader>e", "<cmd> Yazi <cr>", { desc = "Yazi" })
 -- buffers
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
+vim.keymap.del("n", "<leader>1")
+vim.keymap.del("n", "<leader>2")
+vim.keymap.del("n", "<leader>3")
+vim.keymap.del("n", "<leader>4")
+vim.keymap.del("n", "<leader>5")
+vim.keymap.del("n", "<leader>h")
+vim.keymap.del("n", "<leader>H")
 -- vim.keymao.del("n", "<C-h>")
 -- vim.keymap.del("n", "<C-l>")
 -- vim.keymap.del("n", "<C-k>")
@@ -48,3 +55,7 @@ vim.keymap.del("n", "<S-l>")
 --   map("n", "<C-S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
 --   map("n", "<C-S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 -- end
+--
+-- 
+map("n", "<leader>p", "<cmd>lua require('freeze').freeze()<cr>", { desc = "Dev pluging" })
+

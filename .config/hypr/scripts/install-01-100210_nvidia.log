@@ -1,0 +1,66 @@
+checking dependencies...
+
+Package (1)  Old Version  Net Change
+
+hyprland     0.37.1-2     -52.05 MiB
+
+Total Removed Size:  52.05 MiB
+
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+removing hyprland...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[33m[NOTE](B[m Installing hyprland-nvidia-git ...
+ -> No AUR package found for hyprland-nvidia-git
+ there is nothing to do
+ -> No AUR package found for hyprland-nvidia-git
+ there is nothing to do
+[1A[K[31m[ERROR](B[m hyprland-nvidia-git failed to install :( , please check the install.log. You may need to install manually! Sorry, I have tried :(
+[32m[OK](B[m linux-headers is already installed. Skipping...
+[32m[OK](B[m nvidia-dkms is already installed. Skipping...
+[32m[OK](B[m nvidia-settings is already installed. Skipping...
+[32m[OK](B[m nvidia-utils is already installed. Skipping...
+[32m[OK](B[m libva is already installed. Skipping...
+[32m[OK](B[m libva-nvidia-driver-git is already installed. Skipping...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.8.2-arch2-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [kms]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.8.2-arch2-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'bfa'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+  -> Running build hook: [filesystems]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+==> Initcpio image generation successful
+options nvidia-drm modeset=1
+blacklist nouveau
+install nouveau /bin/true
