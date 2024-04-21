@@ -1,5 +1,6 @@
 return {
-  { dir = "~/code/neovim-plugins/freeze", opts = {
+  "AYGA2K/freeze.nvim",
+  opts = {
     save_path = "~/Pictures/",
-  } },
+  },
 }

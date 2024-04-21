@@ -87,6 +87,7 @@ btrfs-progs
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 catppuccin-mocha-grub-theme-git
+celluloid
 cliphist
 clipman
 clonezilla
@@ -129,6 +130,7 @@ ferdium-bin
 ffmpegthumbnailer
 file-roller
 fish
+fluent-icon-theme-git
 foot
 fortune-mod
 freetype2
@@ -139,7 +141,6 @@ ghostscript
 git
 gitflow-avh
 github-cli
-github-desktop-bin
 gksu
 glow
 gnome-disk-utility
@@ -176,7 +177,6 @@ htop
 hw-probe
 hwinfo
 hyperv
-hypnotix
 hypridle
 hyprland
 hyprlock
@@ -195,6 +195,7 @@ jfsutils
 jq
 jsoncpp
 kitty
+krita
 kvantum-qt5-git
 laptop-detect
 lazydocker-bin
@@ -293,6 +294,7 @@ phpactor
 picom
 pipewire-media-session
 pkgfile
+plasma-meta
 playerctl
 pnpm
 polkit
@@ -304,6 +306,7 @@ ppp
 pptpclient
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 pv
 python-mutagen
 python-pyparted
@@ -336,6 +339,7 @@ sg3_utils
 slurp
 smartmontools
 sof-firmware
+spotify
 squashfs-tools
 starship
 stremio-beta

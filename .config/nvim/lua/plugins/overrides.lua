@@ -22,7 +22,7 @@ return {
       timeout = 300,
     },
   },
-  { "nvim-lualine/lualine.nvim", enabled = false },
+  -- { "nvim-lualine/lualine.nvim", enabled = false },
   -- { "stevearc/dressing.nvim", enabled = false },
   -- { "goolord/alpha-nvim", enabled = false },
   -- { "nvimdev/dashboard-nvim", enabled = false },
