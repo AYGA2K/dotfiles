@@ -8,14 +8,14 @@ return {
   },
   keys = {
     {
-      "<C-j>",
+      "<C-S-j>",
       function()
         require("harpoon"):list():append()
       end,
       desc = "Harpoon file",
     },
     {
-      "<C-k>",
+      "<C-S-k>",
       function()
         local harpoon = require("harpoon")
         harpoon.ui:toggle_quick_menu(harpoon:list())
@@ -23,7 +23,7 @@ return {
       desc = "Harpoon quick menu",
     },
     {
-      "<C-h>",
+      "<C-S-h>",
       function()
         local harpoon = require("harpoon")
         harpoon:list():prev()
@@ -31,7 +31,7 @@ return {
       desc = "Harpoon to previous file",
     },
     {
-      "<C-l>",
+      "<C-S-l>",
       function()
         local harpoon = require("harpoon")
         harpoon:list():next()
@@ -39,35 +39,35 @@ return {
       desc = "Harpoon to next file",
     },
     {
-      "<C-1>",
+      "<C-S-1>",
       function()
         require("harpoon"):list():select(1)
       end,
       desc = "Harpoon to file 1",
     },
     {
-      "<C-2>",
+      "<C-S-2>",
       function()
         require("harpoon"):list():select(2)
       end,
       desc = "Harpoon to file 2",
     },
     {
-      "<C-3>",
+      "<C-S-3>",
       function()
         require("harpoon"):list():select(3)
       end,
       desc = "Harpoon to file 3",
     },
     {
-      "<C-4>",
+      "<C-S-4>",
       function()
         require("harpoon"):list():select(4)
       end,
       desc = "Harpoon to file 4",
     },
     {
-      "<C-5>",
+      "<C-S-5>",
       function()
         require("harpoon"):list():select(5)
       end,

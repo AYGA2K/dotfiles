@@ -10,3 +10,7 @@ map b toggle_statusbar
 # Startup options
 set adjust-open width
 set recolor true
+
+map <C-l> feedkeys ":blist <Tab>"
+
+map <C-m> feedkeys ":bmark"

@@ -1,0 +1,10 @@
+import = [
+"~/.config/alacritty/catppuccin-mocha.toml",
+"~/.config/alacritty/fonts.toml",
+]
+
+[mouse]
+hide_when_typing = true
+
+[shell]
+program="/bin/tmux"

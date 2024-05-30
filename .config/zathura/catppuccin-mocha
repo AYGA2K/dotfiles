@@ -1,5 +1,8 @@
-set default-fg                "#CDD6F4"
-set default-bg 			          "#1E1E2E"
+set default-fg                "#FFFFFF"
+set default-bg 			          "rgba(30,30,46,0.95)"
+set recolor-lightcolor        "rgba(30,30,46,0)"
+
+set recolor-darkcolor		      "#FFFFFF"
 
 set completion-bg		          "#313244"
 set completion-fg		          "#CDD6F4"
@@ -20,9 +23,6 @@ set notification-warning-fg	  "#FAE3B0"
 
 set inputbar-fg			          "#CDD6F4"
 set inputbar-bg 		          "#313244"
-
-set recolor-lightcolor		    "#1E1E2E"
-set recolor-darkcolor		      "#CDD6F4"
 
 set index-fg			            "#CDD6F4"
 set index-bg			            "#1E1E2E"

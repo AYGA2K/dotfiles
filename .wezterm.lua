@@ -2,9 +2,10 @@ local wezterm = require("wezterm")
 
 local config = {}
 config.color_scheme = "catppuccin-mocha"
+config.window_background_opacity = 0.9
 config.font = wezterm.font("Iosevka Nerd Font")
-config.font_size = 20
-config.line_height = 0.9
+config.font_size = 19
+config.line_height = 1
 config.colors = {
 	tab_bar = {
 		background = "#1e1e2e",
@@ -21,8 +22,8 @@ config.colors = {
 -- config.scrollback_lines = 3000
 
 config.window_padding = {
-	left = 200,
-	right = 200,
+	left = 5,
+	right = 5,
 	top = 0,
 	bottom = 0,
 }

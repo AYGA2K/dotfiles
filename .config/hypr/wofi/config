@@ -9,8 +9,8 @@ term=wezterm
 columns=1
 
 ## Geometry
-width=25%
-height=40%
+width=30%
+height=50%
 location=0
 orientation=vertical
 halign=fill

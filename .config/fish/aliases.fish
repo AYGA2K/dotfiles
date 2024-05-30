@@ -29,3 +29,18 @@ alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 alias lzd='lazydocker'
+
+# docker
+
+alias dk='docker'
+alias dkr='docker run'
+alias dki='docker image'
+alias dkc='docker container'
+alias dkb='docker build'
+alias dke='docker exec'
+alias dkl='docker logs'
+alias dkrm='docker rm'
+alias dkrmi='docker rmi'
+alias dkps='docker ps'
+alias dks='docker start'
+alias dkst='docker stop'

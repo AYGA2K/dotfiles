@@ -8,6 +8,9 @@ source ~/.config/fish/aliases.fish
 set -x PATH $HOME/go/bin $PATH
 set -x _JAVA_AWT_WM_NONREPARENTING 1
 set -x PATH ~/.cargo/bin $PATH
+set -x JAVA_HOME $HOME/.local/graalvm-jdk
+set -x PATH $HOME/.local/graalvm-jdk/bin $PATH
+
 fish_vi_key_bindings
 # Set the cursor shapes for the different vi modes.
 set fish_cursor_default block blink

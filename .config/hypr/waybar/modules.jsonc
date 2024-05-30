@@ -100,7 +100,7 @@
   "custom/profile": {
     "format": "󰈐  {}",
     "interval": 1,
-    "exec": "asusctl profile -p | awk '{print $NF}'",
+    "exec": "asusctl profile -p | awk 'NR==2 {print $NF}'",
     "on-click": "asusctl profile -n",
   },
   "custom/clipboard": {
@@ -175,23 +175,8 @@
     "on-click-right": "~/.config/hypr/scripts/glassmorphismToggle",
   },
   "clock": {
-    //"interval": 60,
-    "align": 0,
-    "rotate": 0,
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:  %H:%M   %a, %e %b}",
-    //"format-alt": " {:%a %b %d, %G}",
-    "on-click-middle": "~/.config/hypr/scripts/changeWallpaper",
-  },
-  "clock#2": {
-    "format": "{:   %H:%M}",
-    "tooltip": true,
-    "tooltip-format": "{:  %A,  %e %B %Y}",
-    "on-click-middle": "~/.config/hypr/scripts/changeWallpaper",
-  },
-  "clock#3": {
-    "format": "   {:%H:%M}",
-    "format-alt": " {:%H:%M   %Y, %d %B, %A}",
+    "format": "󰥔   {:%H:%M}",
+    "format-alt": "󰥔  {:%H:%M    %Y, %d %B, %A}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "on-click-middle": "~/.config/hypr/scripts/changeWallpaper",
     "calendar": {
