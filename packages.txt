@@ -201,7 +201,6 @@ jfsutils
 jq
 jsoncpp
 kitty
-krita
 kvantum-git
 laptop-detect
 lazydocker-bin
@@ -351,6 +350,7 @@ sof-firmware
 spotify
 squashfs-tools
 starship
+staruml
 stremio-beta
 sublime-text-4
 sudo
@@ -489,7 +489,6 @@ yadm
 yarn
 yay-bin
 yazi
-z-library-bin
 zathura
 zathura-pdf-mupdf
 zed-editor-preview-bin
