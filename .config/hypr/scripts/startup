@@ -3,7 +3,7 @@
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
 # Apply themes
-${SCRIPTSDIR}/gtkthemes &
+# ${SCRIPTSDIR}/gtkthemes &
 
 # Lauch notification daemon (mako)
 ${SCRIPTSDIR}/notifications &

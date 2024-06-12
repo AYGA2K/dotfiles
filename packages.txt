@@ -12,6 +12,7 @@ alsa-firmware
 alsa-lib
 alsa-plugins
 alsa-utils
+apidash-bin
 appflowy-bin
 appstream
 appstream-qt5
@@ -79,7 +80,6 @@ blueman
 bluez
 bluez-libs
 bluez-utils
-brave-bin
 breeze-plymouth
 brightnessctl
 broadcom-wl-dkms
@@ -106,7 +106,6 @@ dhclient
 dialog
 diffutils
 direnv
-discord
 dmidecode
 dmraid
 dnsmasq
@@ -120,6 +119,7 @@ edid-decode-git
 edk2-shell
 efibootmgr
 ethtool
+evtest
 eww-wayland
 exfatprogs
 exo
@@ -274,7 +274,7 @@ ntfs-3g
 ntfs-automount
 ntp
 numlockx
-nvidia-dkms
+nvidia
 nvidia-settings
 nvme-cli
 nwg-displays
@@ -287,6 +287,7 @@ openconnect
 openresolv
 openssh
 openvpn
+optimus-manager-git
 os-prober
 p7zip
 pamixer
@@ -401,7 +402,7 @@ usbmuxd
 usbutils
 v4l2loopback-dkms
 vala
-variety
+vesktop-bin
 vhs
 vim
 visual-studio-code-bin

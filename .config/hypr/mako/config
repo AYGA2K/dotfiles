@@ -10,7 +10,7 @@ on-touch=dismiss
 
 # STYLE OPTIONS
 font=Roboto Nerd Font
-width=300
+width=200
 height=100
 margin=10
 padding=15
@@ -23,7 +23,7 @@ markup=1
 actions=1
 history=1
 text-alignment=left
-default-timeout=5000
+default-timeout=500
 ignore-timeout=0
 max-visible=5
 layer=overlay

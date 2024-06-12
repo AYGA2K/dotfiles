@@ -22,6 +22,15 @@ return {
   },
   keys = {
     {
+      "<leader>fm",
+      false,
+    },
+    {
+      "<leader>fM",
+      false,
+    },
+
+    {
       "<leader>e",
       function()
         require("mini.files").open(vim.api.nvim_buf_get_name(0), true)
@@ -43,8 +52,8 @@ return {
     local filter_show = function(fs_entry)
       return true
     end
-    return not vim.startswith(fs_entry.name, ".")
     local filter_hide = function(fs_entry)
+      return not vim.startswith(fs_entry.name, ".")
     end
 
     local toggle_dotfiles = function()
