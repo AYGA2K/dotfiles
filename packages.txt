@@ -90,6 +90,7 @@ catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 catppuccin-mocha-grub-theme-git
 celluloid
+chromium
 cliphist
 clipman
 clonezilla
@@ -111,6 +112,7 @@ dmidecode
 dmraid
 dnsmasq
 docker
+docker-buildx
 docker-compose
 dosfstools
 downgrade
@@ -185,6 +187,7 @@ hyperv
 hypnotix-wayland
 hypridle
 hyprland
+hyprlang
 hyprlock
 hyprpicker-git
 imagemagick
@@ -207,6 +210,7 @@ laptop-detect
 lazydocker-bin
 lazygit
 less
+lib32-nvidia-utils
 libadwaita-without-adwaita-git
 libdisplay-info
 libdvdcss
