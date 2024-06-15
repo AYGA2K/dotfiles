@@ -1,0 +1,21 @@
+keybinds clear-defaults=true {
+    normal {
+        bind "Alt t" { NewTab; }
+        bind "Alt p" { NewPane; }
+        bind "Alt q" { CloseFocus; }
+        bind "Alt h" { MoveFocusOrTab "Left"; }
+        bind "Alt l" { MoveFocusOrTab "Right"; }
+
+    }
+}
+
+plugins {
+}
+
+simplified_ui true
+
+default_shell "fish"
+
+theme "catppuccin-mocha"
+
+default_layout "compact"
