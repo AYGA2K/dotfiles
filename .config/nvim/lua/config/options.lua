@@ -6,3 +6,4 @@ local opt = vim.opt
 opt.textwidth = 60
 opt.wrap = true
 opt.autowrite = false
+opt.mouse = ""

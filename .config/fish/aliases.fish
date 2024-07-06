@@ -29,6 +29,7 @@ alias vim=nvim
 alias mvnrun="mvn spring-boot:run"
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 alias lzd='lazydocker'
+alias lzg='lazygit'
 
 # docker
 
