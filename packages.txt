@@ -10,6 +10,7 @@ alsa-plugins
 alsa-utils
 android-emulator
 android-studio
+android-tools
 appflowy-bin
 appimagelauncher-bin
 appstream
@@ -110,6 +111,7 @@ gst-plugins-bad
 gst-plugins-base
 gst-plugins-good
 gst-plugins-ugly
+gvfs-mtp
 gvfs-smb
 hdparm
 httpie-desktop-bin
@@ -138,6 +140,7 @@ linux-firmware-marvell
 linux-headers
 linux-zen
 linux-zen-headers
+localsend-bin
 logrotate
 lsb-release
 lsd
@@ -344,4 +347,5 @@ yay-bin
 yazi
 zathura
 zathura-pdf-mupdf
+zed-preview-bin
 zellij
