@@ -14,3 +14,6 @@ set recolor true
 map <C-l> feedkeys ":blist <Tab>"
 
 map <C-m> feedkeys ":bmark"
+map <C-=> zoom in
+map <C--> zoom out
+
