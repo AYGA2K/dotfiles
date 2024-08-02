@@ -46,11 +46,11 @@ bat
 bibata-cursor-theme-bin
 bind
 binder_linux-dkms
+bitwarden
 blueman
 bluez
 bluez-libs
 bluez-utils
-brave-bin
 brightnessctl
 broadcom-wl-dkms
 btrfs-progs
@@ -72,6 +72,7 @@ dmraid
 dnsmasq
 docker
 docker-buildx
+docker-compose
 dosfstools
 duf
 e2fsprogs
@@ -89,7 +90,7 @@ fish
 fish-done
 flameshot
 flatpak
-floorp-bin
+foliate
 font-manager
 fsarchiver
 git
@@ -113,8 +114,8 @@ hdparm
 httpie-desktop-bin
 hw-probe
 hyperv
-hypnotix-git
 hyprcursor-git
+hypridle
 hyprland
 hyprlang-git
 hyprwayland-scanner-git
@@ -219,6 +220,7 @@ powertop
 ppp
 pptpclient
 progress
+proton-vpn-gtk-app
 pulsemixer
 pv
 qbittorrent
@@ -255,6 +257,8 @@ tcpdump
 terminus-font
 testdisk
 the_silver_searcher
+thorium-browser-bin
+thorium-reader-bin
 thunar
 thunar-archive-plugin
 thunar-volman
@@ -283,8 +287,8 @@ volumeicon
 vpnc
 warp-terminal
 waybar-git
-waydroid
 wd719x-firmware
+wev
 wezterm
 wget
 wireless-regdb
@@ -295,6 +299,8 @@ wofi
 wpa_supplicant
 wps-office
 wvdial
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xdg-user-dirs
 xdman-beta-bin
 xf86-input-elographics
@@ -339,6 +345,7 @@ xorg-xvinfo
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xremap-wlroots-bin
 yay-bin
 yazi
 zathura

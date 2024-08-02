@@ -21,6 +21,3 @@ ${SCRIPTSDIR}/xauthority &
 # 	timeout 460 "swaylock --clock -f --indicator --effect-blur 7x5 " \
 # 	before-sleep "systemctl suspend" &
 #
-
-# Hypridle
-hypridle &
