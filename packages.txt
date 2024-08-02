@@ -118,6 +118,7 @@ hyprcursor-git
 hypridle
 hyprland
 hyprlang-git
+hyprlock
 hyprwayland-scanner-git
 iw
 jfsutils
