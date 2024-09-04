@@ -1,0 +1,15 @@
+    "custom/player": {
+        "exec": "mediaplayer.py ",
+        "format": "{}",
+        "rotate": ${r_deg},
+        "return-type": "json",
+        "on-click": "playerctl play-pause ",
+        "on-click-right": "playerctl next ",
+        "on-click-middle": "playerctl previous ",
+        "on-scroll-up": "volumecontrol.sh  i",
+        "on-scroll-down": "volumecontrol.sh  d",
+        "max-length": 25,
+        "escape": true,
+        "tooltip": true
+    },
+
