@@ -1,5 +1,4 @@
 
-.gitconfig
 .bash_history
 .bash_logout
 .bash_profile
@@ -80,3 +79,5 @@
 .config/kdeglobals
 /.config/gtk-3.0
 .config/gtk-4.0
+.gitconfig
+.gitconfig
