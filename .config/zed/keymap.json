@@ -1,21 +1,46 @@
-// Zed keymap
-//
-// For information on binding keys, see the Zed
-// documentation: https://zed.dev/docs/key-bindings
-//
-// To see the default key bindings run `zed: open default keymap`
-// from the command palette.
 [
   {
-    "context": "Workspace",
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      // "shift shift": "file_finder::Toggle"
+      "space g h d": "editor::ToggleHunkDiff",
+      "space g h r": "editor::RevertSelectedHunks",
+      "space t i": "editor::ToggleInlayHints",
+      "space u w": "editor::ToggleSoftWrap",
+      "space c z": "workspace::ToggleCenteredLayout",
+      "space m p": "markdown::OpenPreview",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "g c": "editor::ToggleComments",
+      "space space": "file_finder::Toggle",
+      "shift-d": "editor::Delete"
     }
   },
   {
-    "context": "Editor",
+    "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
-      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "j j": "vim::NormalBefore" // remap jj in insert mode to escape
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste"
+    }
+  },
+  {
+    "commands": {
+      "toggle_project_and_command_palette": {
+        "sequence": ["project_panel::ToggleFocus", "command_palette::Show"]
+      }
+    },
+    "context": "global",
+    "bindings": {
+      "space e": "toggle_project_and_command_palette"
     }
   }
 ]
