@@ -82,3 +82,6 @@
 .config/gtk-4.0
 .gitconfig
 .gitconfig
+/.local/share/io.appflowy.appflowy
+/code
+.nuxtrc
