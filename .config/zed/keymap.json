@@ -15,12 +15,6 @@
     }
   },
   {
-    "context": "Editor && vim_mode == insert && !menu",
-    "bindings": {
-      "j j": "vim::NormalBefore" // remap jj in insert mode to escape
-    }
-  },
-  {
     "context": "ProjectPanel && not_editing",
     "bindings": {
       "a": "project_panel::NewFile",
@@ -33,14 +27,9 @@
     }
   },
   {
-    "commands": {
-      "toggle_project_and_command_palette": {
-        "sequence": ["project_panel::ToggleFocus", "command_palette::Show"]
-      }
-    },
-    "context": "global",
+    "context": "Editor|| ProjectPanel",
     "bindings": {
-      "space e": "toggle_project_and_command_palette"
+      "space e": "project_panel::ToggleFocus"
     }
   }
 ]

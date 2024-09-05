@@ -85,3 +85,10 @@
 /.local/share/io.appflowy.appflowy
 /code
 .nuxtrc
+/.config/dbgate
+/.dbgate
+/.local/share/applications
+/.local/share/hoppscotch
+/.local/share/io.hoppscotch.desktop
+/.config/io.hoppscotch.desktop
+.config/mimeapps.list
