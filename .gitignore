@@ -93,3 +93,11 @@
 /.config/io.hoppscotch.desktop
 .config/mimeapps.list
 /.local/share/flatpak
+.bashrc.bak
+/.config/archlinux-tweak-tool
+.config/fish/config.fish.bak
+.config/QtProject.conf
+/.config/neofetch
+.Xauthority
+.zshrc
+/.config/volumeicon

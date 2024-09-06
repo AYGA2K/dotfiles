@@ -7,21 +7,23 @@
     }
   },
   {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual ) && !VimWaiting && !menu",
+    "context": "VimControl && !menu",
     "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
       "space g h d": "editor::ToggleHunkDiff",
       "space g h r": "editor::RevertSelectedHunks",
       "space t i": "editor::ToggleInlayHints",
       "space u w": "editor::ToggleSoftWrap",
-      "space c z": "workspace::ToggleCenteredLayout",
+      "space z": "workspace::ToggleCenteredLayout",
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
+      "space c a": "editor::ToggleCodeActions",
       "g c": "editor::ToggleComments",
       "space space": "file_finder::Toggle",
       "shift-d shift-d": "editor::DeleteLine"
     }
   },
-
   {
     "context": "Editor && (vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
