@@ -1,6 +1,13 @@
 [
   {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
+    "bindings": {
+      "ctrl-w": "workspace::Save",
+      "ctrl-s": ["workspace::SendKeystrokes", "ctrl-w  escape"]
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual ) && !VimWaiting && !menu",
     "bindings": {
       "space g h d": "editor::ToggleHunkDiff",
       "space g h r": "editor::RevertSelectedHunks",
@@ -11,6 +18,13 @@
       "space m P": "markdown::OpenPreviewToTheSide",
       "g c": "editor::ToggleComments",
       "space space": "file_finder::Toggle",
+      "shift-d shift-d": "editor::DeleteLine"
+    }
+  },
+
+  {
+    "context": "Editor && (vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
       "shift-d": "editor::Delete"
     }
   },
@@ -27,7 +41,7 @@
     }
   },
   {
-    "context": "Editor|| ProjectPanel",
+    "context": "ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space e": "project_panel::ToggleFocus"
     }

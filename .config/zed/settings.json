@@ -22,6 +22,7 @@
     "show": "never"
   },
   "format_on_save": "on",
+  "current_line_highlight": "none",
   "indent_guides": {
     "enabled": false,
     "line_width": 1,
