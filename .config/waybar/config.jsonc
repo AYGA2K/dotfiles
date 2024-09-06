@@ -15,9 +15,9 @@
 
 // positions generated based on config.ctl //
 
-	"modules-left": ["custom/padd","custom/l_end","cpu","memory","custom/cpuinfo","custom/profile","","custom/wallchange","custom/player","custom/r_end","custom/l_end","hyprland/workspaces","custom/r_end","","custom/padd"],
-	"modules-center": ["custom/padd","custom/l_end","idle_inhibitor","clock","custom/r_end","custom/padd"],
-	"modules-right": ["custom/padd","custom/l_end","privacy","tray","battery","custom/r_end","custom/l_end","backlight","network","pulseaudio","pulseaudio#microphone","custom/keybindhint","custom/r_end","custom/padd"],
+	"modules-left": ["custom/padd","custom/l_end","cpu","memory","custom/cpuinfo","custom/r_end","custom/l_end","custom/wallchange","","custom/profile","custom/player","custom/r_end","","custom/padd"],
+	"modules-center": ["custom/padd","custom/l_end","hyprland/workspaces","","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","custom/l_end","privacy","tray","battery","custom/r_end","custom/l_end","idle_inhibitor","clock","backlight","network","pulseaudio","pulseaudio#microphone","custom/keybindhint","custom/notifications","custom/r_end","custom/padd"],
 
 
 // sourced from modules based on config.ctl //
@@ -58,12 +58,6 @@
         "max-length": 1000
     },
 
-  "custom/profile": {
-    "format": "󰈐 {}",
-    "interval": 1,
-    "exec": "profile.sh",
-    "on-click": "asusctl profile -n",
-  },
     "custom/wallchange": {
         "format": "{}",
         "rotate": 0,
@@ -75,6 +69,12 @@
         "tooltip": true
     },
 
+  "custom/profile": {
+    "format": "󰈐 {}",
+    "interval": 1,
+    "exec": "profile.sh",
+    "on-click": "asusctl profile -n",
+  },
     "custom/player": {
         "exec": "mediaplayer.py ",
         "format": "{}",
@@ -111,40 +111,6 @@
     },
     "on-click": "activate",
   },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "rotate": 0,
-        "format-icons": {
-            "activated": "󰥔",
-            "deactivated": ""
-        }
-    },
-
-    "clock": {
-        "format": "{:%I:%M %p}",
-        "rotate": 0,
-        "format-alt": "{:%R 󰃭 %d·%m·%y}",
-        "tooltip-format": "<span>{calendar}</span>",
-        "calendar": {
-            "mode": "month",
-            "mode-mon-col": 3,
-            "on-scroll": 1,
-            "on-click-right": "mode",
-            "format": {
-                "months": "<span color='#ffead3'><b>{}</b></span>",
-                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#ff6699'><b>{}</b></span>"
-            }
-        },
-        "actions": {
-            "on-click-right": "mode",
-            "on-click-forward": "tz_up",
-            "on-click-backward": "tz_down",
-            "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
-        }
-    },
-
     "privacy": {
         "icon-size": 14,
         "icon-spacing": 5,
@@ -181,6 +147,40 @@
         "format-plugged": " {capacity}%",
         "format-alt": "{time} {icon}",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "rotate": 0,
+        "format-icons": {
+            "activated": "󰥔",
+            "deactivated": ""
+        }
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "rotate": 0,
+        "format-alt": "{:%R 󰃭 %d·%m·%y}",
+        "tooltip-format": "<span>{calendar}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "on-click-right": "mode",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b>{}</b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
 
     "backlight": {
@@ -248,6 +248,26 @@
         "on-click": "keybinds_hint.sh"
     },
 
+  "custom/notifications": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
 
 // modules for padding //
 

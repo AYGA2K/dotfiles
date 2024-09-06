@@ -1,29 +1,20 @@
-    "custom/notifications": {
-        "format": "{icon} {}",
-        "rotate": ${r_deg},
-        "format-icons": {
-            "email-notification": "<span foreground='white'><sup></sup></span>",
-            "chat-notification": "󱋊<span foreground='white'><sup></sup></span>",
-            "warning-notification": "󱨪<span foreground='yellow'><sup></sup></span>",
-            "error-notification": "󱨪<span foreground='red'><sup></sup></span>",
-            "network-notification": "󱂇<span foreground='white'><sup></sup></span>",
-            "battery-notification": "󰁺<span foreground='white'><sup></sup></span>",
-            "update-notification": "󰚰<span foreground='white'><sup></sup></span>",
-            "music-notification": "󰝚<span foreground='white'><sup></sup></span>",
-            "volume-notification": "󰕿<span foreground='white'><sup></sup></span>",
-            "notification": "<span foreground='white'><sup></sup></span>",
-            "dnd": "",
-            "none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which dunstctl",
-        "exec": "notifications.py",
-        "on-scroll-down": "sleep 0.1 && dunstctl history-pop",
-        "on-click": "dunstctl set-paused toggle",
-        "on-click-middle": "dunstctl history-clear",
-        "on-click-right": "dunstctl close-all",
-        "interval": 1,
-        "tooltip": true,
-        "escape": true
+  "custom/notifications": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
     },
-
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
