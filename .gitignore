@@ -101,3 +101,6 @@
 .Xauthority
 .zshrc
 /.config/volumeicon
+/.config/btop
+/.config/obsidian
+/Documents

@@ -1,8 +1,8 @@
 # config
-alias fishconfig="nvim ~/.config/fish/"
-alias config="nvim ~/.config/"
-alias nvimconfig="nvim ~/.config/nvim/"
-alias weztermconfig="nvim ~/.wezterm.lua"
+alias fishconfig="cd ~/.config/fish/ && nvim ~/.config/fish/"
+alias config="cd ~/.config && nvim ~/.config/"
+alias nvimconfig="cd ~/.config/nvim/ && nvim ~/.config/nvim/"
+alias kittyconfig="cd ~/.config/kitty/ && nvim ~/.config/kitty/"
 
 # ls
 alias ls='lsd -a --group-directories-first'
@@ -13,9 +13,6 @@ alias cdhypr='cd ~/.config/hypr'
 alias cdnvim='cd ~/.config/nvim'
 alias cdconfig='cd ~/.config/'
 alias cdisk='cd /run/media/ayga/Disk/'
-
-# mount
-alias mountdisk='sudo mkdir -p /run/media/ayga/Disk/; sudo mount /dev/sda1 /run/media/ayga/Disk/ -t ntfs'
 
 # git
 alias gcl='git clone --depth 1'
@@ -32,7 +29,6 @@ alias lzd='lazydocker'
 alias lzg='lazygit'
 
 # docker
-
 alias dk='docker'
 alias dkr='docker run'
 alias dki='docker image'
