@@ -104,3 +104,5 @@
 /.config/btop
 /.config/obsidian
 /Documents
+/.config/obs-studio
+/.var

@@ -211,7 +211,6 @@
       "c": ["vim::PushOperator", "Change"],
       "shift-c": "vim::ChangeToEndOfLine",
       "d": ["vim::PushOperator", "Delete"],
-      "shift-d": "vim::DeleteToEndOfLine",
       "shift-j": "vim::JoinLines",
       "y": ["vim::PushOperator", "Yank"],
       "shift-y": "vim::YankToEndOfLine",
@@ -272,7 +271,6 @@
       "d": "vim::VisualDelete",
       "x": "vim::VisualDelete",
       "shift-d": "vim::VisualDelete",
-      "shift-d shift-d": "editor::DeleteLine",
       "y": "vim::VisualYank",
       "shift-y": "vim::VisualYank",
       "p": "vim::Paste",
@@ -515,14 +513,13 @@
       "ctrl-s": ["workspace::SendKeystrokes", "ctrl-w  escape"]
     }
   },
-  // {
-  //   "context": "Editor && (vim_mode==normal",
-  //   "bindings": {
-  //     "shift-d $": "vim::DeleteToEndOfLine",
-  //     "shift-d d": "editor::DeleteLine",
-  //     "] e": "editor::GoToDiagnostic"
-  //   }
-  // },
+  {
+    "context": "Editor && vim_mode==normal",
+    "bindings": {
+      "shift-d $": "editor::DeleteToEndOfLine",
+      "shift-d shift-d": "editor::DeleteLine"
+    }
+  },
   {
     "context": "VimControl && !menu",
     "bindings": {
