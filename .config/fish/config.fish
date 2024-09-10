@@ -7,6 +7,7 @@ end
 source ~/.config/fish/aliases.fish
 fish_vi_key_bindings
 
+set -U fish_user_paths $fish_user_paths /home/ayga/go/bin
 
 # Handy change dir shortcuts
 abbr .. 'cd ..'

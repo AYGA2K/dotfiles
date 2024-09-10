@@ -541,7 +541,7 @@
   {
     "context": "Editor && (vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      "shift-d": "vim::VisualDelete"
+      "shift-d": "editor::Delete"
     }
   },
   {

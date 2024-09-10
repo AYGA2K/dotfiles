@@ -1,9 +1,3 @@
-# config
-alias fishconfig="cd ~/.config/fish/ && nvim ~/.config/fish/"
-alias config="cd ~/.config && nvim ~/.config/"
-alias nvimconfig="cd ~/.config/nvim/ && nvim ~/.config/nvim/"
-alias kittyconfig="cd ~/.config/kitty/ && nvim ~/.config/kitty/"
-
 # ls
 alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
@@ -13,7 +7,14 @@ alias cdhypr='cd ~/.config/hypr'
 alias cdnvim='cd ~/.config/nvim'
 alias cdconfig='cd ~/.config/'
 alias cdisk='cd /run/media/ayga/Disk/'
+alias cdbin='cd ~/.local/share/bin/'
 
+# config
+alias fishconfig="cd ~/.config/fish/ && nvim ~/.config/fish/"
+alias config="cd ~/.config && nvim ~/.config/"
+alias nvimconfig="cd ~/.config/nvim/ && nvim ~/.config/nvim/"
+alias kittyconfig="cd ~/.config/kitty/ && nvim ~/.config/kitty/"
+alias binconfig="cdbin && nvim ~/.local/share/bin/"
 # git
 alias gcl='git clone --depth 1'
 alias gi='git init'
