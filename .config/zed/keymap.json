@@ -4,11 +4,9 @@
     "bindings": {
       "i": ["vim::PushOperator", { "Object": { "around": false } }],
       "a": ["vim::PushOperator", { "Object": { "around": true } }],
-      "h": "vim::Left",
-      "left": "vim::Left",
+      "left": "editor::MoveLeft",
       "backspace": "vim::Backspace",
-      "j": "vim::Down",
-      "down": "vim::Down",
+      "down": "editor::MoveDown",
       "ctrl-j": "vim::Down",
       "enter": "vim::NextLineStart",
       "ctrl-m": "vim::NextLineStart",
@@ -16,10 +14,8 @@
       "-": "vim::PreviousLineStart",
       "tab": "vim::Tab",
       "shift-tab": "vim::Tab",
-      "k": "vim::Up",
-      "up": "vim::Up",
-      "l": "vim::Right",
-      "right": "vim::Right",
+      "up": "editor::MoveUp",
+      "right": "editor::MoveRight",
       "space": "vim::Space",
       "$": "vim::EndOfLine",
       "end": "vim::EndOfLine",
@@ -80,8 +76,8 @@
       "pagedown": "vim::PageDown",
       "ctrl-b": "vim::PageUp",
       "pageup": "vim::PageUp",
-      "ctrl-d": "vim::ScrollDown",
-      "ctrl-u": "vim::ScrollUp",
+      "ctrl-down": "vim::ScrollDown",
+      "ctrl-up": "vim::ScrollUp",
       "ctrl-e": "vim::LineDown",
       "ctrl-y": "vim::LineUp",
       // "g" commands
@@ -510,14 +506,18 @@
     "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
     "bindings": {
       "ctrl-w": "workspace::Save",
-      "ctrl-s": ["workspace::SendKeystrokes", "ctrl-w  escape"]
+      "ctrl-s": ["workspace::SendKeystrokes", "escape ctrl-w"]
     }
   },
   {
     "context": "Editor && vim_mode==normal",
     "bindings": {
+      "j": "editor::MoveDown",
+      "k": "editor::MoveUp",
       "shift-d $": "editor::DeleteToEndOfLine",
-      "shift-d shift-d": "editor::DeleteLine"
+      "shift-d shift-d": "editor::DeleteLine",
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-up z z"],
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"]
     }
   },
   {
@@ -560,6 +560,12 @@
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt r": "projects::OpenRecent"
     }
   }
 ]

@@ -118,3 +118,6 @@
 /.xdm-app-data
 /.zen
 /.local/share/yaak-app
+/.config/asciinema
+/Pictures
+/Videos
