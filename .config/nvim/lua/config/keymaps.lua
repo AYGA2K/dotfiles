@@ -29,10 +29,3 @@ map("n", "Da[", '"_da[', { desc = "Delete a bracket block" })
 map("n", "Da{", '"_da{', { desc = "Delete a curly bracket block" })
 
 map("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "ZenMode" })
-
-vim.keymap.del("n", "<S-l>")
-vim.keymap.del("n", "<S-h>")
-vim.keymap.del("n", "<C-h>")
-vim.keymap.del("n", "<C-l>")
-vim.keymap.del("n", "<C-j>")
-vim.keymap.del("n", "<C-k>")

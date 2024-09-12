@@ -17,7 +17,7 @@
     "dark": "Catppuccin Mocha"
   },
   "relative_line_numbers": true,
-  "autosave": "on_focus_change",
+  "autosave": "off",
   "scrollbar": {
     "show": "never"
   },
@@ -45,8 +45,13 @@
       "enabled": false
     }
   },
-  "preferred_line_length": 85,
-  "soft_wrap": "preferred_line_length",
+  "gutter": {
+    "line_numbers": true,
+    "code_actions": false,
+    "runnables": false
+  },
+  "preferred_line_length": 70,
+  "soft_wrap": "bounded",
   "show_wrap_guides": false,
   "terminal": {
     "alternate_scroll": "off",

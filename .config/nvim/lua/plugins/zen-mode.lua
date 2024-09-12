@@ -7,7 +7,7 @@ return {
       -- * an absolute number of cells when > 1
       -- * a percentage of the width / height of the editor when <= 1
       -- * a function that returns the width or the height
-      width = 80, -- width of the Zen window
+      width = 70, -- width of the Zen window
       height = 1, -- height of the Zen window
       -- by default, no options are changed for the Zen window
       -- uncomment any of the options below, or add other vim.wo options you want to apply
@@ -39,24 +39,24 @@ return {
       -- to make this work, you need to set the following kitty options:
       -- - allow_remote_control socket-only
       -- - listen_on unix:/tmp/kitty
-      kitty = {
-        enabled = false,
-        font = "+4", -- font size increment
-      },
+      -- kitty = {
+      --   enabled = false,
+      --   font = "+4", -- font size increment
+      -- },
       -- this will change the font size on alacritty when in zen mode
       -- requires  Alacritty Version 0.10.0 or higher
       -- uses `alacritty msg` subcommand to change font size
-      alacritty = {
-        enabled = false,
-        font = "14", -- font size
-      },
+      -- alacritty = {
+      --   enabled = false,
+      --   font = "14", -- font size
+      -- },
       -- this will change the font size on wezterm when in zen mode
       -- See alse also the Plugins/Wezterm section in this projects README
-      wezterm = {
-        enabled = false,
-        -- can be either an absolute font size or the number of incremental steps
-        font = "+4", -- (10% increase per step)
-      },
+      -- wezterm = {
+      --   enabled = false,
+      --   -- can be either an absolute font size or the number of incremental steps
+      --   font = "+4", -- (10% increase per step)
+      -- },
     },
     -- callback where you can add custom code when the Zen window opens
     on_open = function(win) end,
