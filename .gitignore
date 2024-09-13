@@ -127,3 +127,8 @@
 /.redhat
 /.config/gh
 *.bak
+/.config/Follow
+/.local/share/com.gitbutler.app
+/.config/com.gitbutler.app
+/.local/share/com.github.johnfactotum.Foliate
+/.local/share/git-butler
