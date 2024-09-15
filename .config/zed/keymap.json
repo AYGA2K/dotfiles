@@ -12,7 +12,7 @@
     }
   },
   {
-    "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
+    "context": "Editor",
     "bindings": {
       "alt-x": "workspace::Save",
       "ctrl-s": ["workspace::SendKeystrokes", "escape alt-x"]
@@ -68,12 +68,6 @@
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space e": "project_panel::ToggleFocus"
-    }
-  },
-  {
-    "context": "Workspace",
-    "bindings": {
-      "alt r": "projects::OpenRecent"
     }
   }
 ]
