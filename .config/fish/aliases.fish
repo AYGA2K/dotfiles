@@ -14,6 +14,7 @@ alias cdisk='cd /run/media/ayga/Disk/'
 alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
 alias cdhome='cd ~'
+alias cddots='cd ~/.dotfiles/'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
