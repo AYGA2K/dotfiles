@@ -1,6 +1,0 @@
-  "custom/profile": {
-    "format": "󰈐 {}",
-    "interval": 1,
-    "exec": "profile.sh",
-    "on-click": "asusctl profile -n",
-  },

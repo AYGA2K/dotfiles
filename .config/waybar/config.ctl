@@ -1,1 +1,0 @@
-1|31|top|( cpu memory custom/cpuinfo ) ( custom/wallchange  custom/profile custom/player ) |( hyprland/workspaces  )|( privacy tray battery ) ( idle_inhibitor clock backlight network pulseaudio pulseaudio#microphone custom/keybindhint custom/notifications )
