@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+CONFIG="$HOME/.config/hypr/wofi/config-clipboard"
+STYLE="$HOME/.config/hypr/wofi/style.css"
+
+cliphist list | wofi -S dmenu --conf ${CONFIG} --style ${STYLE} | cliphist decode | wl-copy
