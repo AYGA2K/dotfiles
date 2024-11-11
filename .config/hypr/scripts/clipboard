@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-CONFIG="$HOME/.config/hypr/wofi/config-clipboard"
-STYLE="$HOME/.config/hypr/wofi/style.css"
+CONFIG="$HOME/.config/hypr/rofi/clipboard.rasi"
 
-cliphist list | wofi -S dmenu --conf ${CONFIG} --style ${STYLE} | cliphist decode | wl-copy
+cliphist list | rofi -dmenu -theme ${CONFIG} | cliphist decode | wl-copy

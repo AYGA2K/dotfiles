@@ -20,12 +20,10 @@ configuration {
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    west;
-    anchor:                      west;
     fullscreen:                  false;
-    width:                       500px;
-    height:                      96%;
-    x-offset:                    20px;
+    width:                       30%;
+    height:                      60%;
+    x-offset:                    0px;
     y-offset:                    0px;
 
     /* properties for all widgets */
@@ -103,9 +101,9 @@ listview {
     cursor:                      "default";
 }
 scrollbar {
-    handle-width:                5px ;
+    handle-width:                2px ;
     handle-color:                @selected;
-    border-radius:               10px;
+    border-radius:               4px;
     background-color:            @background-alt;
 }
 
@@ -158,7 +156,7 @@ element-text {
 
 /*****----- Mode Switcher -----*****/
 mode-switcher{
-    enabled:                     true;
+    enabled:                     false;
     spacing:                     10px;
     margin:                      0px;
     padding:                     0px 0px;
