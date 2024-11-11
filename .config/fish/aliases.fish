@@ -62,3 +62,7 @@ alias dkrmi='docker rmi'
 alias dkps='docker ps'
 alias dks='docker start'
 alias dkst='docker stop'
+
+
+
+alias sail='./vendor/bin/sail'
