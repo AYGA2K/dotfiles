@@ -42,6 +42,7 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin master'
+alias gpull='git pull'
 
 # other
 alias vim=nvim
@@ -62,7 +63,5 @@ alias dkrmi='docker rmi'
 alias dkps='docker ps'
 alias dks='docker start'
 alias dkst='docker stop'
-
-
 
 alias sail='./vendor/bin/sail'

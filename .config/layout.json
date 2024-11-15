@@ -1,0 +1,22 @@
+{
+  "0": {
+    "left": [
+      "dashboard",
+      "workspaces",
+      "netstat"
+    ],
+    "middle": [
+      "media"
+    ],
+    "right": [
+      "systray",
+      "volume",
+      "network",
+      "bluetooth",
+      "battery",
+      "clock",
+      "notifications",
+      "power"
+    ]
+  }
+}
