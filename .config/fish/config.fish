@@ -24,8 +24,7 @@ ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
 
-# Generated for envman. Do not edit.
-test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
-
-
-direnv hook fish | source
+## Generated for envman. Do not edit.
+#test -s ~/.config/envman/load.fish; and source ~/.config/envman/load.fish
+#
+#direnv hook fish | source

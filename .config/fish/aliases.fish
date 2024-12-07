@@ -64,4 +64,11 @@ alias dkps='docker ps'
 alias dks='docker start'
 alias dkst='docker stop'
 
+# npm
+alias ns='npm start'
+alias nd='npm run dev'
+alias nb='npm run build'
+alias ni='npm install'
+alias nt='npm run test'
+
 alias sail='./vendor/bin/sail'

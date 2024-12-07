@@ -11,13 +11,13 @@
   "bar.workspaces.showWsIcons": false,
   "bar.media.show_active_only": true,
   "theme.bar.buttons.notifications.spacing": "0.5em",
-  "menus.dashboard.powermenu.avatar.image": "/home/ayga/Downloads/create-an-anime-style-image-of-a-young-white-man-w-Ot62AHd4SqWg-IDad2ZIbA-vurb4EBLTHyPycHCORlBbg.jpeg",
+  "menus.dashboard.powermenu.avatar.image": "/home/ayga/Me/create-an-anime-style-image-of-a-young-white-man-w-Ot62AHd4SqWg-IDad2ZIbA-vurb4EBLTHyPycHCORlBbg.jpeg",
   "menus.clock.time.hideSeconds": true,
   "menus.clock.weather.location": "Meknes,Morocco",
   "menus.clock.weather.enabled": false,
-  "theme.bar.outer_spacing": "1em",
+  "theme.bar.outer_spacing": "0.1em",
   "theme.notification.scaling": 100,
-  "scalingPriority": "both",
+  "scalingPriority": "hyprland",
   "notifications.position": "top right",
   "notifications.ignore": [],
   "theme.bar.menus.menu.media.scaling": 85,
@@ -25,7 +25,7 @@
   "theme.osd.muted_zero": true,
   "menus.dashboard.stats.enable_gpu": true,
   "menus.dashboard.directories.enabled": false,
-  "bar.customModules.netstat.networkInterface": "\"wlan0\"",
+  "bar.customModules.netstat.networkInterface": "wlan0",
   "menus.bluetooth.showBattery": true,
   "bar.workspaces.showAllActive": true,
   "bar.workspaces.workspaces": 10,
@@ -46,5 +46,44 @@
   "bar.network.truncation_size": 6,
   "theme.font.name": "JetBrainsMonoNL Nerd Font Propo Medium Italic",
   "tear": false,
-  "theme.bar.menus.menu.volume.scaling": 60
+  "theme.bar.menus.menu.volume.scaling": 100,
+  "theme.font.weight": 700,
+  "theme.bar.location": "top",
+  "theme.bar.buttons.enableBorders": false,
+  "theme.bar.scaling": 100,
+  "theme.bar.menus.opacity": 100,
+  "theme.bar.transparent": true,
+  "theme.bar.opacity": 100,
+  "theme.bar.buttons.opacity": 90,
+  "theme.bar.buttons.background_opacity": 100,
+  "wallpaper.enable": false,
+  "bar.customModules.scrollSpeed": 0,
+  "bar.layouts": {
+    "0": {
+      "left": [
+        "dashboard",
+        "workspaces",
+        "netstat"
+      ],
+      "middle": [
+        "media"
+      ],
+      "right": [
+        "systray",
+        "volume",
+        "network",
+        "bluetooth",
+        "battery",
+        "clock",
+        "notifications"
+      ]
+    }
+  },
+  "theme.bar.buttons.network.enableBorder": false,
+  "theme.bar.buttons.padding_x": "0.7rem",
+  "theme.bar.border_radius": "0.1em",
+  "theme.bar.buttons.y_margins": "0.1em",
+  "menus.dashboard.controls.enabled": false,
+  "menus.dashboard.shortcuts.enabled": true,
+  "theme.bar.menus.menu.dashboard.profile.size": "8.5em"
 }
