@@ -1,9 +1,12 @@
-## Set Random Wallpaper in Hyprland
+#!/bin/bash
 
 WALLPAPERS_DIR="$HOME/.config/hypr/bg"
 
-# Pick a random wallpaper from the directory
-WALLPAPER=$(find "$WALLPAPERS_DIR" -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' \) | shuf -n 1)
+if [ -d "$WALLPAPERS_DIR" ]; then
+  random_background=$(find "$WALLPAPERS_DIR" -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' \) | shuf -n 1)
 
-# Set the selected wallpaper
-swaybg --output '*' --mode fill --image "$WALLPAPER"
+  hyprctl hyprpaper unload all
+  hyprctl hyprpaper preload "$random_background"
+  hyprctl hyprpaper wallpaper ", $random_background"
+
+fi
