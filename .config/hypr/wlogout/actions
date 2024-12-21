@@ -6,15 +6,16 @@ if [[ "$1" == '--shutdown' ]]; then
 elif [[ "$1" == '--reboot' ]]; then
   systemctl reboot
 
-elif [[ "$1" == '--hibernate' ]]; then
-  systemctl hibernate
-  hyprlock
+# elif [[ "$1" == '--hibernate' ]]; then
+#   systemctl hibernate
+#   hyprlock
 
 elif [[ "$1" == '--lock' ]]; then
+  playerctl stop
   hyprlock
 
 elif [[ "$1" == '--suspend' ]]; then
-  mpc -q pause
+  playerctl stop
   systemctl suspend
   hyprlock
 

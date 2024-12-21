@@ -1,12 +1,12 @@
 {
     "label" : "suspend",
     "action" : "~/.config/hypr/wlogout/actions --suspend",
-    "keybind" : "u"
+    "keybind" : "z"
 }
 {
     "label" : "logout",
     "action" : "~/.config/hypr/wlogout/actions --logout",
-    "keybind" : "e"
+    "keybind" : "q"
 }
 {
     "label" : "lock",
