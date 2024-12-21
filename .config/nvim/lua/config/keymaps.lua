@@ -33,3 +33,14 @@ map("n", "Da[", '"_da[', { desc = "Delete a bracket block" })
 map("n", "Da{", '"_da{', { desc = "Delete a curly bracket block" })
 
 map("n", "<leader>z", "<cmd>ZenMode<cr>", { desc = "ZenMode" })
+
+
+
+map("n", "<leader>ife", function()
+  local lines = {
+    "if err != nil {",
+    "\treturn err",
+    "}"
+  }
+  vim.api.nvim_put(lines, "l", true, true)
+end, { desc = "Insert if err != nil snippet" })

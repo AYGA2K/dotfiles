@@ -42,7 +42,6 @@
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
       "space c a": "editor::ToggleCodeActions",
-      "space b d": "pane::CloseActiveItem",
       "space space": "file_finder::Toggle"
     }
   },
@@ -71,9 +70,9 @@
     }
   },
   {
-    "context": "Workspace",
     "bindings": {
-      "alt r": "projects::OpenRecent"
+      "alt-r": "projects::OpenRecent",
+      "alt-q": "pane::CloseActiveItem"
     }
   }
 ]
