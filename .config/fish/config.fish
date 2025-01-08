@@ -9,7 +9,7 @@ fish_vi_key_bindings
 
 set -U fish_user_paths $fish_user_paths /home/ayga/go/bin
 set -U fish_user_paths $fish_user_paths /usr/local/share/hyprpanel/scripts
-set -x BROWSER floorp
+set -x BROWSER zen-browser
 # Handy change dir shortcuts
 abbr .. 'cd ..'
 abbr ... 'cd ../..'

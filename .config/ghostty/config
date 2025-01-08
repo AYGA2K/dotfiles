@@ -1,0 +1,13 @@
+window-decoration = false
+theme = catppuccin-mocha
+font-size = 17
+font-family = CaskaydiaCove Nerd Font Mono
+
+gtk-tabs-location = hidden
+
+keybind = alt+t=new_tab
+keybind = alt+q=close_surface
+keybind = alt+h=previous_tab
+keybind = alt+l=next_tab
+
+

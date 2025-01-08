@@ -77,25 +77,33 @@
         "bluetooth",
         "hyprsunset",
         "hypridle",
+        "battery",
         "clock",
         "notifications"
       ]
     }
   },
   "theme.bar.buttons.network.enableBorder": false,
-  "theme.bar.buttons.padding_x": "0.7rem",
-  "theme.bar.border_radius": "0.1em",
+  "theme.bar.buttons.padding_x": "0.5rem",
+  "theme.bar.border_radius": "0.2em",
   "theme.bar.buttons.y_margins": "0.1em",
   "menus.dashboard.controls.enabled": false,
   "menus.dashboard.shortcuts.enabled": true,
   "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
   "theme.bar.menus.menu.power.scaling": 100,
   "bar.customModules.netstat.labelType": "in",
-  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp1_input",
+  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp2_input",
   "bar.customModules.hyprsunset.temperature": "5500k",
   "bar.autoHide": "fullscreen",
   "bar.notifications.show_total": false,
   "bar.notifications.hideCountWhenZero": true,
   "menus.clock.time.military": false,
-  "menus.power.lowBatteryNotification": true
+  "menus.power.lowBatteryNotification": true,
+  "theme.bar.buttons.spacing": "0.2em",
+  "theme.bar.border.width": "0.15em",
+  "theme.bar.buttons.radius": "0.2em",
+  "theme.bar.buttons.innerRadiusMultiplier": "0.1",
+  "bar.customModules.cpuTemp.pollingInterval": 2000,
+  "theme.bar.buttons.bluetooth.enableBorder": false,
+  "bar.customModules.storage.labelType": "free"
 }
