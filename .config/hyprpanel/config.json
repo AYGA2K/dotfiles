@@ -15,7 +15,7 @@
   "menus.clock.weather.location": "Meknes,Morocco",
   "theme.bar.outer_spacing": "0.1em",
   "theme.notification.scaling": 100,
-  "scalingPriority": "hyprland",
+  "scalingPriority": "both",
   "notifications.position": "top right",
   "notifications.ignore": [],
   "theme.bar.menus.menu.media.scaling": 100,
@@ -105,5 +105,6 @@
   "theme.bar.buttons.innerRadiusMultiplier": "0.1",
   "bar.customModules.cpuTemp.pollingInterval": 2000,
   "theme.bar.buttons.bluetooth.enableBorder": false,
-  "bar.customModules.storage.labelType": "free"
+  "bar.customModules.storage.labelType": "free",
+  "menus.clock.weather.enabled": false
 }
