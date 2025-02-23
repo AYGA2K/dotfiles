@@ -15,7 +15,7 @@
     "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
     "bindings": {
       "alt-x": "workspace::Save",
-      "ctrl-s": ["workspace::SendKeystrokes", "escape alt-x"]
+      "ctrl-s": ["workspace::SendKeystrokes", "alt-x escape"]
     }
   },
   {
@@ -34,15 +34,14 @@
     "bindings": {
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
-      "space g h d": "editor::ToggleHunkDiff",
+      "space g h d": "editor::ToggleSelectedDiffHunks",
       "space g h r": "editor::RevertSelectedHunks",
       "space t i": "editor::ToggleInlayHints",
       "space u w": "editor::ToggleSoftWrap",
       "space z": "workspace::ToggleCenteredLayout",
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
-      "space c a": "editor::ToggleCodeActions",
-      "space space": "file_finder::Toggle"
+      "space c a": "editor::ToggleCodeActions"
     }
   },
   {
@@ -66,13 +65,16 @@
   {
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
-      "space e": "project_panel::ToggleFocus"
+      "space b d": "pane::CloseActiveItem",
+      "space e": "workspace::ToggleLeftDock",
+      // "space e": "project_panel::ToggleFocus",
+      "space space": "file_finder::Toggle",
+      "space s s": "outline::Toggle"
     }
   },
   {
     "bindings": {
-      "alt-r": "projects::OpenRecent",
-      "alt-q": "pane::CloseActiveItem"
+      "alt-r": "projects::OpenRecent"
     }
   }
 ]

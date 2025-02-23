@@ -70,5 +70,7 @@ alias nd='npm run dev'
 alias nb='npm run build'
 alias ni='npm install'
 alias nt='npm run test'
+# zed
+alias zed='zeditor'
 
 alias sail='./vendor/bin/sail'
