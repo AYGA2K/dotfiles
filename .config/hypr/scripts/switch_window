@@ -1,0 +1,21 @@
+#!/bin/bash
+
+CONFIG="$HOME/.config/hypr/rofi/switch_window.rasi"
+
+# Get a sorted list of open windows by focusHistoryID (descending), excluding the window with focusHistoryID of 0
+windows=$(hyprctl clients -j | jq -r '
+  sort_by(.focusHistoryID | tonumber) | 
+  .[] | 
+  select(.focusHistoryID != 0) | 
+  .initialClass')
+
+# Show windows in Rofi and get the selected initial class
+selected_initialClass=$(echo "$windows" | rofi -dmenu -theme ${CONFIG} -i -p "Switch to window:")
+
+# Find the window address by matching the selected initial class
+address=$(hyprctl clients -j | jq -r --arg initialClass "$selected_initialClass" '.[] | select(.initialClass == $initialClass) | .address')
+
+# Focus on the window using its address
+if [ -n "$address" ]; then
+  hyprctl dispatch focuswindow address:$address
+fi

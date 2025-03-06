@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+if [[ "$1" == '--shutdown' ]]; then
+  systemctl poweroff
+
+elif [[ "$1" == '--reboot' ]]; then
+  systemctl reboot
+
+# elif [[ "$1" == '--hibernate' ]]; then
+#   systemctl hibernate
+#   hyprlock
+
+elif [[ "$1" == '--lock' ]]; then
+  playerctl stop
+  hyprlock
+
+elif [[ "$1" == '--suspend' ]]; then
+  playerctl stop
+  systemctl suspend
+  hyprlock
+
+elif [[ "$1" == '--logout' ]]; then
+  hyprctl dispatch exit 0
+fi

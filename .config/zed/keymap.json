@@ -1,0 +1,80 @@
+[
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "left": "editor::MoveLeft",
+      "down": "editor::MoveDown",
+      "ctrl-j": "vim::Down",
+      "up": "editor::MoveUp",
+      "right": "editor::MoveRight",
+      "ctrl-down": "vim::ScrollDown",
+      "ctrl-up": "vim::ScrollUp"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
+    "bindings": {
+      "alt-x": "workspace::Save",
+      "ctrl-s": ["workspace::SendKeystrokes", "alt-x escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode==normal",
+    "bindings": {
+      "j": "editor::MoveDown",
+      "k": "editor::MoveUp",
+      "shift-d $": "editor::DeleteToEndOfLine",
+      "shift-d shift-d": "editor::DeleteLine",
+      "ctrl-u": ["workspace::SendKeystrokes", "ctrl-up z z"],
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"]
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "space g h d": "editor::ToggleSelectedDiffHunks",
+      "space g h r": "editor::RevertSelectedHunks",
+      "space t i": "editor::ToggleInlayHints",
+      "space u w": "editor::ToggleSoftWrap",
+      "space z": "workspace::ToggleCenteredLayout",
+      "space m p": "markdown::OpenPreview",
+      "space m P": "markdown::OpenPreviewToTheSide",
+      "space c a": "editor::ToggleCodeActions"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-d": "editor::Delete"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "A": "project_panel::NewDirectory",
+      "r": "project_panel::Rename",
+      "d": "project_panel::Delete",
+      "x": "project_panel::Cut",
+      "c": "project_panel::Copy",
+      "p": "project_panel::Paste"
+    }
+  },
+  {
+    "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
+    "bindings": {
+      "space b d": "pane::CloseActiveItem",
+      "space e": "workspace::ToggleLeftDock",
+      // "space e": "project_panel::ToggleFocus",
+      "space space": "file_finder::Toggle",
+      "space s s": "outline::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "alt-r": "projects::OpenRecent"
+    }
+  }
+]
