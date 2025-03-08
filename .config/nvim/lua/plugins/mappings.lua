@@ -30,6 +30,7 @@ return {
           ["Da("] = { '"_da(', desc = "Delete a parenthesis block" },
           ["Da["] = { '"_da[', desc = "Delete a bracket block" },
           ["Da{"] = { '"_da{', desc = "Delete a curly bracket block" },
+          ["<Leader>z"] = { "<cmd>ZenMode<cr>", desc = "Toggle Zen Mode" },
         },
         v = {
           ["D"] = { '"_d', desc = "Delete" },
