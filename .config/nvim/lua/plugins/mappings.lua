@@ -14,6 +14,10 @@ return {
           -- ["<Leader>b"] = { desc = "Buffers" },
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+          -- Move line up/down
+          ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line down" },
+          ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line up" },
+
           ["<C-d>"] = { "<C-d>zz", desc = "Scroll down" },
           ["<C-u>"] = { "<C-u>zz", desc = "Scroll up" },
           ["DD"] = { '"_dd', desc = "Delete line" },
@@ -33,6 +37,8 @@ return {
           ["<Leader>z"] = { "<cmd>ZenMode<cr>", desc = "Toggle Zen Mode" },
         },
         v = {
+          ["<A-j>"] = { ":m '>+1<CR>gv=gv", desc = "Move selection down" },
+          ["<A-k>"] = { ":m '<-2<CR>gv=gv", desc = "Move selection up" },
           ["D"] = { '"_d', desc = "Delete" },
         },
         t = {
