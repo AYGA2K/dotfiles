@@ -19,8 +19,10 @@ return {
     },
     -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
     diagnostics = {
-      virtual_text = true,
+      virtual_text = false,
       underline = true,
+      update_in_insert = false,
+      signs = true,
     },
     -- vim options can be configured here
     options = {
@@ -65,6 +67,12 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        ["<C-j>"] = false,
+        ["<C-k>"] = false,
+        ["<C-h>"] = false,
+        ["<C-l>"] = false,
+        ["<leader>e"] = false,
       },
     },
   },

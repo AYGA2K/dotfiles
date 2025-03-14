@@ -10,7 +10,6 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.utility.hover-nvim" },
   { import = "astrocommunity.recipes.disable-tabline" },
-  { import = "astrocommunity.file-explorer.mini-files" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.hyprlang" },
   { import = "astrocommunity.pack.lua" },
@@ -23,4 +22,5 @@ return {
   { import = "astrocommunity.pack.typescript-all-in-one" },
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.fish" },
+  { import = "astrocommunity.bars-and-lines.lualine-nvim" },
 }

@@ -1,6 +1,5 @@
 return {
   "nvim-neo-tree/neo-tree.nvim",
-  enabled = false,
   opts = {
     filesystem = {
       follow_current_file = {
@@ -9,7 +8,7 @@ return {
       },
       use_libuv_file_watcher = true,
       window = {
-        position = "current",
+        position = "float",
       },
     },
   },

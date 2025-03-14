@@ -15,6 +15,7 @@ return {
           -- quick save
           -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
           -- Move line up/down
+          ["<leader>e"] = { ":Neotree reveal toggle<CR>", desc = "Toggle Explorer" },
           ["<A-j>"] = { ":m .+1<CR>==", desc = "Move line down" },
           ["<A-k>"] = { ":m .-2<CR>==", desc = "Move line up" },
 
