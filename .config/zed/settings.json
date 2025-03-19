@@ -48,7 +48,11 @@
     "code_actions": false,
     "runnables": false
   },
-  "preferred_line_length": 70,
+  "centered_layout": {
+    "left_padding": 0.1,
+    "right_padding": 0.1
+  },
+  "preferred_line_length": 80,
   "soft_wrap": "bounded",
   "show_wrap_guides": false,
   "working_directory": "current_project_directory",
@@ -68,9 +72,9 @@
   },
 
   "tab_bar": {
-    "show": false,
-    "show_nav_history_buttons": true,
-    "show_tab_bar_buttons": true
+    "show": true,
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "languages": {
     "HTML": {

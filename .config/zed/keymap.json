@@ -34,9 +34,6 @@
     "bindings": {
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
-      "space g h d": "editor::ToggleSelectedDiffHunks",
-      "space g h r": "editor::RevertSelectedHunks",
-      "space t i": "editor::ToggleInlayHints",
       "space u w": "editor::ToggleSoftWrap",
       "space z": "workspace::ToggleCenteredLayout",
       "space m p": "markdown::OpenPreview",
@@ -65,7 +62,7 @@
   {
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
-      "space b d": "pane::CloseActiveItem",
+      "space q": "pane::CloseActiveItem",
       "space e": "workspace::ToggleLeftDock",
       // "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",

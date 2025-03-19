@@ -25,3 +25,10 @@ ssh-add ~/.ssh/id_ed25519 >/dev/null 2>&1
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 abbr mkdir 'mkdir -p'
+
+# pnpm
+set -gx PNPM_HOME "/home/ayga/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
