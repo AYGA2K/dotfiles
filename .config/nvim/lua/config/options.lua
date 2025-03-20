@@ -1,20 +1,3 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
-vim.opt.smartindent = true
-vim.opt.wrap = true
-vim.opt.linebreak = true
-vim.opt.textwidth = 70
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.termguicolors = true
-vim.opt.cursorline = true
-vim.opt.signcolumn = "yes"
-vim.opt.mouse = "a"
-vim.opt.clipboard = "unnamedplus"
-vim.g.mapleader = " "
-vim.o.swapfile = true
-vim.opt.laststatus = 0
-vim.o.cmdheight = 0
+-- Options are automatically loaded before lazy.nvim startup
+-- Default options that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/options.lua
+-- Add any additional options here
