@@ -43,14 +43,5 @@ map("n", "<Leader>o", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
 map("n", "[d", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts) -- Go to previous diagnostic
 map("n", "]d", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts) -- Go to next diagnostic
 
----------------------
--- Language-Specific Keymaps --
----------------------
-
----------------------
--- Miscellaneous Keymaps --
----------------------
-
--- Toggle comment
-map("n", "gc", '<cmd>lua require("Comment.api").toggle_current_linewise()<CR>', opts)
-map("v", "gc", '<cmd>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
+-- Key mapping for showing diagnostics in a floating window
+map("n", "K", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true })

@@ -15,6 +15,6 @@ vim.opt.signcolumn = "yes"
 vim.opt.mouse = "a"
 vim.opt.clipboard = "unnamedplus"
 vim.g.mapleader = " "
-vim.o.swapfile = false
+vim.o.swapfile = true
 vim.opt.laststatus = 0
 vim.o.cmdheight = 0

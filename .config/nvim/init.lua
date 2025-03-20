@@ -10,9 +10,17 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+
 vim.opt.rtp:prepend(lazypath)
 
+-- Configure diagnostics to show only icons and hide inline messages
+vim.diagnostic.config({
+	virtual_text = false, -- Disable inline text for diagnostics
+	signs = true, -- Keep icons in the sign column
+})
+
 -- Load configuration files
+require("config.settings")
 require("config.options")
 require("config.keybindings")
 require("config.autocommands")

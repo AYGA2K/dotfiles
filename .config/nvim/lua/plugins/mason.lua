@@ -10,20 +10,20 @@ return {
 		config = function()
 			require("mason-lspconfig").setup({
 				ensure_installed = {
-					"gopls", -- Golang
-					"ts_ls", -- JavaScript/TypeScript
-					"eslint", -- ESLint
-					"html", -- HTML
-					"cssls", -- CSS
-					"tailwindcss", -- Tailwind CSS
-					"jsonls", -- JSON
-					"emmet_ls", -- Emmet
-					"volar", -- Vue.js
-					"lua_ls", -- Lua
-					"bashls", -- Bash scripting
-					"yamlls", -- YAML
-					"dockerls", -- Docker
-					"marksman", -- Markdown
+					"gopls", -- golang
+					"ts_ls", -- javascript/typescript
+					"eslint", -- eslint
+					"html", -- html
+					"cssls", -- css
+					"tailwindcss", -- tailwind css
+					"jsonls", -- json
+					"emmet_ls", -- emmet
+					"volar", -- vue.js
+					"lua_ls", -- lua
+					"bashls", -- bash scripting
+					"yamlls", -- yaml
+					"dockerls", -- docker
+					"marksman", -- markdown
 				},
 			})
 		end,

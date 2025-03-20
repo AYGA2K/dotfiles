@@ -1,5 +1,3 @@
--- ~/.config/nvim/lua/plugins/lsp.lua
-
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
@@ -23,19 +21,32 @@ return {
 				})
 			end,
 		})
-		lspconfig.ts_ls.setup({
+		lspconfig.eslint.setup({})
+
+		lspconfig.emmet_ls.setup({
+			filetypes = { "html", "css", "scss", "javascriptreact", "typescriptreact", "vue" },
+		})
+		lspconfig.phpactor.setup({})
+		-- lspconfig.ts_ls.setup({
+		-- 	init_options = {
+		-- 		plugins = {
+		-- 			{
+		-- 				name = "@vue/typescript-plugin",
+		-- 				location = vue_language_server_path,
+		-- 				languages = { "vue" },
+		-- 			},
+		-- 		},
+		-- 	},
+		-- 	filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+		-- })
+		lspconfig.volar.setup({
 			init_options = {
-				plugins = {
-					{
-						name = "@vue/typescript-plugin",
-						location = vue_language_server_path,
-						languages = { "vue" },
-					},
+				vue = {
+					hybridMode = true,
 				},
 			},
-			filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 		})
-		lspconfig.volar.setup({})
+		lspconfig.vtsls.setup({})
 		lspconfig.gopls.setup({
 			capabilities = capabilities,
 			settings = {
