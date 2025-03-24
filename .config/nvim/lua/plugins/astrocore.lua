@@ -30,6 +30,7 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = true, -- sets vim.opt.wrap
+        textwidth = 70,
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
@@ -64,6 +65,10 @@ return {
 
         -- setting a mapping to false will disable it
         ["<Leader>e"] = false,
+        ["<C-j>"] = false,
+        ["<C-k>"] = false,
+        ["<C-l>"] = false,
+        ["<C-h>"] = false,
       },
     },
   },

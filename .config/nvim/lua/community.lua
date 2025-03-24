@@ -10,7 +10,6 @@ return {
   { import = "astrocommunity.recipes.disable-tabline" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
-  { import = "astrocommunity.motion.harpoon" },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.fish" },
   { import = "astrocommunity.pack.go" },
