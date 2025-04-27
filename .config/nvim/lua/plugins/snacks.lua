@@ -5,6 +5,7 @@ return {
     picker = {
       sources = {
         explorer = {
+          hidden = true,
           layout = {
             preset = "vertical", -- Start with vertical layout as base
             layout = {

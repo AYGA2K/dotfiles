@@ -29,19 +29,19 @@ alias gomv='go mod vendor'
 alias gomc='go mod clean'
 
 # config
-alias fishconfig="cd ~/.config/fish/ && nvim ~/.config/fish/"
-alias config="cd ~/.config && nvim ~/.config/"
-alias nvimconfig="cd ~/.config/nvim/ && nvim ~/.config/nvim/"
-alias kittyconfig="cd ~/.config/kitty/ && nvim ~/.config/kitty/"
-alias binconfig="cdbin && nvim ~/.local/share/bin/"
-alias hyprconfig="cdhypr && nvim ~/.config/hypr/"
-alias waybarconfig='cdwaybar && nvim ~/.config/waybar/'
+alias fishconfig="cd ~/.config/fish/ && nvim ."
+alias config="cd ~/.config && nvim ."
+alias nvimconfig="cd ~/.config/nvim/ && nvim ."
+alias kittyconfig="cd ~/.config/kitty/ && nvim ."
+alias binconfig="cdbin && nvim ."
+alias hyprconfig="cdhypr && nvim ."
+alias waybarconfig='cdwaybar && nvim .'
 # git
 alias gcl='git clone --depth 1'
 alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
-alias gp='git push origin master'
+alias gp='git push origin main'
 alias gpull='git pull'
 
 # other
