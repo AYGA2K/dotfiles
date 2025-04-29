@@ -12,7 +12,7 @@ map("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 map("n", "<leader>e", function()
-  Snacks.picker.explorer()
+  Snacks.picker.explorer({})
 end, { desc = "Explorer (cwd)" })
 
 map("n", "<leader>E", function()
@@ -20,6 +20,34 @@ map("n", "<leader>E", function()
     cwd = LazyVim.root(),
   })
 end, { desc = "Explorer (root dir)" })
+
+map("n", "<leader>fe", function()
+  Snacks.picker.explorer({
+    git_untracked = false,
+  })
+end, { desc = "Explorer Git Untracked (cwd)" })
+
+map("n", "<leader>fE", function()
+  Snacks.picker.explorer({
+    cwd = LazyVim.root(),
+    ignored = true,
+    hidden = true,
+  })
+end, { desc = "Explorer Git Untracked (root dir)" })
+
+map("n", "<leader>fu", function()
+  Snacks.picker.files({
+    hidden = true,
+    ignored = true,
+  })
+end, { desc = "Find Files Git Untracked (cwd)" })
+
+map("n", "<leader>fU", function()
+  Snacks.picker.files({
+    cwd = LazyVim.root(),
+    git_untracked = true,
+  })
+end, { desc = "Find Files Git Untracked (root dir)" })
 
 map("v", "D", '"_d', { desc = "Delete" })
 map("n", "DD", '"_dd', { desc = "Delete line" })
