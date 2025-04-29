@@ -15,6 +15,8 @@ alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
 alias cdhome='cd ~'
 alias cddots='cd ~/.dotfiles/'
+alias cdfoot='cd ~/.config/foot/'
+alias cdzellij='cd ~/.config/zellij/'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
@@ -36,6 +38,9 @@ alias kittyconfig="cd ~/.config/kitty/ && nvim ."
 alias binconfig="cdbin && nvim ."
 alias hyprconfig="cdhypr && nvim ."
 alias waybarconfig='cdwaybar && nvim .'
+alias footconfig='cdfoot && nvim .'
+alias zellijconfig='cdzellij && nvim .'
+
 # git
 alias gcl='git clone --depth 1'
 alias gi='git init'
