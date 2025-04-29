@@ -7,22 +7,22 @@ return {
         explorer = {
           hidden = true,
           layout = {
-            preset = "vertical", -- Start with vertical layout as base
+            preset = "vertical",
             layout = {
               box = "horizontal",
-              width = 0.8,
+              width = 0.9,
               min_width = 120,
-              height = 0.8,
+              height = 0.98,
               {
                 box = "vertical",
                 border = "rounded",
                 title = "{title} {live} {flags}",
-                { win = "list", border = "none" }, -- Remove input window
+                { win = "list", border = "none" },
               },
               { win = "preview", title = "{preview}", width = 0.5, border = "rounded" },
             },
           },
-          auto_close = true, -- Close explorer after selecting file
+          auto_close = true,
         },
       },
     },
