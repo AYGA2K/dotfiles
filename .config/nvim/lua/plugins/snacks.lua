@@ -10,7 +10,7 @@ return {
             preset = "vertical",
             layout = {
               box = "horizontal",
-              width = 0.9,
+              width = 0.8,
               min_width = 120,
               height = 0.98,
               {
