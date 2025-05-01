@@ -16,12 +16,17 @@ map("n", "<leader><leader>", function()
 end, { desc = "Find Files" })
 
 map("n", "<leader>e", function()
-  Snacks.picker.explorer({})
+  Snacks.picker.explorer({
+    ignored = false,
+    hidden = false,
+  })
 end, { desc = "Explorer (cwd)" })
 
 map("n", "<leader>E", function()
   Snacks.picker.explorer({
     cwd = LazyVim.root(),
+    hidden = false,
+    ignored = false,
   })
 end, { desc = "Explorer (root dir)" })
 
