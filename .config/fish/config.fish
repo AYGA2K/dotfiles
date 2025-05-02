@@ -9,6 +9,7 @@ fish_vi_key_bindings
 
 set -U fish_user_paths $fish_user_paths $HOME/go/bin
 set -U fish_user_paths $fish_user_paths $HOME/.local/bin
+set -U fish_user_paths $fish_user_paths $HOME/usr/local/bin
 set -U fish_user_paths $fish_user_paths /usr/local/share/hyprpanel/scripts
 set -x BROWSER zen-browser
 # Handy change dir shortcuts
@@ -29,6 +30,6 @@ abbr mkdir 'mkdir -p'
 # pnpm
 set -gx PNPM_HOME "/home/ayga/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
-  set -gx PATH "$PNPM_HOME" $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end

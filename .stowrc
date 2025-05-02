@@ -1,0 +1,4 @@
+--target=$HOME
+--dir=.
+--no-folding
+--ignore='\.git|README\.md|LICENSE|\.stowrc|setup\.sh'
