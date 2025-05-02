@@ -58,6 +58,10 @@ if ! grep -q "\[chaotic-aur\]" /etc/pacman.conf; then
 
   echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" |
     gum spin --spinner minidot --title.foreground "$BLUE" --title "Updating pacman.conf" -- sudo tee -a /etc/pacman.conf
+
+  # Refresh package databases
+  msg "$BLUE" "[→] Refreshing package databases..."
+  gum spin --spinner minidot --title.foreground "$BLUE" --title "Refreshing package databases" -- sudo pacman -Sy
 else
   msg "$GREEN" "[✓] Chaotic AUR already configured"
 fi
@@ -79,10 +83,6 @@ if ! command -v yay &>/dev/null; then
   rm -rf "$WORKDIR"
 fi
 
-# Refresh package list just before installation
-msg "$BLUE" "[→] Refreshing package databases..."
-gum spin --spinner minidot --title.foreground "$BLUE" --title "Refreshing package databases" -- sudo pacman -Sy
-
 # List of packages to install
 packages=(
   alacritty fish starship foot hyprland hyprlock hypridle hyprpaper rofi
@@ -91,7 +91,7 @@ packages=(
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
   hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  ags-hyprpanel-git hyprswitch cliphist go npm
+  ags-hyprpanel-git hyprswitch cliphist go npm zellij nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."
@@ -104,10 +104,16 @@ if [ -d "$HOME/.config" ]; then
   backup_dir="$HOME/config_backup_$(date +%Y%m%d_%H%M%S)"
   msg "$GREEN" "[+] Creating backup at $backup_dir"
   mkdir -p "$backup_dir"
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Creating backup" -- cp -r "$HOME/.config" "$backup_dir"
+  gum spin --spinner minidot --title.foreground "$BLUE" --title "Creating backup" -- mv "$HOME/.config" "$backup_dir"
   msg "$GREEN" "[✓] Backup created successfully"
 else
   msg "$PEACH" "[!] No existing .config directory found"
+fi
+
+# Make Fish Default Shell
+if [ "$SHELL" != "/bin/fish" ]; then
+  msg "$BLUE" "[→] Setting Fish as default shell..."
+  chsh -s /bin/fish
 fi
 
 msg "$BLUE" "[→] Stowing dotfiles..."

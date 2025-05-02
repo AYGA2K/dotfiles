@@ -18,9 +18,6 @@ _A one-click setup for a stunning Hyprland environment on Arch Linux_
 ## 🚀 Installation
 
 ```bash
-# Make the script executable
-chmod +x setup.sh
-
 # Run the installer
 ./setup.sh
 ```
