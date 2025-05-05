@@ -91,7 +91,7 @@ packages=(
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
   hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  ags-hyprpanel-git hyprswitch cliphist go npm zellij nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent
+  ags-hyprpanel-git hyprswitch cliphist go npm zellij nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."
