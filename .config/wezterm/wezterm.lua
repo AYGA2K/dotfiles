@@ -13,14 +13,23 @@ local colors = {
 
 config.color_scheme = "Catppuccin Mocha"
 config.use_fancy_tab_bar = true
+config.window_frame = {
+	font = wezterm.font({ family = "JetBrainsMono Nerd Font", weight = "Bold" }),
+	font_size = 11.0,
+	active_titlebar_bg = colors.base,
+	inactive_titlebar_bg = colors.crust,
+}
+
 config.show_new_tab_button_in_tab_bar = false
 config.tab_max_width = 100
+config.tab_bar_at_bottom = true
+config.hide_tab_bar_if_only_one_tab = true
 
 wezterm.on("format-tab-title", function(tab)
 	local title = tab.tab_title ~= "" and tab.tab_title or tab.active_pane.title
 	title = wezterm.truncate_right(title, 24)
 
-	local bg = colors.surface0
+	local bg = colors.base
 	local fg = colors.overlay2
 	local icon = wezterm.nerdfonts.md_tab
 	local pad = "  "
@@ -38,8 +47,8 @@ wezterm.on("format-tab-title", function(tab)
 	}
 end)
 
-config.font = wezterm.font("JetBrains Mono", { weight = "Bold", italic = true })
-config.font_size = 15
+config.font = wezterm.font("JetBrainsMono Nerd Font")
+config.font_size = 17
 config.window_padding = { left = 20, right = 20, top = 0, bottom = 0 }
 
 -- Keybindings
