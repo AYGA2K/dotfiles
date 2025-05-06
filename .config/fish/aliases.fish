@@ -3,20 +3,18 @@ alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
 
 # cd
-alias cdhypr='cd ~/.config/hypr'
-alias cdkitty='cd ~/.config/kitty'
-alias cdfish='cd ~/.config/fish'
-alias cdwaybar='cd ~/.config/waybar'
+alias cdhypr='cddots && cd .config/hypr'
+alias cdkitty='cddots && cd .config/kitty'
+alias cdfish='cddots && cd .config/fish'
 alias cdw='cd ~/Downloads'
-alias cdnvim='cd ~/.config/nvim'
-alias cdconfig='cd ~/.config/'
+alias cdnvim='cddots && cd .config/nvim'
+alias cdconfig='cddots && cd .config'
 alias cdisk='cd /run/media/ayga/Disk/'
 alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
-alias cdhome='cd ~'
 alias cddots='cd ~/.dotfiles/'
-alias cdfoot='cd ~/.config/foot/'
-alias cdzellij='cd ~/.config/zellij/'
+alias cdfoot='cddots && cd .config/foot/'
+alias cdzellij='cddots &&  .config/zellij/'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
@@ -31,13 +29,12 @@ alias gomv='go mod vendor'
 alias gomc='go mod clean'
 
 # config
-alias fishconfig="cd ~/.config/fish/ && nvim ."
-alias config="cd ~/.config && nvim ."
-alias nvimconfig="cd ~/.config/nvim/ && nvim ."
-alias kittyconfig="cd ~/.config/kitty/ && nvim ."
+alias fishconfig="cdfish && nvim ."
+alias config="cdconfig && nvim ."
+alias nvimconfig="cdnvim && nvim ."
+alias kittyconfig="cdkitty && nvim ."
 alias binconfig="cdbin && nvim ."
 alias hyprconfig="cdhypr && nvim ."
-alias waybarconfig='cdwaybar && nvim .'
 alias footconfig='cdfoot && nvim .'
 alias zellijconfig='cdzellij && nvim .'
 
@@ -47,7 +44,7 @@ alias gi='git init'
 alias ga='git add'
 alias gc='git commit -m'
 alias gp='git push origin main'
-alias gpull='git pull'
+alias gpl='git pull'
 
 # other
 alias vim=nvim
