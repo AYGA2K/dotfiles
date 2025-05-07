@@ -17,7 +17,7 @@ map("n", "<leader><leader>", function()
     finder = "git_files",
     show_empty = true,
     format = "file",
-    untracked = false,
+    untracked = true,
     submodules = true,
     hidden = true,
   })
