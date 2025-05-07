@@ -12,15 +12,7 @@ map("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 map("n", "<leader><leader>", function()
-  Snacks.picker.git_files({
-    cwd = LazyVim.root(),
-    finder = "git_files",
-    show_empty = true,
-    format = "file",
-    untracked = true,
-    submodules = true,
-    hidden = true,
-  })
+  Snacks.picker.files({})
 end, { desc = "Find Files" })
 
 map("n", "<leader>e", function()
