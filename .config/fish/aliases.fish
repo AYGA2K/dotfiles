@@ -72,6 +72,7 @@ alias nd='npm run dev'
 alias nb='npm run build'
 alias ni='npm install'
 alias nt='npm run test'
+alias nm='npm run migrate'
 # zed
 alias zed='zeditor'
 
