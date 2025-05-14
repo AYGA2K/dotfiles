@@ -107,5 +107,8 @@
   "theme.bar.buttons.bluetooth.enableBorder": false,
   "bar.customModules.storage.labelType": "free",
   "menus.clock.weather.enabled": false,
-  "theme.bar.buttons.modules.netstat.enableBorder": false
+  "theme.bar.buttons.modules.netstat.enableBorder": false,
+  "bar.systray.ignore": [
+    "nm-applet"
+  ]
 }
