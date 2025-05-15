@@ -4,7 +4,6 @@ alias ll='lsd -la --group-directories-first'
 
 # cd
 alias cdhypr='cddots && cd .config/hypr'
-alias cdkitty='cddots && cd .config/kitty'
 alias cdfish='cddots && cd .config/fish'
 alias cdw='cd ~/Downloads'
 alias cdnvim='cddots && cd .config/nvim'
@@ -13,8 +12,7 @@ alias cdisk='cd /run/media/ayga/Disk/'
 alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
 alias cddots='cd ~/.dotfiles/'
-alias cdfoot='cddots && cd .config/foot/'
-alias cdzellij='cddots &&  .config/zellij/'
+alias cdwezterm='cddots && cd .config/wezterm'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
@@ -32,11 +30,9 @@ alias gomc='go mod clean'
 alias fishconfig="cdfish && nvim ."
 alias config="cdconfig && nvim ."
 alias nvimconfig="cdnvim && nvim ."
-alias kittyconfig="cdkitty && nvim ."
 alias binconfig="cdbin && nvim ."
 alias hyprconfig="cdhypr && nvim ."
-alias footconfig='cdfoot && nvim .'
-alias zellijconfig='cdzellij && nvim .'
+alias weztermconfig="cdwezterm && nvim ."
 
 # git
 alias gcl='git clone --depth 1'

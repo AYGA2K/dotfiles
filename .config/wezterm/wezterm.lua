@@ -31,7 +31,7 @@ wezterm.on("format-tab-title", function(tab)
 
 	local bg = colors.base
 	local fg = colors.overlay2
-	local icon = wezterm.nerdfonts.md_tab
+	local icon = wezterm.nerdfonts.linux_tux
 	local pad = "  "
 
 	if tab.is_active then
@@ -46,7 +46,7 @@ wezterm.on("format-tab-title", function(tab)
 		{ Text = pad .. icon .. " " .. title .. pad },
 	}
 end)
-
+-- config.show_close_tab_button_in_tabs = false
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 17
 config.window_padding = { left = 20, right = 20, top = 0, bottom = 0 }

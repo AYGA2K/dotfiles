@@ -85,13 +85,13 @@ fi
 
 # List of packages to install
 packages=(
-  alacritty fish starship foot hyprland hyprlock hypridle hyprpaper rofi
-  wlogout swaylock kitty keyd lsd lazygit lazydocker mpv qt5ct qt6ct neovim
+  alacritty fish starship hyprland hyprlock hypridle hyprpaper rofi
+  wlogout swaylock keyd lsd lazygit lazydocker mpv qt5ct qt6ct neovim
   unzip stow ttf-jetbrains-mono-nerd ttf-cascadia-code-nerd wl-clipboard
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
   hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  ags-hyprpanel-git hyprswitch cliphist go npm zellij nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi
+  ags-hyprpanel-git hyprswitch cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."
