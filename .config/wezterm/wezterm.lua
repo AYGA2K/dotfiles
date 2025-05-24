@@ -49,7 +49,7 @@ end)
 -- config.show_close_tab_button_in_tabs = false
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 config.font_size = 17
-config.window_padding = { left = 20, right = 20, top = 0, bottom = 0 }
+config.window_padding = { left = 150, right = 150, top = 0, bottom = 0 }
 
 -- Keybindings
 config.keys = {
