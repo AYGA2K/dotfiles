@@ -105,7 +105,7 @@
   "theme.bar.buttons.innerRadiusMultiplier": "0.1",
   "bar.customModules.cpuTemp.pollingInterval": 2000,
   "theme.bar.buttons.bluetooth.enableBorder": false,
-  "bar.customModules.storage.labelType": "free",
+  "bar.customModules.storage.labelType": "percentage",
   "menus.clock.weather.enabled": false,
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.systray.ignore": [
