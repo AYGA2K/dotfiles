@@ -12,7 +12,6 @@
   "theme.bar.buttons.notifications.spacing": "0.5em",
   "menus.dashboard.powermenu.avatar.image": "/home/ayga/Me/create-an-anime-style-image-of-a-young-white-man-w-Ot62AHd4SqWg-IDad2ZIbA-vurb4EBLTHyPycHCORlBbg.jpeg",
   "menus.clock.time.hideSeconds": true,
-  "menus.clock.weather.location": "Meknes,Morocco",
   "theme.bar.outer_spacing": "0.1em",
   "theme.notification.scaling": 100,
   "scalingPriority": "both",
@@ -92,7 +91,7 @@
   "theme.bar.menus.menu.dashboard.profile.size": "8.5em",
   "theme.bar.menus.menu.power.scaling": 100,
   "bar.customModules.netstat.labelType": "in",
-  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/coretemp.0/hwmon/hwmon8/temp2_input",
+  "bar.customModules.cpuTemp.sensor": "/sys/devices/platform/coretemp.0/hwmon/hwmon9/temp1_input",
   "bar.customModules.hyprsunset.temperature": "5500k",
   "bar.autoHide": "fullscreen",
   "bar.notifications.show_total": false,
@@ -110,5 +109,7 @@
   "theme.bar.buttons.modules.netstat.enableBorder": false,
   "bar.systray.ignore": [
     "nm-applet"
-  ]
+  ],
+  "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
+  "bar.customModules.cpuTemp.unit": "metric"
 }
