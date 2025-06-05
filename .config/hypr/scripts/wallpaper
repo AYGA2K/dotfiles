@@ -1,12 +1,13 @@
 #!/bin/bash
 
-WALLPAPERS_DIR="$HOME/.config/hypr/bg"
+WALLPAPER_DIR="$HOME/.dotfiles/.config/hypr/bg/"
+CURRENT_WALL=$(hyprctl hyprpaper listloaded | awk -F': ' '{print $2}')
+MONITOR=$(hyprctl monitors | grep 'Monitor' | awk '{print $2}')
 
-if [ -d "$WALLPAPERS_DIR" ]; then
-  random_background=$(find "$WALLPAPERS_DIR" -type f \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.jpeg' \) | shuf -n 1)
+# Get a random wallpaper that is not the current one
+WALLPAPER=$(find "$WALLPAPER_DIR" -type f ! -name "$(basename "$CURRENT_WALL")" | shuf -n 1)
 
-  hyprctl hyprpaper unload all
-  hyprctl hyprpaper preload "$random_background"
-  hyprctl hyprpaper wallpaper ", $random_background"
-
-fi
+# Apply the wallpaper
+hyprctl hyprpaper unload all
+hyprctl hyprpaper preload "$WALLPAPER"
+hyprctl hyprpaper wallpaper "$MONITOR,$WALLPAPER"
