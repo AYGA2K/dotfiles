@@ -3,16 +3,15 @@ alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
 
 # cd
-alias cdhypr='cddots && cd .config/hypr'
-alias cdfish='cddots && cd .config/fish'
+alias cdhypr='cd && cd .config/hypr'
+alias cdfish='cdd && cd .config/fish'
 alias cdw='cd ~/Downloads'
-alias cdnvim='cddots && cd .config/nvim'
-alias cdconfig='cddots && cd .config'
-alias cdisk='cd /run/media/ayga/Disk/'
+alias cdnvim='cd && cd .config/nvim'
+alias cdconfig='cd && cd .config'
 alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
 alias cddots='cd ~/.dotfiles/'
-alias cdwezterm='cddots && cd .config/wezterm'
+alias cdwezterm='cd && cd .config/wezterm'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
