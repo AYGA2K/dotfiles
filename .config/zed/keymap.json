@@ -38,7 +38,7 @@
       "space z": "workspace::ToggleCenteredLayout",
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
-      "space a": "editor::ToggleCodeActions"
+      "space c a": "editor::ToggleCodeActions"
     }
   },
   {
@@ -62,9 +62,8 @@
   {
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
-      "space c": "pane::CloseActiveItem",
+      "space b d": "pane::CloseActiveItem",
       "space e": "workspace::ToggleLeftDock",
-      // "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle"
     }
