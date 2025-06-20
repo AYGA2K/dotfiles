@@ -4,7 +4,7 @@ alias ll='lsd -la --group-directories-first'
 
 # cd
 alias cdhypr='cd && cd .config/hypr'
-alias cdfish='cdd && cd .config/fish'
+alias cdfish='cd && cd .config/fish'
 alias cdw='cd ~/Downloads'
 alias cdnvim='cd && cd .config/nvim'
 alias cdconfig='cd && cd .config'
