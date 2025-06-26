@@ -7,3 +7,4 @@ opt.textwidth = 60
 opt.wrap = true
 opt.autowrite = false
 opt.mouse = ""
+vim.g.lazyvim_prettier_needs_config = true
