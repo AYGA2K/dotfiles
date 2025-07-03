@@ -1,0 +1,110 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin-top": 2,
+  "margin-bottom": 0,
+  "margin-left": 6,
+  "margin-right": 6,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces",
+    "cpu",
+    "memory",
+    "temperature"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "network",
+    "battery",
+    "tray",
+    "custom/notification"
+  ],
+  // Hyprland modules
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "urgent": "",
+      "active": "",
+      "default": ""
+    }
+  },
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 50,
+    "separator": false,
+    "rewrite": {
+      "(.*) - Mozilla Firefox": "󰈹 $1",
+      "(.*) - Discord": "󰙯 $1"
+    }
+  },
+  // System modules
+  "clock": {
+    "interval": 1,
+    "format": " {:%I:%M %p}",
+    "tooltip-format": "<big>{:%A, %d %B %Y}</big>"
+  },
+  "cpu": {
+    "format": "󰘚 {usage}%",
+    "interval": 2
+  },
+  "memory": {
+    "format": "󰍛 {used:0.1f}G",
+    "interval": 2
+  },
+  "temperature": {
+    "format": " {temperatureC}°C",
+    "critical-threshold": 80,
+    "interval": 2
+  },
+  "battery": {
+    "format": "{icon} {capacity}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "states": {
+      "warning": 30,
+      "critical": 15
+    }
+  },
+  "network": {
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀 Wired",
+    "format-disconnected": "󰖪 Offline",
+    "interval": 5
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-icons": {
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+  },
+  "tray": {
+    "spacing": 8
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{} {icon}",
+    "format-icons": {
+      "notification": "",
+      "none": "",
+      "dnd-notification": "",
+      "dnd-none": ""
+    },
+    "exec": "python ~/.config/waybar/notification.py", // Optional: Custom notification script
+    "return-type": "json"
+  }
+}
