@@ -20,6 +20,7 @@
     "pulseaudio",
     "network",
     "battery",
+    "custom/powerplan",
     "tray",
     "custom/notification"
   ],
@@ -63,6 +64,7 @@
   },
   "battery": {
     "format": "{icon} {capacity}%",
+    "format-charging": " {icon} {capacity}%",
     "format-icons": [
       "",
       "",
@@ -95,16 +97,12 @@
   "tray": {
     "spacing": 8
   },
-  "custom/notification": {
-    "tooltip": false,
-    "format": "{} {icon}",
-    "format-icons": {
-      "notification": "",
-      "none": "",
-      "dnd-notification": "",
-      "dnd-none": ""
-    },
-    "exec": "python ~/.config/waybar/notification.py", // Optional: Custom notification script
-    "return-type": "json"
+  "custom/powerplan": {
+    "format": "{}",
+    "exec": "~/.dotfiles/.config/hypr/scripts/powerplan",
+    "return-type": "json",
+    "on-click": "~/.dotfiles/.config/hypr/scripts/powerplan toggle",
+    "interval": 5,
+    "tooltip": true
   }
 }

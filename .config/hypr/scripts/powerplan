@@ -1,0 +1,28 @@
+#!/bin/bash
+
+# Fetch current power profile (requires `powerprofilesctl`)
+get_profile() {
+  current=$(powerprofilesctl get)
+  case "$current" in
+  "power-saver") echo '{"text":"power saver","tooltip":"Power Saver","class":"power-saver"}' ;;
+  "balanced") echo '{"text":"balanced","tooltip":"Balanced","class":"balanced"}' ;;
+  "performance") echo '{"text":"performance","tooltip":"Performance","class":"performance"}' ;;
+  *) echo '{"text":"?","tooltip":"Unknown"}' ;;
+  esac
+}
+
+# Toggle between profiles
+toggle_profile() {
+  current=$(powerprofilesctl get)
+  case "$current" in
+  "power-saver") powerprofilesctl set balanced ;;
+  "balanced") powerprofilesctl set performance ;;
+  "performance") powerprofilesctl set power-saver ;;
+  esac
+}
+
+# Handle CLI args
+case "$1" in
+"toggle") toggle_profile ;;
+*) get_profile ;;
+esac

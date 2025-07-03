@@ -137,9 +137,23 @@ window#waybar {
   padding: 0 8px;
 }
 
-@keyframes blink {
-  to {
-    background: @red;
-    color: @crust;
-  }
+#custom-powerplan {
+  padding: 0 10px;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+#custom-powerplan.power-saver {
+  color: @green;
+}
+#custom-powerplan.balanced {
+  color: @yellow;
+}
+#custom-powerplan.performance {
+  color: @red;
+}
+
+tooltip {
+     border-radius: 4px;
+     background-color: @base;
 }
