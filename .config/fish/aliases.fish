@@ -12,6 +12,7 @@ alias cdbin='cd ~/.local/share/bin/'
 alias cdcode='cd ~/code/'
 alias cddots='cd ~/.dotfiles/'
 alias cdwezterm='cd && cd .config/wezterm'
+alias cdkitty='cd && cd .config/kitty'
 
 #fish
 alias fishsource='source ~/.config/fish/config.fish'
@@ -32,6 +33,7 @@ alias nvimconfig="cdnvim && nvim ."
 alias binconfig="cdbin && nvim ."
 alias hyprconfig="cdhypr && nvim ."
 alias weztermconfig="cdwezterm && nvim ."
+alias kittyconfig ="cdkitty && nvim ."
 
 # git
 alias gcl='git clone --depth 1'
@@ -42,7 +44,7 @@ alias gp='git push origin main'
 alias gpl='git pull'
 
 # other
-alias vim=nvim
+alias v=nvim
 alias lzd='lazydocker'
 alias lzg='lazygit'
 alias cl='clear'
@@ -72,3 +74,4 @@ alias nm='npm run migrate'
 alias zed='zeditor'
 
 alias sail='./vendor/bin/sail'
+alias glow='glow -s ~/.config/glow/themes/catppuccin.json'

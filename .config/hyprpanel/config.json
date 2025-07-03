@@ -111,5 +111,8 @@
     "nm-applet"
   ],
   "theme.bar.buttons.modules.cpuTemp.enableBorder": false,
-  "bar.customModules.cpuTemp.unit": "metric"
+  "bar.customModules.cpuTemp.unit": "metric",
+  "bar.customModules.storage.paths": [
+    "/"
+  ]
 }
