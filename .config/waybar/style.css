@@ -157,3 +157,6 @@ tooltip {
      border-radius: 4px;
      background-color: @base;
 }
+#custom-notification {
+  font-family: "Fira Code";
+}
