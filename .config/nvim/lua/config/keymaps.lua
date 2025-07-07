@@ -17,8 +17,8 @@ end, { desc = "Find Files" })
 
 map("n", "<leader>e", function()
   Snacks.picker.explorer({
-    ignored = false,
-    hidden = false,
+    ignored = true,
+    hidden = true,
   })
 end, { desc = "Explorer (cwd)" })
 
