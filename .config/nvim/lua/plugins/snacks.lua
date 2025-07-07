@@ -3,6 +3,7 @@ return {
   opts = {
     scroll = { enabled = false },
     dim = { enabled = false },
+    dashboard = {},
     picker = {
       sources = {
         zen = {
@@ -42,6 +43,11 @@ return {
             },
           },
           auto_close = true,
+        },
+        files = {
+          layout = {
+            preview = false, -- Disable preview for file picker
+          },
         },
       },
     },

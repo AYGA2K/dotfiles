@@ -12,13 +12,15 @@ map("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 map("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 map("n", "<leader><leader>", function()
-  Snacks.picker.files({})
+  Snacks.picker.files({
+    hidden = true,
+  })
 end, { desc = "Find Files" })
 
 map("n", "<leader>e", function()
   Snacks.picker.explorer({
-    ignored = false,
-    hidden = false,
+    ignored = true,
+    hidden = true,
   })
 end, { desc = "Explorer (cwd)" })
 
