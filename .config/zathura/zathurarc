@@ -3,3 +3,4 @@ include catppuccin-mocha
 map <C-l> feedkeys ":blist <Tab>"
 map <C-m> feedkeys ":bmark"
 set guioptions ""
+set selection-clipboard clipboard

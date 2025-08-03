@@ -49,16 +49,18 @@ window#waybar {
   padding: 0 8px;
   background: transparent;
   color: @subtext1;
-  border-bottom: 2px solid transparent;
+  /* border-bottom: 2px solid transparent; */
 }
 
-#workspaces button.focused {
-  color: @lavender;
-  border-bottom: 2px solid @lavender;
+#workspaces button.active {
+  color: @mauve;
+  text-shadow: 0 0 6px @mauve, 0 0 10px @mauve;
+  /* border-bottom: 2px solid @blue; */
 }
 
 #workspaces button.urgent {
   color: @red;
+  text-shadow: 0 0 8px @red;
 }
 
 #mode {
@@ -159,4 +161,9 @@ tooltip {
 }
 #custom-notification {
   font-family: "Fira Code";
+}
+
+#backlight {
+  color: @rosewater;
+  padding: 0 10px;
 }

@@ -11,28 +11,24 @@
     "hyprland/workspaces",
     "cpu",
     "memory",
-    "temperature"
+    "temperature",
+    "custom/powerplan"
   ],
   "modules-center": [
     "clock"
   ],
   "modules-right": [
-    "pulseaudio",
     "network",
+    "pulseaudio",
+    "backlight",
     "battery",
-    "custom/powerplan",
     "custom/notification",
     "tray"
   ],
   // Hyprland modules
   "hyprland/workspaces": {
-    "format": "{icon}",
-    "on-click": "activate",
-    "format-icons": {
-      "urgent": "",
-      "active": "",
-      "default": ""
-    }
+    "format": "{name}",
+    "on-click": "activate"
   },
   "hyprland/window": {
     "format": "{}",
@@ -125,4 +121,14 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "󰃞 ",
+      "󰃟 ",
+      "󰃠 "
+    ],
+    "on-scroll-up": "brightnessctl set +5%",
+    "on-scroll-down": "brightnessctl set 5%-"
+  }
 }
