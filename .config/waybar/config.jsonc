@@ -77,7 +77,8 @@
     "format-wifi": "󰖩 {essid}  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-ethernet": "󰈀 Wired  {bandwidthUpBytes}  {bandwidthDownBytes}",
     "format-disconnected": "󰖪 Offline",
-    "interval": 5
+    "interval": 5,
+    "on-click": "nmgui"
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
