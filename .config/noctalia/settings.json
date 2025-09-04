@@ -1,0 +1,187 @@
+{
+    "appLauncher": {
+        "backgroundOpacity": 1,
+        "enableClipboardHistory": true,
+        "pinnedExecs": [
+        ],
+        "position": "center"
+    },
+    "audio": {
+        "cavaFrameRate": 60,
+        "mprisBlacklist": [
+        ],
+        "preferredPlayer": "",
+        "showMiniplayerAlbumArt": true,
+        "showMiniplayerCava": true,
+        "visualizerType": "none",
+        "volumeStep": 5
+    },
+    "bar": {
+        "alwaysShowBatteryPercentage": false,
+        "backgroundOpacity": 0,
+        "monitors": [
+            "eDP-1"
+        ],
+        "position": "top",
+        "showActiveWindowIcon": false,
+        "showNetworkStats": true,
+        "showWorkspaceLabel": "index",
+        "useDistroLogo": false,
+        "widgets": {
+            "center": [
+                {
+                    "id": "Workspace"
+                }
+            ],
+            "left": [
+                {
+                    "id": "SystemMonitor"
+                },
+                {
+                    "id": "MediaMini"
+                }
+            ],
+            "right": [
+                {
+                    "id": "ScreenRecorderIndicator"
+                },
+                {
+                    "id": "Tray"
+                },
+                {
+                    "id": "NotificationHistory"
+                },
+                {
+                    "id": "WiFi"
+                },
+                {
+                    "id": "Bluetooth"
+                },
+                {
+                    "id": "Battery"
+                },
+                {
+                    "id": "Volume"
+                },
+                {
+                    "id": "Brightness"
+                },
+                {
+                    "id": "NightLight"
+                },
+                {
+                    "id": "Clock"
+                },
+                {
+                    "id": "SidePanelToggle"
+                }
+            ]
+        }
+    },
+    "brightness": {
+        "brightnessStep": 5
+    },
+    "colorSchemes": {
+        "darkMode": true,
+        "predefinedScheme": "/etc/xdg/quickshell/noctalia-shell/Assets/ColorScheme/Catppuccin.json",
+        "useWallpaperColors": false
+    },
+    "dock": {
+        "autoHide": false,
+        "exclusive": false,
+        "monitors": [
+        ]
+    },
+    "general": {
+        "animationSpeed": 1,
+        "avatarImage": "/home/ayga/.face",
+        "dimDesktop": false,
+        "radiusRatio": 1,
+        "showScreenCorners": false
+    },
+    "hooks": {
+        "darkModeChange": "",
+        "enabled": false,
+        "wallpaperChange": ""
+    },
+    "location": {
+        "name": "Dubai",
+        "reverseDayMonth": false,
+        "showDateWithClock": true,
+        "use12HourClock": true,
+        "useFahrenheit": false
+    },
+    "matugen": {
+        "enableUserTemplates": false,
+        "foot": false,
+        "fuzzel": false,
+        "ghostty": false,
+        "gtk3": false,
+        "gtk4": false,
+        "kitty": false,
+        "qt5": false,
+        "qt6": false,
+        "vesktop": false
+    },
+    "network": {
+        "bluetoothEnabled": true,
+        "wifiEnabled": true
+    },
+    "nightLight": {
+        "autoSchedule": true,
+        "dayTemp": "6000",
+        "enabled": true,
+        "manualSunrise": "00:00",
+        "manualSunset": "23:30",
+        "nightTemp": "5500"
+    },
+    "notifications": {
+        "monitors": [
+            "eDP-1"
+        ]
+    },
+    "screenRecorder": {
+        "audioCodec": "opus",
+        "audioSource": "default_output",
+        "colorRange": "limited",
+        "directory": "/home/ayga/Videos",
+        "frameRate": 60,
+        "quality": "very_high",
+        "showCursor": true,
+        "videoCodec": "h264",
+        "videoSource": "portal"
+    },
+    "settingsVersion": 1,
+    "ui": {
+        "fontBillboard": "Roboto",
+        "fontDefault": "Roboto",
+        "fontFixed": "JetBrains Mono",
+        "idleInhibitorEnabled": false,
+        "monitorsScaling": [
+            {
+                "name": "eDP-1",
+                "scale": 1
+            }
+        ]
+    },
+    "wallpaper": {
+        "directory": "/home/ayga/.config/hypr/bg",
+        "enableMultiMonitorDirectories": false,
+        "enabled": true,
+        "fillColor": "#000000",
+        "fillMode": "crop",
+        "monitors": [
+            {
+                "directory": "/home/ayga/.config/hypr/bg",
+                "name": "eDP-1",
+                "wallpaper": "/home/ayga/.config/hypr/bg/sunken-tower.png"
+            }
+        ],
+        "randomEnabled": true,
+        "randomIntervalSec": 300,
+        "setWallpaperOnAllMonitors": true,
+        "transitionDuration": 1500,
+        "transitionEdgeSmoothness": 0.05,
+        "transitionType": "random"
+    }
+}

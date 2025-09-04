@@ -6,6 +6,7 @@ return {
       virtual_text = false,
     },
     servers = {
+      qmlls = {},
       templ = {},
       html = {
         filetypes = { "html", "templ" },
