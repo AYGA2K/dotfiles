@@ -38,6 +38,12 @@
             "left": [
                 {
                     "id": "SystemMonitor",
+                    "showCpuTemp": true,
+                    "showCpuUsage": true,
+                    "showDiskUsage": false,
+                    "showGpuTemp": false,
+                    "showMemoryAsPercent": false,
+                    "showMemoryUsage": true,
                     "showNetworkStats": true
                 },
                 {
@@ -70,7 +76,8 @@
                 },
                 {
                     "alwaysShowPercentage": false,
-                    "id": "Battery"
+                    "id": "Battery",
+                    "warningThreshold": 30
                 },
                 {
                     "alwaysShowPercentage": false,
@@ -102,7 +109,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
-        "predefinedScheme": "/etc/xdg/quickshell/noctalia-shell/Assets/ColorScheme/Catppuccin.json",
+        "predefinedScheme": "",
         "useWallpaperColors": false
     },
     "dock": {
@@ -151,13 +158,14 @@
         "autoSchedule": true,
         "dayTemp": "6000",
         "enabled": true,
+        "forced": false,
         "manualSunrise": "00:00",
         "manualSunset": "23:30",
         "nightTemp": "5500"
     },
     "notifications": {
         "doNotDisturb": false,
-        "lastSeenTs": 1757438163000,
+        "lastSeenTs": 1757753999000,
         "monitors": [
             "eDP-1"
         ]
@@ -187,7 +195,6 @@
         ]
     },
     "wallpaper": {
-        "defaultWallpaper": "/etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/noctalia.png",
         "directory": "/home/ayga/.config/hypr/bg",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
@@ -197,7 +204,7 @@
             {
                 "directory": "/home/ayga/.config/hypr/bg",
                 "name": "eDP-1",
-                "wallpaper": "/home/ayga/.config/hypr/bg/tree-stump.jpg"
+                "wallpaper": "/home/ayga/.config/hypr/bg/pixel-car.png"
             }
         ],
         "randomEnabled": true,
