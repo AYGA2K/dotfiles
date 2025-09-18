@@ -6,6 +6,7 @@ return {
       virtual_text = false,
     },
     servers = {
+      tinymist = {},
       qmlls = {},
       templ = {},
       html = {

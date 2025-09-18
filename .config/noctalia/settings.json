@@ -8,18 +8,21 @@
         "useApp2Unit": false
     },
     "audio": {
-        "cavaFrameRate": 60,
+        "cavaFrameRate": 30,
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
         "showMiniplayerAlbumArt": true,
         "showMiniplayerCava": false,
-        "visualizerType": "none",
+        "visualizerType": "linear",
         "volumeStep": 5
     },
     "bar": {
         "alwaysShowBatteryPercentage": false,
         "backgroundOpacity": 0,
+        "floating": false,
+        "marginHorizontal": 0.25,
+        "marginVertical": 0.25,
         "monitors": [
             "eDP-1"
         ],
@@ -31,6 +34,7 @@
         "widgets": {
             "center": [
                 {
+                    "hideUnoccupied": false,
                     "id": "Workspace",
                     "labelMode": "index"
                 }
@@ -76,25 +80,31 @@
                 },
                 {
                     "alwaysShowPercentage": false,
+                    "displayMode": "onhover",
                     "id": "Battery",
                     "warningThreshold": 30
                 },
                 {
+                    "displayMode": "onhover",
+                    "id": "Microphone"
+                },
+                {
                     "alwaysShowPercentage": false,
+                    "displayMode": "onhover",
                     "id": "Volume"
                 },
                 {
                     "alwaysShowPercentage": false,
+                    "displayMode": "onhover",
                     "id": "Brightness"
                 },
                 {
                     "id": "NightLight"
                 },
                 {
+                    "displayFormat": "time-date",
                     "id": "Clock",
                     "reverseDayMonth": false,
-                    "showDate": true,
-                    "showSeconds": false,
                     "use12HourClock": true
                 },
                 {
@@ -116,6 +126,7 @@
         "autoHide": false,
         "backgroundOpacity": 1,
         "exclusive": false,
+        "floatingRatio": 1,
         "monitors": [
         ]
     },
@@ -123,7 +134,9 @@
         "animationSpeed": 1,
         "avatarImage": "/home/ayga/.face",
         "dimDesktop": false,
+        "forceBlackScreenCorners": false,
         "radiusRatio": 1,
+        "screenRadiusRatio": 1,
         "showScreenCorners": false
     },
     "hooks": {
@@ -146,6 +159,7 @@
         "gtk3": false,
         "gtk4": false,
         "kitty": false,
+        "pywalfox": false,
         "qt5": false,
         "qt6": false,
         "vesktop": false
@@ -155,20 +169,23 @@
         "wifiEnabled": true
     },
     "nightLight": {
-        "autoSchedule": true,
+        "autoSchedule": false,
         "dayTemp": "6000",
         "enabled": true,
         "forced": false,
-        "manualSunrise": "00:00",
-        "manualSunset": "23:30",
+        "manualSunrise": "07:00",
+        "manualSunset": "18:00",
         "nightTemp": "5500"
     },
     "notifications": {
+        "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1757753999000,
+        "lastSeenTs": 1757758256000,
+        "lowUrgencyDuration": 3,
         "monitors": [
             "eDP-1"
-        ]
+        ],
+        "normalUrgencyDuration": 8
     },
     "screenRecorder": {
         "audioCodec": "opus",
@@ -204,7 +221,7 @@
             {
                 "directory": "/home/ayga/.config/hypr/bg",
                 "name": "eDP-1",
-                "wallpaper": "/home/ayga/.config/hypr/bg/pixel-car.png"
+                "wallpaper": "/home/ayga/.config/hypr/bg/cottages-river.png"
             }
         ],
         "randomEnabled": true,
