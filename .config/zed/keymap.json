@@ -74,5 +74,11 @@
     "bindings": {
       "alt-r": "projects::OpenRecent"
     }
+  },
+  {
+    "context": "VimControl",
+    "bindings": {
+      "ctrl-j": "pane::TogglePinTab"
+    }
   }
 ]

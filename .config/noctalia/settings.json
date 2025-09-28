@@ -6,7 +6,7 @@
         ],
         "position": "center",
         "sortByMostUsed": true,
-        "useApp2Unit": true
+        "useApp2Unit": false
     },
     "audio": {
         "cavaFrameRate": 30,
@@ -180,7 +180,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1758448159000,
+        "lastSeenTs": 1759064531000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -230,7 +230,7 @@
             {
                 "directory": "/home/ayga/.config/hypr/bg",
                 "name": "eDP-1",
-                "wallpaper": "/home/ayga/.config/hypr/bg/tower.png"
+                "wallpaper": "/home/ayga/.config/hypr/bg/crane.png"
             }
         ],
         "randomEnabled": true,

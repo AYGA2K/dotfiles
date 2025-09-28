@@ -39,50 +39,6 @@ msg "$BLUE" "[→] Updating system..."
 gum spin --spinner minidot --title.foreground "$BLUE" --title "Updating system packages" -- \
   sudo pacman -Syu --noconfirm
 
-# Install prerequisites
-msg "$BLUE" "[→] Installing prerequisites..."
-gum spin --spinner minidot --title.foreground "$BLUE" --title "Installing build essentials" -- \
-  sudo pacman -S --needed --noconfirm git base-devel
-
-# Enable Chaotic AUR
-if ! grep -q "\[chaotic-aur\]" /etc/pacman.conf; then
-  msg "$BLUE" "[→] Adding Chaotic AUR..."
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Adding Chaotic AUR keys" -- \
-    sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Signing Chaotic AUR keys" -- \
-    sudo pacman-key --lsign-key 3056513887B78AEB
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Installing Chaotic AUR keyring" -- \
-    sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Installing Chaotic AUR mirrorlist" -- \
-    sudo pacman -U --noconfirm 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-
-  echo -e "\n[chaotic-aur]\nInclude = /etc/pacman.d/chaotic-mirrorlist" |
-    gum spin --spinner minidot --title.foreground "$BLUE" --title "Updating pacman.conf" -- sudo tee -a /etc/pacman.conf
-
-  # Refresh package databases
-  msg "$BLUE" "[→] Refreshing package databases..."
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Refreshing package databases" -- sudo pacman -Sy
-else
-  msg "$GREEN" "[✓] Chaotic AUR already configured"
-fi
-
-# Install yay using yay-bin
-if ! command -v yay &>/dev/null; then
-  msg "$BLUE" "[→] Installing yay from yay-bin..."
-  WORKDIR=$(mktemp -d)
-  gum spin --spinner minidot --title.foreground "$BLUE" --title "Cloning yay-bin repository" -- \
-    git clone https://aur.archlinux.org/yay-bin.git "$WORKDIR/yay-bin"
-  cd "$WORKDIR/yay-bin"
-  if ! gum spin --spinner minidot --title.foreground "$BLUE" --title "Building and installing yay" -- makepkg -si --noconfirm; then
-    msg "$RED" "[✗] Failed to install yay"
-    cd "$ORIGINAL_DIR"
-    rm -rf "$WORKDIR"
-    exit 1
-  fi
-  cd "$ORIGINAL_DIR"
-  rm -rf "$WORKDIR"
-fi
-
 # List of packages to install
 packages=(
   alacritty fish starship hyprland hyprlock hypridle hyprpaper rofi
@@ -91,7 +47,7 @@ packages=(
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
   hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji ntfs-automount noctalia-shell-git wlsunset matugen cava
+  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji ntfs-automount noctalia-shell wlsunset matugen cava brave-bin
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."
