@@ -5,21 +5,21 @@
         "pinnedExecs": [
         ],
         "position": "center",
-        "useApp2Unit": false
+        "sortByMostUsed": true,
+        "useApp2Unit": true
     },
     "audio": {
         "cavaFrameRate": 30,
         "mprisBlacklist": [
         ],
         "preferredPlayer": "",
-        "showMiniplayerAlbumArt": true,
-        "showMiniplayerCava": false,
         "visualizerType": "linear",
+        "volumeOverdrive": false,
         "volumeStep": 5
     },
     "bar": {
-        "alwaysShowBatteryPercentage": false,
         "backgroundOpacity": 0,
+        "density": "default",
         "floating": false,
         "marginHorizontal": 0.25,
         "marginVertical": 0.25,
@@ -27,10 +27,7 @@
             "eDP-1"
         ],
         "position": "top",
-        "showActiveWindowIcon": false,
-        "showNetworkStats": true,
-        "showWorkspaceLabel": "index",
-        "useDistroLogo": false,
+        "showCapsule": true,
         "widgets": {
             "center": [
                 {
@@ -45,7 +42,6 @@
                     "showCpuTemp": true,
                     "showCpuUsage": true,
                     "showDiskUsage": false,
-                    "showGpuTemp": false,
                     "showMemoryAsPercent": false,
                     "showMemoryUsage": true,
                     "showNetworkStats": true
@@ -54,7 +50,9 @@
                     "id": "PowerProfile"
                 },
                 {
+                    "autoHide": true,
                     "id": "MediaMini",
+                    "scrollingMode": "hover",
                     "showAlbumArt": true,
                     "showVisualizer": false,
                     "visualizerType": "linear"
@@ -62,7 +60,7 @@
             ],
             "right": [
                 {
-                    "id": "ScreenRecorderIndicator"
+                    "id": "ScreenRecorder"
                 },
                 {
                     "id": "Tray"
@@ -79,7 +77,6 @@
                     "id": "Bluetooth"
                 },
                 {
-                    "alwaysShowPercentage": false,
                     "displayMode": "onhover",
                     "id": "Battery",
                     "warningThreshold": 30
@@ -89,12 +86,10 @@
                     "id": "Microphone"
                 },
                 {
-                    "alwaysShowPercentage": false,
                     "displayMode": "onhover",
                     "id": "Volume"
                 },
                 {
-                    "alwaysShowPercentage": false,
                     "displayMode": "onhover",
                     "id": "Brightness"
                 },
@@ -102,13 +97,16 @@
                     "id": "NightLight"
                 },
                 {
-                    "displayFormat": "time-date",
+                    "formatHorizontal": "HH:mm ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
-                    "reverseDayMonth": false,
-                    "use12HourClock": true
+                    "useMonospacedFont": true,
+                    "usePrimaryColor": true
                 },
                 {
-                    "id": "SidePanelToggle",
+                    "customIconPath": "",
+                    "icon": "noctalia",
+                    "id": "ControlCenter",
                     "useDistroLogo": false
                 }
             ]
@@ -128,10 +126,12 @@
         "exclusive": false,
         "floatingRatio": 1,
         "monitors": [
+        ],
+        "pinnedApps": [
         ]
     },
     "general": {
-        "animationSpeed": 1,
+        "animationSpeed": 2,
         "avatarImage": "/home/ayga/.face",
         "dimDesktop": false,
         "forceBlackScreenCorners": false,
@@ -146,9 +146,8 @@
     },
     "location": {
         "name": "Dubai",
-        "reverseDayMonth": false,
-        "showDateWithClock": true,
-        "use12HourClock": true,
+        "showWeekNumberInCalendar": false,
+        "use12hourFormat": true,
         "useFahrenheit": false
     },
     "matugen": {
@@ -172,20 +171,30 @@
         "autoSchedule": false,
         "dayTemp": "6000",
         "enabled": true,
-        "forced": false,
+        "forced": true,
         "manualSunrise": "07:00",
         "manualSunset": "18:00",
         "nightTemp": "5500"
     },
     "notifications": {
+        "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1757758256000,
+        "lastSeenTs": 1758448159000,
+        "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
             "eDP-1"
         ],
-        "normalUrgencyDuration": 8
+        "normalUrgencyDuration": 8,
+        "respectExpireTimeout": false
+    },
+    "osd": {
+        "autoHideMs": 2000,
+        "enabled": true,
+        "location": "top_right",
+        "monitors": [
+        ]
     },
     "screenRecorder": {
         "audioCodec": "opus",
@@ -221,7 +230,7 @@
             {
                 "directory": "/home/ayga/.config/hypr/bg",
                 "name": "eDP-1",
-                "wallpaper": "/home/ayga/.config/hypr/bg/cottages-river.png"
+                "wallpaper": "/home/ayga/.config/hypr/bg/tower.png"
             }
         ],
         "randomEnabled": true,

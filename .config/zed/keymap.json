@@ -21,8 +21,10 @@
   {
     "context": "Editor && vim_mode==normal",
     "bindings": {
-      "j": "editor::MoveDown",
-      "k": "editor::MoveUp",
+      // "j": "editor::MoveDown",
+      // "k": "editor::MoveUp",
+      "j": ["workspace::SendKeystrokes", "g j"],
+      "k": ["workspace::SendKeystrokes", "g k"],
       "shift-d $": "editor::DeleteToEndOfLine",
       "shift-d shift-d": "editor::DeleteLine",
       "ctrl-u": ["workspace::SendKeystrokes", "ctrl-up z z"],
