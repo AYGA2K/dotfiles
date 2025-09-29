@@ -117,6 +117,7 @@
     },
     "colorSchemes": {
         "darkMode": true,
+        "matugenSchemeType": "scheme-fruit-salad",
         "predefinedScheme": "",
         "useWallpaperColors": false
     },
@@ -131,6 +132,7 @@
         ]
     },
     "general": {
+        "animationDisabled": false,
         "animationSpeed": 2,
         "avatarImage": "/home/ayga/.face",
         "dimDesktop": false,
@@ -164,7 +166,6 @@
         "vesktop": false
     },
     "network": {
-        "bluetoothEnabled": true,
         "wifiEnabled": true
     },
     "nightLight": {
@@ -180,7 +181,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1759064531000,
+        "lastSeenTs": 1759143871000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [

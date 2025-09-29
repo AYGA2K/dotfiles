@@ -7,7 +7,11 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
-  "icon_theme": "Catppuccin Mocha",
+  "icon_theme": {
+    "mode": "system",
+    "light": "Catppuccin Mocha",
+    "dark": "Catppuccin Mocha"
+  },
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
@@ -24,7 +28,7 @@
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "buffer_font_size": 17,
   "theme": {
-    "mode": "dark",
+    "mode": "system",
     "light": "Catppuccin Mocha",
     "dark": "Catppuccin Mocha"
   },
