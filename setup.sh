@@ -41,7 +41,7 @@ gum spin --spinner minidot --title.foreground "$BLUE" --title "Updating system p
 
 # List of packages to install
 packages=(
-  alacritty fish starship hyprland hyprlock hypridle hyprpaper rofi
+  hyprshot alacritty fish starship hyprland hyprlock hypridle hyprpaper rofi
   wlogout swaylock keyd lsd lazygit lazydocker mpv qt5ct qt6ct neovim
   unzip stow ttf-jetbrains-mono-nerd ttf-cascadia-code-nerd wl-clipboard
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
