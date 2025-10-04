@@ -6,6 +6,7 @@
         ],
         "position": "center",
         "sortByMostUsed": true,
+        "terminalCommand": "xterm -e",
         "useApp2Unit": false
     },
     "audio": {
@@ -97,10 +98,11 @@
                     "id": "NightLight"
                 },
                 {
+                    "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
-                    "useMonospacedFont": true,
+                    "useCustomFont": false,
                     "usePrimaryColor": true
                 },
                 {
@@ -128,11 +130,12 @@
         "floatingRatio": 1,
         "monitors": [
         ],
+        "onlySameOutput": true,
         "pinnedApps": [
         ]
     },
     "general": {
-        "animationDisabled": false,
+        "animationDisabled": true,
         "animationSpeed": 2,
         "avatarImage": "/home/ayga/.face",
         "dimDesktop": false,
@@ -181,7 +184,7 @@
         "alwaysOnTop": false,
         "criticalUrgencyDuration": 15,
         "doNotDisturb": false,
-        "lastSeenTs": 1759143871000,
+        "lastSeenTs": 1759519751000,
         "location": "top_right",
         "lowUrgencyDuration": 3,
         "monitors": [
@@ -210,10 +213,11 @@
     },
     "settingsVersion": 1,
     "ui": {
-        "fontBillboard": "Roboto",
         "fontDefault": "Roboto",
+        "fontDefaultScale": 1,
         "fontFixed": "JetBrains Mono",
-        "idleInhibitorEnabled": false,
+        "fontFixedScale": 1,
+        "idleInhibitorEnabled": true,
         "monitorsScaling": [
             {
                 "name": "eDP-1",
@@ -231,7 +235,7 @@
             {
                 "directory": "/home/ayga/.config/hypr/bg",
                 "name": "eDP-1",
-                "wallpaper": "/home/ayga/.config/hypr/bg/river-city.jpg"
+                "wallpaper": "/home/ayga/.config/hypr/bg/dark-forest.jpg"
             }
         ],
         "randomEnabled": true,
