@@ -81,7 +81,7 @@
   "maxWorkspaceIcons": 3,
   "workspacesPerMonitor": true,
   "workspaceNameIcons": {},
-  "waveProgressEnabled": true,
+  "waveProgressEnabled": false,
   "clockCompactMode": false,
   "focusedWindowCompactMode": false,
   "runningAppsCompactMode": true,

@@ -47,7 +47,7 @@ packages=(
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
   hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji ntfs-automount noctalia-shell wlsunset matugen cava brave-bin
+  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji gammastep cava dgop dms-shell-git colloid-gtk-theme-git brave-bin
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."
