@@ -40,10 +40,10 @@
   "format_on_save": "on",
   "current_line_highlight": "none",
   "indent_guides": {
-    "enabled": false,
+    "enabled": true,
     "line_width": 1,
     "active_line_width": 1,
-    "coloring": "fixed",
+    "coloring": "indent_aware",
     "background_coloring": "disabled"
   },
   "inlay_hints": {

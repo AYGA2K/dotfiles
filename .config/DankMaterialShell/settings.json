@@ -95,6 +95,10 @@
       "enabled": true
     },
     {
+      "id": "network_speed_monitor",
+      "enabled": true
+    },
+    {
       "id": "music",
       "enabled": true
     }
@@ -105,14 +109,6 @@
   "dankBarRightWidgets": [
     {
       "id": "systemTray",
-      "enabled": true
-    },
-    {
-      "id": "clipboard",
-      "enabled": true
-    },
-    {
-      "id": "network_speed_monitor",
       "enabled": true
     },
     {
@@ -136,7 +132,15 @@
       "enabled": true
     },
     {
-      "id": "notepadButton",
+      "id": "privacyIndicator",
+      "enabled": true
+    },
+    {
+      "id": "systemUpdate",
+      "enabled": true
+    },
+    {
+      "id": "colorPicker",
       "enabled": true
     }
   ],
@@ -144,14 +148,18 @@
   "spotlightModalViewMode": "list",
   "networkPreference": "auto",
   "iconTheme": "Colloid-Dark",
-  "useOSLogo": false,
-  "osLogoColorOverride": "",
-  "osLogoBrightness": 0.5,
-  "osLogoContrast": 1,
+  "launcherLogoMode": "apps",
+  "launcherLogoCustomPath": "",
+  "launcherLogoColorOverride": "",
+  "launcherLogoColorInvertOnMode": false,
+  "launcherLogoBrightness": 0.5,
+  "launcherLogoContrast": 1,
+  "launcherLogoSizeOffset": 0,
   "fontFamily": "Inter Variable",
   "monoFontFamily": "Fira Code",
   "fontWeight": 400,
   "fontScale": 1,
+  "dankBarFontScale": 1,
   "notepadUseMonospace": true,
   "notepadFontFamily": "",
   "notepadFontSize": 14,
@@ -172,12 +180,13 @@
   "dankBarAutoHide": false,
   "dankBarOpenOnOverview": false,
   "dankBarVisible": true,
-  "dankBarSpacing": 4,
-  "dankBarBottomGap": 0,
-  "dankBarInnerPadding": 4,
+  "dankBarSpacing": 0,
+  "dankBarBottomGap": -4,
+  "dankBarInnerPadding": 0,
   "dankBarSquareCorners": false,
   "dankBarNoBackground": false,
   "dankBarGothCornersEnabled": false,
+  "dankBarBorderEnabled": false,
   "dankBarPosition": 0,
   "lockScreenShowPowerActions": true,
   "hideBrightnessSlider": false,
@@ -187,7 +196,7 @@
   "notificationTimeoutNormal": 5000,
   "notificationTimeoutCritical": 0,
   "notificationPopupPosition": 0,
+  "osdAlwaysShowValue": false,
   "screenPreferences": {},
-  "pluginSettings": {},
   "animationSpeed": 0
 }

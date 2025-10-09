@@ -40,7 +40,13 @@
       "space z": "workspace::ToggleCenteredLayout",
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
-      "space c a": "editor::ToggleCodeActions"
+      "space c a": "editor::ToggleCodeActions",
+      "space g g": [
+        "task::Spawn",
+        {
+          "task_name": "lazygit"
+        }
+      ]
     }
   },
   {
@@ -62,7 +68,7 @@
     }
   },
   {
-    "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
+    "context": "Workspace || EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space b d": "pane::CloseActiveItem",
       "space e": "workspace::ToggleLeftDock",
