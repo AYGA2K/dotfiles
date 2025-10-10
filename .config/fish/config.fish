@@ -12,6 +12,7 @@ set -U fish_user_paths $fish_user_paths $HOME/.local/bin
 set -U fish_user_paths $fish_user_paths $HOME/usr/local/bin
 set -U fish_user_paths $fish_user_paths /usr/local/share/hyprpanel/scripts
 set -x BROWSER zen-browser
+set -x EDITOR zed
 # Handy change dir shortcuts
 abbr .. 'cd ..'
 abbr ... 'cd ../..'

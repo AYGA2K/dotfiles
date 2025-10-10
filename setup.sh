@@ -41,7 +41,7 @@ gum spin --spinner minidot --title.foreground "$BLUE" --title "Updating system p
 
 # List of packages to install
 packages=(
-  hyprshot alacritty fish starship hyprland hyprlock hypridle hyprpaper rofi
+  hyprshot alacritty zsh hyprland hyprlock hypridle hyprpaper rofi
   wlogout swaylock keyd lsd lazygit lazydocker mpv qt5ct qt6ct neovim
   unzip stow ttf-jetbrains-mono-nerd ttf-cascadia-code-nerd wl-clipboard
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
@@ -66,10 +66,13 @@ else
   msg "$PEACH" "[!] No existing .config directory found"
 fi
 
-# Make Fish Default Shell
-if [ "$SHELL" != "/bin/fish" ]; then
-  msg "$BLUE" "[→] Setting Fish as default shell..."
-  chsh -s /bin/fish
+# Install OhMyZsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Make Zsh Default Shell
+if [ "$SHELL" != "/bin/zsh" ]; then
+  msg "$BLUE" "[→] Setting Zsh as default shell..."
+  chsh -s /bin/zsh
 fi
 
 msg "$BLUE" "[→] Stowing dotfiles..."
