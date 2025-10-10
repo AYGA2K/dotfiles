@@ -74,7 +74,7 @@
       "space e": "workspace::ToggleLeftDock",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
-      "space f c": "zed::OpenKeymap",
+      "space f b": "zed::OpenKeymap",
       "space f s": "zed::OpenSettings"
     }
   },

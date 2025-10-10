@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette
 {
+  "auto_update": false,
   "edit_predictions": {
     "mode": "subtle",
     "copilot": {
@@ -16,7 +17,7 @@
     "enabled_in_text_threads": false
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
   "vim_mode": true,
   "ui_font_size": 16,
@@ -35,10 +36,12 @@
   "format_on_save": "on",
   "current_line_highlight": "none",
   "indent_guides": {
-    "enabled": false,
+    "enabled": true,
     "line_width": 1,
     "active_line_width": 1,
-    "coloring": "fixed",
+    // "coloring": "fixed",
+    // "background_coloring": "disabled"
+    "coloring": "indent_aware",
     "background_coloring": "disabled"
   },
   "inlay_hints": {
@@ -51,12 +54,11 @@
   },
   "git": {
     "inline_blame": {
-      "enabled": true
+      "enabled": false
     }
   },
   "gutter": {
     "line_numbers": true,
-    "code_actions": false,
     "runnables": false
   },
   "centered_layout": {
@@ -66,7 +68,6 @@
   "preferred_line_length": 80,
   "soft_wrap": "bounded",
   "show_wrap_guides": false,
-  "working_directory": "current_project_directory",
   "project_panel": {
     "button": true,
     "default_width": 260,
@@ -100,54 +101,8 @@
     "enable_preview_from_code_navigation": false
   },
   "languages": {
-    "HTML": {
-      "language_servers": [
-        "tailwindcss-language-server",
-        "vscode-html-language-server",
-        "emmet-language-server"
-      ]
-    },
-    "Templ": {
-      "formatter": {
-        "external": {
-          "command": "templ",
-          "arguments": ["fmt", "-stdin-filepath", "{buffer_path}"]
-        }
-      },
-      "format_on_save": "on",
-      "language_servers": [
-        "tailwindcss-language-server",
-        "vscode-html-language-server",
-        "emmet-language-server"
-      ],
-      "inlay_hints": {
-        "enabled": true
-      }
-    }
-  },
-  "lsp": {
-    "vscode-html-language-server": {
-      "settings": {
-        "embeddedLanguages": {
-          "templ": "html"
-        }
-      }
-    },
-    "emmet-language-server": {
-      "settings": {
-        "includeLanguages": {
-          "templ": "html",
-          "Templ": "html"
-        }
-      }
-    },
-    "tailwindcss-language-server": {
-      "settings": {
-        "includeLanguages": {
-          "templ": "html",
-          "Templ": "html"
-        }
-      }
+    "JavaScript": {
+      "language_servers": ["typescript-language-server", "!vtsls", "..."]
     }
   }
 }
