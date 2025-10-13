@@ -2,6 +2,7 @@
   "currentThemeName": "custom",
   "customThemeFile": "/home/ayga/.config/DankMaterialShell/theme.json",
   "matugenScheme": "scheme-tonal-spot",
+  "runUserMatugenTemplates": true,
   "dankBarTransparency": 0,
   "dankBarWidgetTransparency": 1,
   "popupTransparency": 1,
@@ -101,6 +102,10 @@
     {
       "id": "music",
       "enabled": true
+    },
+    {
+      "id": "dankPomodoroTimer",
+      "enabled": true
     }
   ],
   "dankBarCenterWidgets": [
@@ -142,12 +147,16 @@
     {
       "id": "colorPicker",
       "enabled": true
+    },
+    {
+      "id": "powerUsagePlugin",
+      "enabled": true
     }
   ],
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
-  "networkPreference": "auto",
-  "iconTheme": "Colloid-Dark",
+  "networkPreference": "wifi",
+  "iconTheme": "Tela-dark",
   "launcherLogoMode": "apps",
   "launcherLogoCustomPath": "",
   "launcherLogoColorOverride": "",
@@ -187,6 +196,9 @@
   "dankBarNoBackground": false,
   "dankBarGothCornersEnabled": false,
   "dankBarBorderEnabled": false,
+  "dankBarBorderColor": "surfaceText",
+  "dankBarBorderOpacity": 1,
+  "dankBarBorderThickness": 1,
   "dankBarPosition": 0,
   "lockScreenShowPowerActions": true,
   "hideBrightnessSlider": false,

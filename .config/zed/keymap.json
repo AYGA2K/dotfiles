@@ -12,7 +12,7 @@
     }
   },
   {
-    "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
+    "context": "Editor",
     "bindings": {
       "alt-x": "workspace::Save",
       "ctrl-s": ["workspace::SendKeystrokes", "alt-x escape"]
@@ -21,8 +21,6 @@
   {
     "context": "Editor && vim_mode==normal",
     "bindings": {
-      // "j": "editor::MoveDown",
-      // "k": "editor::MoveUp",
       "j": ["workspace::SendKeystrokes", "g j"],
       "k": ["workspace::SendKeystrokes", "g k"],
       "shift-d $": "editor::DeleteToEndOfLine",
@@ -68,14 +66,21 @@
     }
   },
   {
-    "context": "Workspace || EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
+    "context": "!Editor",
+    "bindings": {
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "ProjectPanel || (Editor && vim_mode == normal)",
     "bindings": {
       "space b d": "pane::CloseActiveItem",
-      "space e": "workspace::ToggleLeftDock",
+      "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
       "space f b": "zed::OpenKeymap",
-      "space f s": "zed::OpenSettings"
+      "space f s": "zed::OpenSettings",
+      "space g g": "git_panel::ToggleFocus"
     }
   },
   {
@@ -87,6 +92,18 @@
     "context": "VimControl",
     "bindings": {
       "ctrl-j": "pane::TogglePinTab"
+    }
+  },
+  {
+    "context": "GitPanel",
+    "bindings": {
+      "space g u": "git::UnstageFile",
+      "space g p": "git::Push",
+      "space g P": "git::Pull",
+      "space g d": "git::RestoreFile",
+      "space g a": "git::StageAll",
+      "space g b": "git::Switch",
+      "space e": "project_panel::ToggleFocus"
     }
   }
 ]

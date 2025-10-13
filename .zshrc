@@ -177,3 +177,5 @@ alias nm='npm run migrate'
 
 # zed
 alias zed='zeditor'
+
+export PATH="$PATH:$(go env GOPATH)/bin"
