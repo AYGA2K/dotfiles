@@ -96,9 +96,7 @@
   {
     "context": "GitPanel",
     "bindings": {
-      "space g s": "git::StageFile",
       "space g u": "git::UnstageFile",
-      "space g c": "git::Commit",
       "space g p": "git::Push",
       "space g P": "git::Pull",
       "space g d": "git::RestoreFile",
