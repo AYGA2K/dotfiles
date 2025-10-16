@@ -28,7 +28,8 @@
       "shift-d $": "editor::DeleteToEndOfLine",
       "shift-d shift-d": "editor::DeleteLine",
       "ctrl-u": ["workspace::SendKeystrokes", "ctrl-up z z"],
-      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"]
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"],
+      "g c": "editor::ToggleComments"
     }
   },
   {
@@ -74,6 +75,7 @@
       "space b d": "pane::CloseActiveItem",
       "space b r": "pane::CloseItemsToTheRight",
       "space b l": "pane::CloseItemsToTheLeft",
+      "space b a": "pane::CloseAllItems",
       "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
@@ -96,12 +98,12 @@
   {
     "context": "GitPanel",
     "bindings": {
-      "space g u": "git::UnstageFile",
-      "space g p": "git::Push",
-      "space g P": "git::Pull",
-      "space g d": "git::RestoreFile",
-      "space g a": "git::StageAll",
-      "space g b": "git::Switch"
+      "alt-u": "git::UnstageFile",
+      "alt-p": "git::Push",
+      "alt-P": "git::Pull",
+      "alt-d": "git::RestoreFile",
+      "alt-a": "git::StageAll",
+      "alt-b": "git::Switch"
     }
   }
 ]
