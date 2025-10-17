@@ -21,8 +21,6 @@
   {
     "context": "Editor && vim_mode==normal",
     "bindings": {
-      // "j": "editor::MoveDown",
-      // "k": "editor::MoveUp",
       "j": ["workspace::SendKeystrokes", "g j"],
       "k": ["workspace::SendKeystrokes", "g k"],
       "shift-d $": "editor::DeleteToEndOfLine",
@@ -79,8 +77,8 @@
       "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
-      "space f b": "zed::OpenKeymap",
-      "space f s": "zed::OpenSettings",
+      "space f b": "zed::OpenKeymapFile",
+      "space f s": "zed::OpenSettingsFile",
       "space g g": "git_panel::ToggleFocus"
     }
   },
@@ -104,6 +102,31 @@
       "alt-d": "git::RestoreFile",
       "alt-a": "git::StageAll",
       "alt-b": "git::Switch"
+    }
+  },
+  {
+    "context": "FileFinder || (FileFinder > Picker > Editor)",
+    "bindings": {
+      "ctrl-p": "menu::SelectPrevious"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": null,
+      "ctrl-p": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-/": null
     }
   }
 ]
