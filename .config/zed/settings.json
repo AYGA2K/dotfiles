@@ -26,9 +26,7 @@
   "terminal": {
     "button": false
   },
-  "git_panel": {
-    "button": false
-  },
+
   // "disable_ai": true,
   "auto_update": false,
   "edit_predictions": {
@@ -94,7 +92,6 @@
   "show_wrap_guides": false,
   "project_panel": {
     "hide_root": true,
-    "button": false,
     "default_width": 260,
     "dock": "left",
     "file_icons": true,
