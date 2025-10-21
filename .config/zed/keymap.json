@@ -79,7 +79,8 @@
       "space s s": "outline::Toggle",
       "space f b": "zed::OpenKeymapFile",
       "space f s": "zed::OpenSettingsFile",
-      "space g g": "git_panel::ToggleFocus"
+      "space g g": "git_panel::ToggleFocus",
+      "space g c": "git::CheckoutBranch"
     }
   },
   {
@@ -102,6 +103,12 @@
       "alt-d": "git::RestoreFile",
       "alt-a": "git::StageAll",
       "alt-b": "git::Switch"
+    }
+  },
+  {
+    "context": "GitPanel && vim_mode == normal || !Editor",
+    "bindings": {
+      "space e": "project_panel::ToggleFocus"
     }
   },
   {
