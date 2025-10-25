@@ -12,9 +12,9 @@
     }
   },
   {
-    "context": "Editor",
+    "context": "Editor && (vim_mode == insert) && !VimWaiting && !menu",
     "bindings": {
-      "alt-x": "workspace::Save",
+      "alt-x": "workspace::SaveWithoutFormat",
       "ctrl-s": ["workspace::SendKeystrokes", "alt-x escape"]
     }
   },
@@ -26,7 +26,8 @@
       "shift-d $": "editor::DeleteToEndOfLine",
       "shift-d shift-d": "editor::DeleteLine",
       "ctrl-u": ["workspace::SendKeystrokes", "ctrl-up z z"],
-      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"]
+      "ctrl-d": ["workspace::SendKeystrokes", "ctrl-down z z"],
+      "g c": "editor::ToggleComments"
     }
   },
   {
@@ -39,6 +40,7 @@
       "space m p": "markdown::OpenPreview",
       "space m P": "markdown::OpenPreviewToTheSide",
       "space c a": "editor::ToggleCodeActions",
+      "space c f": "editor::Format",
       "space g g": [
         "task::Spawn",
         {
@@ -66,21 +68,19 @@
     }
   },
   {
-    "context": "!Editor",
-    "bindings": {
-      "space space": "file_finder::Toggle"
-    }
-  },
-  {
-    "context": "ProjectPanel || (Editor && vim_mode == normal)",
+    "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space b d": "pane::CloseActiveItem",
+      "space b r": "pane::CloseItemsToTheRight",
+      "space b l": "pane::CloseItemsToTheLeft",
+      "space b a": "pane::CloseAllItems",
       "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
-      "space f b": "zed::OpenKeymap",
-      "space f s": "zed::OpenSettings",
-      "space g g": "git_panel::ToggleFocus"
+      "space f b": "zed::OpenKeymapFile",
+      "space f s": "zed::OpenSettingsFile",
+      "space g g": "git_panel::ToggleFocus",
+      "space g c": "git::CheckoutBranch"
     }
   },
   {
@@ -97,13 +97,43 @@
   {
     "context": "GitPanel",
     "bindings": {
-      "space g u": "git::UnstageFile",
-      "space g p": "git::Push",
-      "space g P": "git::Pull",
-      "space g d": "git::RestoreFile",
-      "space g a": "git::StageAll",
-      "space g b": "git::Switch",
+      "alt-u": "git::UnstageFile",
+      "alt-p": "git::Push",
+      "alt-P": "git::Pull",
+      "alt-d": "git::RestoreFile",
+      "alt-a": "git::StageAll",
+      "alt-b": "git::Switch"
+    }
+  },
+  {
+    "context": "GitPanel && vim_mode == normal || !Editor",
+    "bindings": {
       "space e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "FileFinder || (FileFinder > Picker > Editor)",
+    "bindings": {
+      "ctrl-p": "menu::SelectPrevious"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-n": null,
+      "ctrl-p": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-k": null
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-/": null
     }
   }
 ]

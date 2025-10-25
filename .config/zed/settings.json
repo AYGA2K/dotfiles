@@ -1,9 +1,25 @@
 {
-  "icon_theme": {
-    "mode": "system",
-    "light": "Catppuccin Mocha",
-    "dark": "Catppuccin Mocha"
+  "base_keymap": "VSCode",
+  "agent": {
+    "enabled": false
   },
+  "search": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "notification_panel": {
+    "button": false
+  },
+  "terminal": {
+    "button": false
+  },
+
+  // "disable_ai": true,
   "auto_update": false,
   "edit_predictions": {
     "mode": "subtle",
@@ -14,12 +30,12 @@
     "enabled_in_text_threads": false
   },
   "features": {
-    // "edit_prediction_provider": "supermaven"
+    "edit_prediction_provider": "zed"
   },
   "vim_mode": true,
   "ui_font_size": 16,
   "buffer_font_family": "JetBrainsMono Nerd Font",
-  "buffer_font_size": 17,
+  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
     "light": "Catppuccin Mocha",
@@ -36,6 +52,8 @@
     "enabled": true,
     "line_width": 1,
     "active_line_width": 1,
+    // "coloring": "fixed",
+    // "background_coloring": "disabled"
     "coloring": "indent_aware",
     "background_coloring": "disabled"
   },
@@ -56,6 +74,7 @@
     "line_numbers": true,
     "runnables": false
   },
+  "restore_on_file_reopen": true,
   "centered_layout": {
     "left_padding": 0.1,
     "right_padding": 0.1
@@ -64,7 +83,7 @@
   "soft_wrap": "bounded",
   "show_wrap_guides": false,
   "project_panel": {
-    "button": true,
+    "hide_root": true,
     "default_width": 260,
     "dock": "left",
     "file_icons": true,
@@ -77,6 +96,7 @@
       "show": "always"
     }
   },
+
   "tab_bar": {
     "show": true,
     "show_nav_history_buttons": false,
@@ -90,10 +110,19 @@
     "show_close_button": "hover",
     "show_diagnostics": "errors"
   },
+  "title_bar": {
+    "show_branch_icon": true,
+    "show_branch_name": true,
+    "show_project_items": true,
+    "show_onboarding_banner": true,
+    "show_user_picture": true,
+    "show_sign_in": true,
+    "show_menus": false
+  },
   "preview_tabs": {
-    "enabled": false,
-    "enable_preview_from_file_finder": false,
-    "enable_preview_from_code_navigation": false
+    "enabled": true,
+    "enable_preview_from_file_finder": true,
+    "enable_preview_from_code_navigation": true
   },
   "languages": {
     "JavaScript": {
