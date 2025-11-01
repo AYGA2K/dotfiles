@@ -1,7 +1,13 @@
 {
+  "icon_theme": "Catppuccin Mocha",
   "base_keymap": "VSCode",
   "agent": {
-    "enabled": false
+    "default_model": {
+      "provider": "ollama",
+      "model": "deepseek-r1:8b"
+    },
+    "button": true,
+    "enabled": true
   },
   "search": {
     "button": false

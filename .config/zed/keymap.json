@@ -68,6 +68,12 @@
     }
   },
   {
+    "context": "!Editor",
+    "bindings": {
+      "space space": "file_finder::Toggle"
+    }
+  },
+  {
     "context": "EmptyPane || ProjectPanel ||  (Editor  && (vim_mode == normal || vim_mode == visual )) ",
     "bindings": {
       "space b d": "pane::CloseActiveItem",
@@ -77,6 +83,7 @@
       "space e": "project_panel::ToggleFocus",
       "space space": "file_finder::Toggle",
       "space s s": "outline::Toggle",
+      "space s S": "project_symbols::Toggle",
       "space f b": "zed::OpenKeymapFile",
       "space f s": "zed::OpenSettingsFile",
       "space g g": "git_panel::ToggleFocus",

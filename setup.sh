@@ -45,9 +45,9 @@ packages=(
   wlogout swaylock keyd lsd lazygit lazydocker mpv qt5ct qt6ct neovim
   unzip stow ttf-jetbrains-mono-nerd ttf-cascadia-code-nerd wl-clipboard
   brightnessctl playerctl network-manager-applet hyprpicker xdg-desktop-portal-hyprland
-  hyprsysteminfo hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
+  hyprsunset hyprpolkitagent hyprland-qt-support hyprcursor
   hyprutils hyprlang hyprwayland-scanner aquamarine hyprgraphics hyprland-qtutils
-  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji gammastep cava dgop dms-shell-git colloid-gtk-theme-git brave-bin
+  cliphist go npm wezterm nemo nemo-fileroller pulsemixer nwg-look kvantum qbittorrent yazi noto-fonts-emoji gammastep cava dgop dms-shell-bin colloid-gtk-theme-git brave-bin
 )
 
 msg "$BLUE" "[→] Installing Hyprland packages..."

@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+NOTES_DIR="$HOME/.daily-notes"
+
+# Get date info
+YEAR=$(date +"%Y")
+MONTH_NUM=$(date +"%m")
+MONTH_NAME=$(date +"%B")
+WEEK_NUM=$(date +"%V")  # ISO week number
+TODAY=$(date +"%Y-%m-%d")
+
+# Yesterday's date (GNU date supports this)
+YESTERDAY=$(date -d "yesterday" +"%Y-%m-%d")
+
+# Build folder path: YEAR/MONTH/WEEK
+NOTE_PATH="$NOTES_DIR/$YEAR/${MONTH_NUM}-${MONTH_NAME}/Week-$WEEK_NUM"
+mkdir -p "$NOTE_PATH"
+
+# Full file path
+FILE="$NOTE_PATH/${TODAY}.md"
+
+# Try to locate yesterday's note (it might be in the previous week or month)
+YESTERDAY_FILE=$(find "$NOTES_DIR" -type f -name "${YESTERDAY}.md" 2>/dev/null | head -n 1)
+
+if [[ -f "$FILE" ]]; then
+  echo "🗒️ Note for $TODAY already exists: $FILE"
+else
+  cat > "$FILE" <<EOF
+# 🗓️ Daily Notes — $TODAY
+
+$(if [[ -n "$YESTERDAY_FILE" ]]; then
+echo "🔗 [Yesterday’s Note]($(realpath --relative-to="$(dirname "$FILE")" "$YESTERDAY_FILE"))"
+echo ""
+fi)
+
+## ✅ What I Did Today
+-
+
+## 🔄 If I Had to Start the Day Again, I Would…
+-
+
+## 🌅 Plans for Tomorrow InchaAllah
+-
+
+EOF
+
+  echo "✅ Created new note: $FILE"
+fi
+
+# Open the note in your preferred editor
+zeditor "$FILE"

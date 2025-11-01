@@ -4,6 +4,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -82,10 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export GLOBAL_EDITOR='zeditor'
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='nvim'
+  export EDITOR=$GLOBAL_EDITOR
 fi
 
 # Compilation flags
@@ -119,6 +121,7 @@ alias cdcode='cd ~/code'
 alias cddots='cd ~/.dotfiles'
 alias cdwezterm='cd ~/.config/wezterm'
 alias cdkitty='cd ~/.config/kitty'
+alias cdnotes='cd ~/.daily-notes'
 
 # go
 alias gor='go run'
@@ -130,14 +133,14 @@ alias gomv='go mod vendor'
 alias gomc='go mod clean'
 
 # config
-alias zshconfig='cd && nvim ~/.zshrc'
+alias zshconfig='cd && $GLOBAL_EDITOR ~/.zshrc'
 alias zshsource='source ~/.zshrc'
-alias config='cdconfig && nvim .'
-alias nvimconfig='cdnvim && nvim .'
-alias binconfig='cdbin && nvim .'
-alias hyprconfig='cdhypr && nvim .'
-alias weztermconfig='cdwezterm && nvim .'
-alias kittyconfig='cdkitty && nvim .'
+alias config='cdconfig && $GLOBAL_EDITOR .'
+alias nvimconfig='cdnvim && $GLOBAL_EDITOR .'
+alias binconfig='cdbin && $GLOBAL_EDITOR .'
+alias hyprconfig='cdhypr && $GLOBAL_EDITOR .'
+alias weztermconfig='cdwezterm && $GLOBAL_EDITOR .'
+alias kittyconfig='cdkitty && $GLOBAL_EDITOR .'
 
 # git
 alias gcl='git clone --depth 1'
@@ -148,7 +151,6 @@ alias gp='git push origin main'
 alias gpl='git pull'
 
 # other
-alias v='nvim'
 alias lzd='lazydocker'
 alias lzg='lazygit'
 alias cl='clear'
@@ -179,3 +181,4 @@ alias nm='npm run migrate'
 alias zed='zeditor'
 
 export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH="$HOME/.local/bin:$PATH"
