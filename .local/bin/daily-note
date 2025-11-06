@@ -6,7 +6,7 @@ NOTES_DIR="$HOME/.daily-notes"
 YEAR=$(date +"%Y")
 MONTH_NUM=$(date +"%m")
 MONTH_NAME=$(date +"%B")
-WEEK_NUM=$(date +"%V")  # ISO week number
+WEEK_NUM=$(date +"%V") # ISO week number
 TODAY=$(date +"%Y-%m-%d")
 
 # Yesterday's date (GNU date supports this)
@@ -25,13 +25,13 @@ YESTERDAY_FILE=$(find "$NOTES_DIR" -type f -name "${YESTERDAY}.md" 2>/dev/null |
 if [[ -f "$FILE" ]]; then
   echo "🗒️ Note for $TODAY already exists: $FILE"
 else
-  cat > "$FILE" <<EOF
+  cat >"$FILE" <<EOF
 # 🗓️ Daily Notes — $TODAY
 
 $(if [[ -n "$YESTERDAY_FILE" ]]; then
-echo "🔗 [Yesterday’s Note]($(realpath --relative-to="$(dirname "$FILE")" "$YESTERDAY_FILE"))"
-echo ""
-fi)
+    echo "🔗 [Yesterday’s Note]($(realpath --relative-to="$(dirname "$FILE")" "$YESTERDAY_FILE"))"
+    echo ""
+  fi)
 
 ## ✅ What I Did Today
 -
@@ -47,5 +47,4 @@ EOF
   echo "✅ Created new note: $FILE"
 fi
 
-# Open the note in your preferred editor
-zeditor "$FILE"
+nvim "$FILE"

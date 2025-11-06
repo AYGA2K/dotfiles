@@ -17,7 +17,7 @@ return {
           minimal = false,
           width = 80,
           height = 0,
-          backdrop = { transparent = true },
+          backdrop = { transparent = false },
           keys = { q = false },
           zindex = 40,
           w = {
@@ -30,9 +30,9 @@ return {
             preset = "vertical",
             layout = {
               box = "horizontal",
-              width = 0.8,
-              min_width = 120,
-              height = 0.98,
+              width = 0.7,
+              -- min_width = 120,
+              height = 0.8,
               {
                 box = "vertical",
                 border = "rounded",
@@ -44,6 +44,13 @@ return {
           },
           auto_close = true,
         },
+        picker = {
+          layout = {
+            width = 0.7,
+            height = 0.5,
+          },
+        },
+
         files = {
           layout = {
             preview = false, -- Disable preview for file picker

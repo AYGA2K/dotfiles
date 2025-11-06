@@ -83,7 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export GLOBAL_EDITOR='zeditor'
+export GLOBAL_EDITOR='nvim'
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
@@ -179,6 +179,7 @@ alias nm='npm run migrate'
 
 # zed
 alias zed='zeditor'
+alias vim='nvim'
 
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH="$HOME/.local/bin:$PATH"
