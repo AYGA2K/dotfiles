@@ -47,4 +47,4 @@ EOF
   echo "✅ Created new note: $FILE"
 fi
 
-nvim "$FILE"
+$EDITOR "$FILE"
