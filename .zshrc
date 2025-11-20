@@ -132,6 +132,17 @@ alias gomt='go mod tidy'
 alias gomv='go mod vendor'
 alias gomc='go mod clean'
 
+goinit() {
+    if [ -z "$1" ]; then
+        echo "Usage: goinit <project-name>"
+        return 1
+    fi
+    mkdir -p "$1"
+    cd "$1" || return
+    go mod init github.com/AYGA2K/"$1"
+    echo "Go project '$1' initialized in $(pwd)!"
+}
+
 # config
 alias zshconfig='cd && $GLOBAL_EDITOR ~/.zshrc'
 alias zshsource='source ~/.zshrc'
